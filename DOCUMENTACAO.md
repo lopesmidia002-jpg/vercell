@@ -6,6 +6,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 - **Framework:** Next.js (App Router, React 18/19, TypeScript)
 - **Estilização:** Tailwind CSS com tokens customizados:
   - Fundo geral: `#F6F7F2` (Ivory/Off-White suave idêntico ao design original)
+  - Textura de Fundo: Grade sutil de quadrados `48x48px` na Hero e `32x32px` no carrossel
   - Verde de destaque em textos claros: `#5B7500` (Moss/Olive Green de alto contraste)
   - Verde neon de destaque em fundos dark e botões: `#D2FB07` / `#C6F500`
 - **Aceleração Gráfica:** Translações 3D com `will-change: transform` e `translate3d` para evitar quedas de frame em dispositivos móveis
@@ -17,17 +18,19 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ---
 
-## 2. Ajustes Pixel-Perfect do Bento Grid e Carrossel / Ticker
-1. **Carrossel / Ticker com Sombreamento Lateral Suave:**
-   - Adicionadas camadas bilaterais de degradê `from-[#F6F7F2] via-[#F6F7F2]/90 to-transparent` (`w-24 sm:w-40 md:w-60 z-20`) nas bordas esquerda e direita, criando o efeito de esmaecimento suave das tags ao entrar e sair da tela.
-   - Textura sutil de padrão quadriculado/grid de fundo (`32x32px`).
-   - Cards/pills em branco puro (`#FFFFFF`) com borda suave, sombra leve e ícone em squircle arredondado verde neon `#D2FB07`.
-2. **Bento Grid:**
-   - **Linha 1:** Card 1 (2 colunas) com a foto da modelo (`Pagina-Versell-1-1-scaled.webp`) e degradê suave na lateral esquerda; Card 2 (1 coluna) da API Pix com luz ambiente fluorescente no canto inferior direito.
-   - **Linha 2:** 3 Cards simétricos: Subcontas, Split automático (com destaque em verde `#5B7500`) e Pix Automático.
-   - **Linha 3:** Card 6 (2 colunas) com ícone `Eye` e mockup dos notebooks (`MacBook-Air-2022-3.webp`) alinhado na base inferior; Card 7 (1 coluna) do Antifraude inteligente.
-3. **Header / Navbar:**
-   - Utilização de `sticky top-0` com efeito backdrop-blur, evitando sobreposição indevida em capturas completas de tela (*full-page screenshots*).
+## 2. Ajustes Pixel-Perfect (Hero, Bento Grid e Carrossel)
+1. **Hero Section:**
+   - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
+   - Badge superior em pílula aninhada: contorno externo branco com pílula verde suave interna `(• Versell)` e subtítulo `Conta digital + API de Pix`.
+   - Ícones de diferenciais inline sem caixas circulares adicionais: `Zap` (Pix 24/7), `Shield` (Infraestrutura completa) e `Code2` (API e sandbox).
+2. **Carrossel / Ticker:**
+   - Degradê bilateral suave nos cantos (`w-24 sm:w-40 md:w-60 z-20`) para entrada e saída contínua de elementos.
+   - Fundo com padrão sutil de grade quadriculada.
+   - Tags brancas com squircle neon `#D2FB07`.
+3. **Bento Grid:**
+   - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
+4. **Header / Navbar:**
+   - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
 
 ---
 

@@ -45,5 +45,6 @@
 - [x] Card 6 (Painel e monitoramento): Mockup dos MacBooks centralizado e rente à base inferior, com ícone `Eye` e destaque em verde.
 - [x] Calibração de cores globais com a imagem de referência: Fundo `#F6F7F2` e verde de texto `#5B7500`.
 - [x] Ajuste da Navbar para `sticky top-0`, eliminando sobreposições em capturas full-page.
-- [x] **Carrossel / Ticker com efeito de sombreamento e fade suave nas bordas:** Adicionadas máscaras de degradê lateral bilateral (`w-24 sm:w-40 md:w-60`), textura sutil de grid de fundo e novos pills brancos com squircle neon `#D2FB07` idênticos à referência original.
+- [x] Carrossel / Ticker com efeito de sombreamento e fade suave nas bordas bilaterais (`w-24 sm:w-40 md:w-60`), textura sutil de grid de fundo e novos pills brancos com squircle neon `#D2FB07`.
+- [x] **Hero Section Pixel-Perfect:** Aplicação da grade sutil de quadrados de fundo (`48x48px`), badge em pílula aninhada com fundo lime suave, e ícones minimalistas diretos (`Zap`, `Shield`, `Code2`).
 - [x] Validação completa no container Docker em execução e compilação do build standalone de produção.
