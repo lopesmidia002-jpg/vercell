@@ -44,6 +44,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
 5. **Header / Navbar:**
    - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
+6. **Banners / Cards de Valor (`ValueCards.tsx`):**
+   - **Badges padronizados:** Card 1 com badge pastel `"Receba"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"Distribua"` (`#D2FB07`) em vez do antigo "DIVIDA", e Card 3 com badge pastel `"Movimente"` (`#EEF3DB`).
+   - **Conectores em chevron:** Inseridos chevrons (`ChevronRight`) neon `#D2FB07` alinhados entre o Card 1 e Card 2, e entre o Card 2 e Card 3.
+   - **Card central em destaque:** Card 2 estilizado com gradiente vertical suave (`from-[#F2FCD0]/90 via-[#F9FCE9]/50 to-white`), borda sutil em tom limão `#D2FB07]/50` e aura radial de glow difuso ao fundo.
+   - **Ícones de verificação:** Substituição dos antigos checkmarks por `CircleCheck` (`CheckCircle2`) com traço fino em tom moss green `#5B7500`.
+   - **Eliminação de divisória:** Removida a linha divisória artificial `border-t` acima dos bullets, garantindo espaçamento orgânico e fluido como no design original.
 
 ---
 
