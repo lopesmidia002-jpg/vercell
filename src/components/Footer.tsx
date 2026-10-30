@@ -33,7 +33,7 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
               <a
                 href="#suporte"
-                className="min-h-[44px] px-6 py-2.5 text-xs sm:text-sm font-bold text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all text-center flex items-center justify-center shadow-sm"
+                className="min-h-[44px] px-6 py-2.5 text-xs sm:text-sm font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all text-center flex items-center justify-center shadow-sm"
               >
                 Falar com especialista
               </a>

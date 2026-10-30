@@ -26,9 +26,9 @@ export default function PreFooterCta() {
             <TagBadge text="Vamos crescer juntos?" isDark className="mb-6" />
 
             {/* Title */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
-              Quem vende no Pix, <br />
-              <span className="text-[#D2FB07]">vende com Versell.</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight mb-4">
+              <span className="font-normal text-white">Quem vende no Pix,</span> <br />
+              <span className="font-bold text-[#D2FB07]">vende com Versell.</span>
             </h2>
 
             {/* Subtitle */}
@@ -40,7 +40,7 @@ export default function PreFooterCta() {
             {/* Primary Action Button */}
             <a
               href="#como-comecar"
-              className="min-h-[48px] px-9 py-3.5 text-base font-bold text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_25px_rgba(210,251,7,0.4)] flex items-center justify-center text-center mb-8 transform active:scale-[0.98]"
+              className="min-h-[48px] px-9 py-3.5 text-base font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_25px_rgba(210,251,7,0.4)] flex items-center justify-center text-center mb-8 transform active:scale-[0.98]"
             >
               Abrir minha conta
             </a>

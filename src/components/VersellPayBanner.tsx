@@ -16,7 +16,7 @@ export default function VersellPayBanner() {
                 <CreditCard className="w-6 h-6 text-[#D2FB07]" />
               </div>
               <div>
-                <h3 className="text-base sm:text-lg font-bold text-black group-hover:text-neutral-800 transition-colors">
+                <h3 className="text-base sm:text-lg font-normal text-black group-hover:text-neutral-800 transition-colors">
                   Também precisa de cartão e checkout?
                 </h3>
                 <p className="text-xs sm:text-sm text-[#666666]">
@@ -25,7 +25,7 @@ export default function VersellPayBanner() {
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-800 group-hover:text-black transition-colors self-end sm:self-center">
+            <div className="inline-flex items-center gap-1.5 text-sm font-normal text-neutral-800 group-hover:text-black transition-colors self-end sm:self-center">
               <span>versellpay.com</span>
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </div>

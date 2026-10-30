@@ -64,9 +64,9 @@ print("QR Code Copia e Cola:", response.copia_e_cola)`,
           <div className="lg:col-span-5 flex flex-col items-start">
             <TagBadge text="Desenvolvedores" className="mb-4" />
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
-              API de Pix <br />
-              <span className="text-[#5B7500]">simples e robusta</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
+              <span className="font-normal text-[#111111]">API de Pix </span><br />
+              <span className="font-bold text-[#5B7500]">simples e robusta</span>
             </h2>
 
             <p className="text-base text-[#666666] font-normal leading-relaxed mb-8">
@@ -105,13 +105,13 @@ print("QR Code Copia e Cola:", response.copia_e_cola)`,
             <div className="flex flex-wrap items-center gap-4">
               <a
                 href="#docs"
-                className="px-6 py-3 text-sm font-bold text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all shadow-sm"
+                className="px-6 py-3 text-sm font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all shadow-sm"
               >
                 Ver documentação
               </a>
               <a
                 href="#postman"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-800 hover:text-black transition-colors"
+                className="inline-flex items-center gap-1.5 text-sm font-normal text-neutral-800 hover:text-black transition-colors"
               >
                 <span>Baixar coleção Postman</span>
                 <ArrowUpRight className="w-4 h-4" />

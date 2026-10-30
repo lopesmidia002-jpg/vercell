@@ -20,9 +20,9 @@ export default function OrbitalSupport() {
             <div className="lg:col-span-5 flex flex-col items-start text-left">
               <TagBadge text="Suporte 24h" isDark className="mb-6" />
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
-                Um time do seu lado <br />
-                <span className="text-[#D2FB07]">24 horas por dia</span>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight mb-6">
+                <span className="font-normal text-white">Um time do seu lado </span><br />
+                <span className="font-bold text-[#D2FB07]">24 horas por dia</span>
               </h2>
 
               <p className="text-base sm:text-lg text-neutral-400 font-normal leading-relaxed mb-8">
@@ -47,7 +47,7 @@ export default function OrbitalSupport() {
                 href="https://wa.me/5584992315908"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[48px] px-8 py-3.5 text-sm sm:text-base font-bold text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_25px_rgba(210,251,7,0.35)] flex items-center gap-2.5 active:scale-[0.98]"
+                className="min-h-[48px] px-8 py-3.5 text-sm sm:text-base font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_25px_rgba(210,251,7,0.35)] flex items-center gap-2.5 active:scale-[0.98]"
               >
                 <MessageCircle className="w-5 h-5 fill-black stroke-none" />
                 <span>Chamar no WhatsApp</span>

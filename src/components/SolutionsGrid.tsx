@@ -55,8 +55,9 @@ export default function SolutionsGrid() {
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
           <TagBadge text="Para quem é" className="mb-4" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
-            Feita para quem <span className="text-[#5B7500]">vende online</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
+            <span className="font-normal text-[#111111]">Feita para quem </span>
+            <span className="font-bold text-[#5B7500]">vende online</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[#666666] font-normal leading-relaxed">
@@ -77,7 +78,7 @@ export default function SolutionsGrid() {
                   <Icon className="w-5 h-5 text-[#D2FB07]" />
                 </div>
 
-                <h3 className="text-xl font-bold text-black tracking-tight mb-3">
+                <h3 className="text-xl font-normal text-black tracking-tight mb-3">
                   {item.title}
                 </h3>
 

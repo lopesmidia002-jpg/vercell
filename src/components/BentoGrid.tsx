@@ -37,8 +37,9 @@ export default function BentoGrid() {
                     <Wallet className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
                   </div>
 
-                  <h3 className="text-2xl sm:text-[28px] font-bold text-[#111111] tracking-tight mb-3">
-                    Conta digital <span className="text-[#5B7500]">Versell</span>
+                  <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
+                    <span className="font-normal text-[#111111]">Conta digital </span>
+                    <span className="font-bold text-[#5B7500]">Versell</span>
                   </h3>
 
                   <p className="text-sm sm:text-base text-[#666666] leading-relaxed mb-6">
@@ -80,8 +81,9 @@ export default function BentoGrid() {
                   <Code className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
                 </div>
 
-                <h3 className="text-2xl sm:text-[28px] font-bold text-[#111111] tracking-tight mb-3">
-                  API de <span className="text-[#5B7500]">Pix</span>
+                <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
+                  <span className="font-normal text-[#111111]">API de </span>
+                  <span className="font-bold text-[#5B7500]">Pix</span>
                 </h3>
 
                 <p className="text-sm sm:text-base text-[#666666] leading-relaxed">
@@ -114,8 +116,9 @@ export default function BentoGrid() {
                 <Split className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
               </div>
 
-              <h3 className="text-2xl sm:text-[26px] font-bold tracking-tight mb-3">
-                <span className="text-[#5B7500]">Split</span> <span className="text-[#111111]">automático</span>
+              <h3 className="text-2xl sm:text-[26px] tracking-tight mb-3">
+                <span className="font-bold text-[#5B7500]">Split</span>{" "}
+                <span className="font-normal text-[#111111]">automático</span>
               </h3>
 
               <p className="text-sm sm:text-base text-[#666666] leading-relaxed">
@@ -129,9 +132,9 @@ export default function BentoGrid() {
                 <Calendar className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
               </div>
 
-              <h3 className="text-2xl sm:text-[26px] font-bold tracking-tight mb-3">
-                <span className="text-[#111111]">Pix </span>
-                <span className="text-[#5B7500]">Automático</span>
+              <h3 className="text-2xl sm:text-[26px] tracking-tight mb-3">
+                <span className="font-normal text-[#111111]">Pix </span>
+                <span className="font-bold text-[#5B7500]">Automático</span>
               </h3>
 
               <p className="text-sm sm:text-base text-[#666666] leading-relaxed">
@@ -149,9 +152,9 @@ export default function BentoGrid() {
                   <Eye className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
                 </div>
 
-                <h3 className="text-2xl sm:text-[28px] font-bold tracking-tight mb-3">
-                  <span className="text-[#111111]">Painel e </span>
-                  <span className="text-[#5B7500]">monitoramento</span>
+                <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
+                  <span className="font-normal text-[#111111]">Painel e </span>
+                  <span className="font-bold text-[#5B7500]">monitoramento</span>
                 </h3>
 
                 <p className="text-sm sm:text-base text-[#666666] leading-relaxed max-w-xl mb-6">
@@ -176,9 +179,9 @@ export default function BentoGrid() {
                 <ShieldCheck className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
               </div>
 
-              <h3 className="text-2xl sm:text-[28px] font-bold tracking-tight mb-3">
-                <span className="text-[#111111]">Antifraude </span>
-                <span className="text-[#5B7500]">inteligente</span>
+              <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
+                <span className="font-normal text-[#111111]">Antifraude </span>
+                <span className="font-bold text-[#5B7500]">inteligente</span>
               </h3>
 
               <p className="text-sm sm:text-base text-[#666666] leading-relaxed">

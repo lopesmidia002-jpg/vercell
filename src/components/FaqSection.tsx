@@ -76,9 +76,9 @@ export default function FaqSection() {
           <div className="lg:col-span-4 flex flex-col items-start lg:sticky lg:top-28">
             <TagBadge text="Perguntas frequentes" className="mb-4" />
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
-              Perguntas <br />
-              <span className="text-black">Frequentes</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
+              <span className="font-normal text-[#111111]">Perguntas </span><br />
+              <span className="font-bold text-[#5B7500]">frequentes</span>
             </h2>
 
             <p className="text-base text-[#666666] font-normal leading-relaxed">
@@ -98,7 +98,7 @@ export default function FaqSection() {
                   <button
                     id={`button-${faq.id}`}
                     onClick={() => toggleItem(idx)}
-                    className="w-full min-h-[56px] px-6 py-4 text-left flex items-center justify-between gap-4 font-semibold text-base sm:text-lg text-neutral-900 hover:text-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2FB07]"
+                    className="w-full min-h-[56px] px-6 py-4 text-left flex items-center justify-between gap-4 font-normal text-base sm:text-lg text-[#111111] hover:text-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2FB07]"
                     aria-expanded={isOpen}
                     aria-controls={`panel-${faq.id}`}
                   >

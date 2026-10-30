@@ -49,3 +49,17 @@
 - [x] **Hero Section Título, Diferenciais e Botões CTA (`Hero.tsx`):** Frase `"Quem vende no Pix,"` com peso de fonte normal (`font-normal`), sem negrito, e `"vende com Versell."` em negrito `#5B7500`; botões CTA ampliados para `min-h-[56px] sm:min-h-[62px]` com padding `px-9 sm:px-11`, peso de fonte normal e leve sombreamento difuso; ícones inline em verde oliva da marca (`#5B7500`).
 - [x] **Tag Badges Pixel-Perfect (`TagBadge.tsx`):** Remoção de negrito do nome `Versell` (`font-normal`), ponto neon limpo e sólido (`bg-[#D2FB07]`), e texto em `font-normal text-[#222222]`, aplicado globalmente em todos os pontos da página.
 - [x] Validação completa no container Docker em execução (HTTP 200 OK) e compilação limpa sem erros.
+
+---
+
+### [x] Passo 5: Padronização Global de Tipografia (Remoção de Negrito em Palavras/Frases Pretas) e Calibração do Ticker
+- [x] **Remoção Global de Negrito em Textos Pretos:**
+  - [x] Varredura e substituição completa em todos os componentes do projeto: todas as palavras e frases de cor preta (`text-[#111111]`, `text-black`, `text-neutral-800`, `text-[#222222]`) formatadas anteriormente em negrito (`font-bold`, `font-semibold`, `font-extrabold`) foram convertidas para peso regular/normal (`font-normal`).
+  - [x] **Preservação de Destaques:** Mantido o negrito estilizado (`font-bold`) exclusivamente nas palavras coloridas de destaque da marca em verde oliva (`text-[#5B7500]`) e neon (`text-[#D2FB07]`).
+  - [x] Componentes atualizados: `BentoGrid.tsx`, `ValueCards.tsx`, `DevSection.tsx`, `SecuritySection.tsx`, `SolutionsGrid.tsx`, `ThreeSteps.tsx`, `FaqSection.tsx`, `VersellPayBanner.tsx`, `OrbitalSupport.tsx`, `PreFooterCta.tsx` e `Footer.tsx`.
+- [x] **Calibração Visual do Carrossel / Ticker (`Ticker.tsx`):**
+  - [x] Remoção de negrito de todos os textos dos balões do carrossel (`font-normal text-[#111111]`).
+  - [x] Refinamento dos ícones para traço fino (`stroke-[1.75]`), removendo a espessura pesada anterior.
+  - [x] Aumento proporcional das dimensões dos elementos: padding ampliado para `px-5 py-2.5 sm:px-6 sm:py-3`, squircles neon aumentados para `w-7 h-7 sm:w-8 sm:h-8 rounded-xl` e tamanho do texto ajustado para `text-sm sm:text-[15px]`.
+  - [x] Ícones e labels alinhados com a captura original: `Key` para "mTLS + OAuth2" e label limpo "Antifraude".
+- [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).

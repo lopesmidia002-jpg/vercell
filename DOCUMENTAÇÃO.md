@@ -71,6 +71,28 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - **Badges padronizados:** Card 1 com badge pastel `"RECEBA"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"DIVIDA"` (`#D2FB07`), e Card 3 com badge pastel `"MOVIMENTE"` (`#EEF3DB`).
    - **Ícones de verificação:** Marcadores de benefícios com ícone `Check` (tique verde `#5B7500` com traço firme `stroke-[2.5]`).
 
+7. **Padronização Global de Tipografia (Remoção de Negrito em Palavras Pretas):**
+   - Em conformidade estrita com o padrão de design da Versell e a solicitação do usuário, **todas as palavras e frases de cor preta** (`#111111`, `#000000`, `text-black`, `text-neutral-800`, `text-[#222222]`) que continham classes de negrito (`font-bold`, `font-semibold`, `font-extrabold`) foram convertidas para peso regular/normal (`font-normal`).
+   - O negrito (`font-bold`) foi **preservado exclusivamente nas palavras e expressões coloridas de destaque** em verde oliva oficial (`#5B7500`) e verde neon fluorescente (`#D2FB07`).
+   - Essa harmonia tipográfica dual-weight foi aplicada integralmente em todos os componentes:
+     - `Hero.tsx`: `"Quem vende no Pix,"` (`font-normal`), `"vende com Versell."` (`font-bold text-[#5B7500]`), botões com texto preto em `font-normal`.
+     - `BentoGrid.tsx`: Todos os títulos de cards com palavras pretas em `font-normal` e palavras-chave verdes em `font-bold` (`"Conta digital "`, `"API de "`, `"automático"`, `"Pix "`, `"Painel e "`, `"Antifraude "`).
+     - `ValueCards.tsx`: Título de seção e títulos de cards em `font-normal text-[#111111]`, badge "DIVIDA" em `font-normal text-[#111111]`.
+     - `DevSection.tsx`: `"API de Pix "` em `font-normal`, botão de ação em `font-normal text-black`, link Postman em `font-normal`.
+     - `SecuritySection.tsx`: `"Segurança em "` em `font-normal`, menção à Baas Pago em `font-normal`, link de políticas e cards de segurança em `font-normal`.
+     - `SolutionsGrid.tsx`: `"Feita para quem "` em `font-normal`, títulos dos 6 cards em `font-normal`.
+     - `ThreeSteps.tsx`: `"Comece a receber em "` em `font-normal`, badges numéricos e títulos de passos em `font-normal`, botão CTA em `font-normal text-black`.
+     - `FaqSection.tsx`: `"Perguntas "` em `font-normal`, perguntas do acordeão em `font-normal text-[#111111]`.
+     - `VersellPayBanner.tsx`: Título do banner e link em `font-normal`.
+     - `OrbitalSupport.tsx`: `"Um time do seu lado "` em `font-normal`, botão WhatsApp em `font-normal text-black`.
+     - `PreFooterCta.tsx`: `"Quem vende no Pix,"` em `font-normal`, botão CTA em `font-normal text-black`.
+     - `Footer.tsx`: Botão CTA em `font-normal text-black`.
+8. **Calibração Visual do Carrossel / Ticker (`Ticker.tsx`):**
+   - Remoção de negrito em todas as palavras das tags (`font-normal text-[#111111]`).
+   - Ícones com traço fino refinado (`stroke-[1.75]`), eliminando traços grossos/pesados.
+   - Aumento proporcional de escala: padding expandido para `px-5 py-2.5 sm:px-6 sm:py-3`, squircle neon ampliado para `w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#D2FB07]` e tamanho do texto ajustado para `text-sm sm:text-[15px]`.
+   - Ícone de chave `Key` para "mTLS + OAuth2" e label simplificado "Antifraude" conforme a captura original.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

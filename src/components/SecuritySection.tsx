@@ -44,22 +44,22 @@ export default function SecuritySection() {
           <div className="lg:col-span-5 flex flex-col items-start">
             <TagBadge text="Segurança" className="mb-4" />
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
-              Segurança em <br />
-              <span className="text-[#5B7500]">cada Pix</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
+              <span className="font-normal text-[#111111]">Segurança em </span><br />
+              <span className="font-bold text-[#5B7500]">cada Pix</span>
             </h2>
 
             <p className="text-base text-[#666666] font-normal leading-relaxed mb-6">
               A Versell opera com a infraestrutura da{" "}
-              <strong className="text-black font-semibold">
+              <span className="text-black font-normal">
                 Baas Pago Instituição de Pagamento
-              </strong>
+              </span>
               , responsável pelas contas, pelas transações Pix e pela liquidação. Por cima, somamos tecnologia, antifraude e monitoramento para a sua operação rodar tranquila.
             </p>
 
             <a
               href="#politicas"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-black hover:text-neutral-700 mb-8 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-normal text-black hover:text-neutral-700 mb-8 transition-colors"
             >
               <span>Conheça nossas políticas</span>
               <ArrowRight className="w-4 h-4" />
@@ -71,7 +71,7 @@ export default function SecuritySection() {
                 <span>Canal de denúncias:</span>
                 <a
                   href="mailto:denuncias@versell.com.br"
-                  className="text-black font-medium hover:underline"
+                  className="text-black font-normal hover:underline"
                 >
                   denuncias@versell.com.br
                 </a>
@@ -81,7 +81,7 @@ export default function SecuritySection() {
                 <span>Compliance:</span>
                 <a
                   href="mailto:compliance@versell.com.br"
-                  className="text-black font-medium hover:underline"
+                  className="text-black font-normal hover:underline"
                 >
                   compliance@versell.com.br
                 </a>
@@ -102,7 +102,7 @@ export default function SecuritySection() {
                     <Icon className="w-5 h-5 text-[#D2FB07]" />
                   </div>
 
-                  <h3 className="text-lg font-bold text-black tracking-tight mb-2">
+                  <h3 className="text-lg font-normal text-black tracking-tight mb-2">
                     {item.title}
                   </h3>
 

@@ -6,7 +6,7 @@ import {
   Split,
   RefreshCw,
   Webhook,
-  Lock,
+  Key,
   ShieldCheck,
   Headphones,
 } from "lucide-react";
@@ -19,8 +19,8 @@ const tickerItems = [
   { icon: Split, label: "Split automático" },
   { icon: RefreshCw, label: "Pix Automático" },
   { icon: Webhook, label: "Webhooks em tempo real" },
-  { icon: Lock, label: "mTLS + OAuth2" },
-  { icon: ShieldCheck, label: "Antifraude inteligente" },
+  { icon: Key, label: "mTLS + OAuth2" },
+  { icon: ShieldCheck, label: "Antifraude" },
   { icon: Headphones, label: "Suporte" },
 ];
 
@@ -29,7 +29,7 @@ export default function Ticker() {
   const allItems = [...tickerItems, ...tickerItems];
 
   return (
-    <section className="relative py-4 border-y border-black/[0.06] bg-[#F6F7F2] overflow-hidden select-none">
+    <section className="relative py-5 sm:py-6 border-y border-black/[0.06] bg-[#F6F7F2] overflow-hidden select-none">
       {/* Subtle Grid Pattern Overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000006_1px,transparent_1px),linear-gradient(to_bottom,#00000006_1px,transparent_1px)] bg-[size:32px_32px] pointer-events-none" />
 
@@ -47,10 +47,10 @@ export default function Ticker() {
             return (
               <div
                 key={index}
-                className="inline-flex items-center gap-2.5 mx-2.5 sm:mx-3 px-4 py-2 rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] text-xs sm:text-sm font-semibold text-[#111111] flex-shrink-0"
+                className="inline-flex items-center gap-3 sm:gap-3.5 mx-3 sm:mx-3.5 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] text-sm sm:text-[15px] font-normal text-[#111111] flex-shrink-0"
               >
-                <div className="w-6 h-6 rounded-lg bg-[#D2FB07] flex items-center justify-center text-black flex-shrink-0 shadow-sm">
-                  <Icon className="w-3.5 h-3.5 stroke-[2.5]" />
+                <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#D2FB07] flex items-center justify-center text-black flex-shrink-0 shadow-sm">
+                  <Icon className="w-4 h-4 sm:w-4.5 sm:h-4.5 stroke-[1.75]" />
                 </div>
                 <span>{item.label}</span>
               </div>

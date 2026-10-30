@@ -17,7 +17,7 @@ export default function ValueCards() {
     },
     {
       badge: "DIVIDA",
-      badgeClass: "bg-[#D2FB07] text-[#111111] font-bold",
+      badgeClass: "bg-[#D2FB07] text-[#111111] font-normal",
       title: "Cada real no lugar certo",
       description:
         "Subcontas e split dividem cada recebimento entre sellers, parceiros e coprodutores, automaticamente.",
@@ -72,7 +72,7 @@ export default function ValueCards() {
                   {card.badge}
                 </span>
 
-                <h3 className="text-2xl sm:text-[26px] font-bold text-[#111111] tracking-tight mb-3">
+                <h3 className="text-2xl sm:text-[26px] font-normal text-[#111111] tracking-tight mb-3">
                   {card.title}
                 </h3>
 
