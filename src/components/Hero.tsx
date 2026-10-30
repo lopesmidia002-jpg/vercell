@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Zap, Shield, Code2 } from "lucide-react";
+import { Zap, ShieldCheck, Code } from "lucide-react";
 import TagBadge from "./TagBadge";
 
 export default function Hero() {
@@ -49,18 +49,18 @@ export default function Hero() {
               </a>
             </div>
 
-            {/* Highlights List with bare icons (idêntico à imagem original) */}
+            {/* Highlights List with bare green icons (idêntico à imagem original) */}
             <div className="flex flex-wrap items-center gap-y-2 gap-x-5 text-xs font-normal text-[#555555]">
               <div className="flex items-center gap-1.5">
-                <Zap className="w-3.5 h-3.5 text-[#555555] stroke-[2]" />
+                <Zap className="w-3.5 h-3.5 text-[#5B7500] stroke-[2]" />
                 <span>Pix 24/7</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Shield className="w-3.5 h-3.5 text-[#555555] stroke-[2]" />
+                <ShieldCheck className="w-3.5 h-3.5 text-[#5B7500] stroke-[2]" />
                 <span>Infraestrutura completa</span>
               </div>
               <div className="flex items-center gap-1.5">
-                <Code2 className="w-3.5 h-3.5 text-[#555555] stroke-[2]" />
+                <Code className="w-3.5 h-3.5 text-[#5B7500] stroke-[2]" />
                 <span>API e sandbox</span>
               </div>
             </div>

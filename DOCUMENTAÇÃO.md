@@ -26,7 +26,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - Texto de identificação de seção em `font-normal text-[#222222]` sem barras divisórias artificiais.
 2. **Hero Section:**
    - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
-   - Ícones de diferenciais inline sem caixas circulares adicionais: `Zap` (Pix 24/7), `Shield` (Infraestrutura completa) e `Code` (API e sandbox).
+   - Ícones de diferenciais inline minimalistas em verde oliva de destaque (`#5B7500` / `stroke-[2]`): `Zap` (Pix 24/7), `ShieldCheck` (escudo com tique de verificação para "Infraestrutura completa") e `Code` (`< >` para "API e sandbox"), acompanhados por texto neutro `#555555`.
 3. **Carrossel / Ticker:**
    - Degradê bilateral suave nos cantos (`w-24 sm:w-40 md:w-60 z-20`) para entrada e saída contínua de elementos.
    - Fundo com padrão sutil de grade quadriculada.

@@ -70,6 +70,7 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 9. **Navbar Superior (`Navbar.tsx`):** Barra de navegação com logotipo oficial Versell, links centrais contidos em elegante pílula branca arredondada flutuante com sombra suave, link de "Documentação ↗" em negrito, botão de texto limpo "Entrar" e botão de conversão neon "Falar com especialista".
 10. **Bento Grid de Soluções (`BentoGrid.tsx`):** Grid moderno com proporções generosas idênticas ao original: Linha 2 (Subcontas, Split automático, Pix Automático) com altura ampliada para `min-h-[350px] sm:min-h-[380px]`, Linha 1 com enquadramento e calibração cirúrgica da foto da modelo via `objectPosition: "74% top"` (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`), e ícones dedicados em squircles escuros (`Wallet`, `Code`, `Users`, `Split`, `Calendar`, `Eye`, `ShieldCheck`).
 11. **Tag Badges Padronizados (`TagBadge.tsx`):** Pílula branca com sombra suave, inner pill pastel `#EEF3DB` com ponto indicador circular neon limpo e sólido (`bg-[#D2FB07]`) e nome `Versell` em peso normal (`font-normal`), sem negrito, aplicado globalmente em todos os pontos da página.
+12. **Diferenciais da Hero (`Hero.tsx`):** Ícones inline em verde oliva da marca (`#5B7500`): `Zap` (Pix 24/7), `ShieldCheck` com checkmark (Infraestrutura completa) e `Code` `< >` (API e sandbox), com tipografia neutra `#555555`.
 
 ---
 
