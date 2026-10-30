@@ -62,4 +62,10 @@
   - [x] Refinamento dos ícones para traço fino (`stroke-[1.75]`), removendo a espessura pesada anterior.
   - [x] Aumento proporcional das dimensões dos elementos: padding ampliado para `px-5 py-2.5 sm:px-6 sm:py-3`, squircles neon aumentados para `w-7 h-7 sm:w-8 sm:h-8 rounded-xl` e tamanho do texto ajustado para `text-sm sm:text-[15px]`.
   - [x] Ícones e labels alinhados com a captura original: `Key` para "mTLS + OAuth2" e label limpo "Antifraude".
+- [x] **Refinamento Pixel-Perfect dos 3 Cards de Valor (`ValueCards.tsx`):**
+  - [x] Remoção de negrito das palavras verdes nos badges laterais (`Receba` e `Movimente`) com `font-normal` e casing Title Case.
+  - [x] Correção da palavra do badge central para `Distribua` (substituindo a anterior `DIVIDA`), em `font-normal text-[#111111]` e fundo neon `#D2FB07`.
+  - [x] Aplicação do efeito sutil no Card Central: iluminação difusa radial suave em verde neon no canto superior direito (`radial-gradient` + blur) e borda sutilmente destacada.
+  - [x] Atualização de todos os ícones da checklist para círculos checados (`CheckCircle2`) em verde oliva `#5B7500` com traço fino.
+  - [x] Inclusão de setas conectoras de fluxo (`ChevronRight` neon) posicionadas no espaço entre os cards no desktop.
 - [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).

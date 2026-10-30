@@ -1,11 +1,11 @@
-import { Check } from "lucide-react";
+import { CheckCircle2, ChevronRight } from "lucide-react";
 import TagBadge from "./TagBadge";
 
 export default function ValueCards() {
   const cards = [
     {
-      badge: "RECEBA",
-      badgeClass: "bg-[#EEF3DB] text-[#425405] font-semibold",
+      badge: "Receba",
+      badgeClass: "bg-[#EEF3DB] text-[#425405] font-normal",
       title: "Pix que cai na hora",
       description:
         "Gere cobranças por API, QR Code ou Copia e Cola e receba em segundos — inclusive à noite, nos fins de semana e nos feriados.",
@@ -14,10 +14,11 @@ export default function ValueCards() {
         "QR Code e Copia e Cola",
         "Confirmação instantânea",
       ],
+      isHighlighted: false,
     },
     {
-      badge: "DIVIDA",
-      badgeClass: "bg-[#D2FB07] text-[#111111] font-normal",
+      badge: "Distribua",
+      badgeClass: "bg-[#D2FB07] text-[#111111] font-normal shadow-[0_2px_8px_rgba(210,251,7,0.35)]",
       title: "Cada real no lugar certo",
       description:
         "Subcontas e split dividem cada recebimento entre sellers, parceiros e coprodutores, automaticamente.",
@@ -26,10 +27,11 @@ export default function ValueCards() {
         "Split na hora do pagamento",
         "Conciliação automática",
       ],
+      isHighlighted: true,
     },
     {
-      badge: "MOVIMENTE",
-      badgeClass: "bg-[#EEF3DB] text-[#425405] font-semibold",
+      badge: "Movimente",
+      badgeClass: "bg-[#EEF3DB] text-[#425405] font-normal",
       title: "Sua conta, sem burocracia",
       description:
         "Pague, transfira e saque via Pix direto da sua conta digital, com tudo acompanhado no painel e no app.",
@@ -38,6 +40,7 @@ export default function ValueCards() {
         "Saldo e extrato em tempo real",
         "App Versell para iOS e Android",
       ],
+      isHighlighted: false,
     },
   ];
 
@@ -58,40 +61,65 @@ export default function ValueCards() {
           </p>
         </div>
 
-        {/* 3 Cards Container */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
-          {cards.map((card, idx) => (
-            <div
-              key={idx}
-              className="bg-white rounded-[32px] p-8 sm:p-9 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-md transition-all duration-300 flex flex-col justify-between min-h-[360px] sm:min-h-[380px]"
-            >
-              <div>
-                <span
-                  className={`inline-block text-xs uppercase tracking-wider px-3.5 py-1 rounded-full mb-6 ${card.badgeClass}`}
-                >
-                  {card.badge}
-                </span>
+        {/* 3 Cards Container with flow arrows between them */}
+        <div className="relative">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            {cards.map((card, idx) => (
+              <div
+                key={idx}
+                className={`rounded-[32px] p-8 sm:p-9 transition-all duration-300 flex flex-col justify-between min-h-[360px] sm:min-h-[380px] relative overflow-hidden ${
+                  card.isHighlighted
+                    ? "bg-white border border-[#D2FB07]/60 shadow-[0_8px_30px_rgba(210,251,7,0.12)] hover:shadow-lg"
+                    : "bg-white border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-md"
+                }`}
+              >
+                {/* Efeito sutil no Card Central (idêntico ao original: glow suave neon no canto superior direito) */}
+                {card.isHighlighted && (
+                  <>
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(ellipse_at_top_right,#D2FB07_0%,#EBFBA0_35%,transparent_72%)] opacity-35 pointer-events-none" />
+                    <div className="absolute -top-10 -right-10 w-48 h-48 bg-[#D2FB07]/20 rounded-full blur-2xl pointer-events-none" />
+                  </>
+                )}
 
-                <h3 className="text-2xl sm:text-[26px] font-normal text-[#111111] tracking-tight mb-3">
-                  {card.title}
-                </h3>
+                <div className="relative z-10">
+                  <span
+                    className={`inline-block text-xs font-normal px-3.5 py-1 rounded-full mb-6 ${card.badgeClass}`}
+                  >
+                    {card.badge}
+                  </span>
 
-                <p className="text-sm sm:text-base text-[#666666] leading-relaxed mb-8">
-                  {card.description}
-                </p>
+                  <h3 className="text-2xl sm:text-[26px] font-normal text-[#111111] tracking-tight mb-3">
+                    {card.title}
+                  </h3>
+
+                  <p className="text-sm sm:text-base text-[#666666] leading-relaxed mb-8">
+                    {card.description}
+                  </p>
+                </div>
+
+                {/* Features List with circled checkmark icons */}
+                <div className="flex flex-col space-y-3.5 relative z-10">
+                  {card.features.map((item, fIdx) => (
+                    <div
+                      key={fIdx}
+                      className="flex items-start gap-2.5 text-xs sm:text-sm text-[#444444]"
+                    >
+                      <CheckCircle2 className="w-4 h-4 text-[#5B7500] stroke-[1.75] flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
+            ))}
+          </div>
 
-              {/* Features List */}
-              <div className="flex flex-col space-y-3.5">
-                {card.features.map((item, fIdx) => (
-                  <div key={fIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#444444]">
-                    <Check className="w-4 h-4 text-[#5B7500] stroke-[2.5] flex-shrink-0 mt-0.5" />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
+          {/* Setas conectivas discretas entre os cards no desktop (como na imagem original) */}
+          <div className="hidden md:flex absolute left-[33.333%] -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 pointer-events-none items-center justify-center">
+            <ChevronRight className="w-5 h-5 text-[#D2FB07] stroke-[2.5]" />
+          </div>
+          <div className="hidden md:flex absolute left-[66.666%] -translate-x-1/2 top-1/2 -translate-y-1/2 z-20 pointer-events-none items-center justify-center">
+            <ChevronRight className="w-5 h-5 text-[#D2FB07] stroke-[2.5]" />
+          </div>
         </div>
       </div>
     </section>

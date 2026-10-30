@@ -67,9 +67,14 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - **Botão Entrar:** Estilizado em formato pílula com contorno suave e fundo branco (`rounded-full border border-black/15 bg-white px-5 py-2 text-sm font-normal text-[#111111] hover:border-black/30 shadow-sm`).
    - **Botão CTA ("Falar com especialista"):** Tipografia em peso normal (`font-normal`), sem negrito, em verde neon `#D2FB07` com sombreamento/glow neon difuso característico (`shadow-[0_4px_20px_rgba(210,251,7,0.5)]`).
 6. **Banners / Cards de Valor (`ValueCards.tsx`):**
-   - **Cards Brancos Puros e Proporcionais:** Três cards brancos limpos (`bg-white rounded-[32px] p-8 sm:p-9 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] min-h-[360px] sm:min-h-[380px]`) dispostos lado a lado.
-   - **Badges padronizados:** Card 1 com badge pastel `"RECEBA"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"DIVIDA"` (`#D2FB07`), e Card 3 com badge pastel `"MOVIMENTE"` (`#EEF3DB`).
-   - **Ícones de verificação:** Marcadores de benefícios com ícone `Check` (tique verde `#5B7500` com traço firme `stroke-[2.5]`).
+   - **Três cards calibrados ao design original:** Dispostos lado a lado com fluxo sequencial *Receba ➔ Distribua ➔ Movimente*.
+   - **Badges Padronizados e Sem Negrito:**
+     - Card 1: Badge pastel `"Receba"` (`#EEF3DB`) em peso normal (`font-normal`) com texto verde oliva `#425405`.
+     - Card 2: Badge neon fluorescente `"Distribua"` (`#D2FB07`) em peso normal (`font-normal`) com texto preto `#111111`.
+     - Card 3: Badge pastel `"Movimente"` (`#EEF3DB`) em peso normal (`font-normal`) com texto verde oliva `#425405`.
+   - **Efeito Sutil no Card Central:** Iluminação ambiental suave em degradê neon fluorescente no canto superior direito (`radial-gradient` neon + blur difuso) e borda com acabamento refinado (`border-[#D2FB07]/60`), destacando o card central de split e distribuição exatamente como na captura original.
+   - **Ícones de Verificação Circulares:** Marcadores de benefícios substituídos pelo ícone circular com tique (`CheckCircle2` em `#5B7500` com traço fino `stroke-[1.75]`).
+   - **Setas Conectoras de Fluxo:** Chevrons discretos em verde neon (`ChevronRight`) dispostos nos intervalos entre os cards no desktop para guiar a leitura do fluxo operacional.
 
 7. **Padronização Global de Tipografia (Remoção de Negrito em Palavras Pretas):**
    - Em conformidade estrita com o padrão de design da Versell e a solicitação do usuário, **todas as palavras e frases de cor preta** (`#111111`, `#000000`, `text-black`, `text-neutral-800`, `text-[#222222]`) que continham classes de negrito (`font-bold`, `font-semibold`, `font-extrabold`) foram convertidas para peso regular/normal (`font-normal`).
