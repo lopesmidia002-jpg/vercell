@@ -69,21 +69,13 @@ export default function ValueCards() {
                 key={idx}
                 className={`rounded-[32px] p-8 sm:p-9 transition-all duration-300 flex flex-col justify-between min-h-[360px] sm:min-h-[380px] relative overflow-hidden ${
                   card.isHighlighted
-                    ? "bg-white border border-[#D2FB07]/60 shadow-[0_8px_30px_rgba(210,251,7,0.12)] hover:shadow-lg"
+                    ? "bg-[linear-gradient(180deg,#F1FBC4_0%,#F8FDE2_42%,#FFFFFF_68%)] border border-[#D2FB07]/70 shadow-[0_10px_35px_rgba(210,251,7,0.2)] hover:shadow-xl"
                     : "bg-white border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-md"
                 }`}
               >
-                {/* Efeito sutil no Card Central (idêntico ao original: glow suave neon no canto superior direito) */}
-                {card.isHighlighted && (
-                  <>
-                    <div className="absolute top-0 right-0 w-64 h-64 bg-[radial-gradient(ellipse_at_top_right,#D2FB07_0%,#EBFBA0_35%,transparent_72%)] opacity-35 pointer-events-none" />
-                    <div className="absolute -top-10 -right-10 w-48 h-48 bg-[#D2FB07]/20 rounded-full blur-2xl pointer-events-none" />
-                  </>
-                )}
-
                 <div className="relative z-10">
                   <span
-                    className={`inline-block text-xs font-normal px-3.5 py-1 rounded-full mb-6 ${card.badgeClass}`}
+                    className={`inline-block text-sm sm:text-[14px] font-normal px-5 py-1.5 sm:py-2 rounded-full mb-6 sm:mb-7 ${card.badgeClass}`}
                   >
                     {card.badge}
                   </span>

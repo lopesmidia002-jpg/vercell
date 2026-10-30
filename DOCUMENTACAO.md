@@ -68,11 +68,11 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - **Botão CTA ("Falar com especialista"):** Tipografia em peso normal (`font-normal`), sem negrito, em verde neon `#D2FB07` com sombreamento/glow neon difuso característico (`shadow-[0_4px_20px_rgba(210,251,7,0.5)]`).
 6. **Banners / Cards de Valor (`ValueCards.tsx`):**
    - **Três cards calibrados ao design original:** Dispostos lado a lado com fluxo sequencial *Receba ➔ Distribua ➔ Movimente*.
-   - **Badges Padronizados e Sem Negrito:**
-     - Card 1: Badge pastel `"Receba"` (`#EEF3DB`) em peso normal (`font-normal`) com texto verde oliva `#425405`.
-     - Card 2: Badge neon fluorescente `"Distribua"` (`#D2FB07`) em peso normal (`font-normal`) com texto preto `#111111`.
-     - Card 3: Badge pastel `"Movimente"` (`#EEF3DB`) em peso normal (`font-normal`) com texto verde oliva `#425405`.
-   - **Efeito Sutil no Card Central:** Iluminação ambiental suave em degradê neon fluorescente no canto superior direito (`radial-gradient` neon + blur difuso) e borda com acabamento refinado (`border-[#D2FB07]/60`), destacando o card central de split e distribuição exatamente como na captura original.
+   - **Badges Padronizados, Ampliados e Sem Negrito:**
+     - Card 1: Badge pastel `"Receba"` (`#EEF3DB`) em peso normal com padding ampliado (`px-5 py-2 text-sm`) e texto verde oliva `#425405`.
+     - Card 2: Badge neon fluorescente `"Distribua"` (`#D2FB07`) em peso normal com padding ampliado (`px-5 py-2 text-sm`) e texto preto `#111111`.
+     - Card 3: Badge pastel `"Movimente"` (`#EEF3DB`) em peso normal com padding ampliado (`px-5 py-2 text-sm`) e texto verde oliva `#425405`.
+   - **Efeito Fiel de Fundo no Card Central:** Gradiente vertical suave que cobre exatamente a metade superior do card (`linear-gradient(180deg, #F1FBC4 0%, #F8FDE2 42%, #FFFFFF 68%)`), transicionando naturalmente para branco puro na metade inferior, acompanhado por borda neon `border-[#D2FB07]/70` e sombra exterior difusa `shadow-[0_10px_35px_rgba(210,251,7,0.2)]`.
    - **Ícones de Verificação Circulares:** Marcadores de benefícios substituídos pelo ícone circular com tique (`CheckCircle2` em `#5B7500` com traço fino `stroke-[1.75]`).
    - **Setas Conectoras de Fluxo:** Chevrons discretos em verde neon (`ChevronRight`) dispostos nos intervalos entre os cards no desktop para guiar a leitura do fluxo operacional.
 

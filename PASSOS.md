@@ -65,7 +65,8 @@
 - [x] **Refinamento Pixel-Perfect dos 3 Cards de Valor (`ValueCards.tsx`):**
   - [x] Remoção de negrito das palavras verdes nos badges laterais (`Receba` e `Movimente`) com `font-normal` e casing Title Case.
   - [x] Correção da palavra do badge central para `Distribua` (substituindo a anterior `DIVIDA`), em `font-normal text-[#111111]` e fundo neon `#D2FB07`.
-  - [x] Aplicação do efeito sutil no Card Central: iluminação difusa radial suave em verde neon no canto superior direito (`radial-gradient` + blur) e borda sutilmente destacada.
+  - [x] Aplicação do efeito fiel de fundo no Card Central: gradiente vertical suave cobrindo exatamente a metade superior do card (`linear-gradient(180deg, #F1FBC4 0%, #F8FDE2 42%, #FFFFFF 68%)`), transicionando perfeitamente para branco puro na metade inferior, acompanhado por borda neon `border-[#D2FB07]/70` e sombra exterior difusa `shadow-[0_10px_35px_rgba(210,251,7,0.2)]`.
+  - [x] Ampliação dos balões menores internos (badges dos 3 cards): padding e tamanho aumentados para `px-5 py-1.5 sm:py-2 text-sm sm:text-[14px]` (altura ~32-35px), garantindo o dimensionamento generoso e legível da referência original.
   - [x] Atualização de todos os ícones da checklist para círculos checados (`CheckCircle2`) em verde oliva `#5B7500` com traço fino.
   - [x] Inclusão de setas conectoras de fluxo (`ChevronRight` neon) posicionadas no espaço entre os cards no desktop.
 - [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).
