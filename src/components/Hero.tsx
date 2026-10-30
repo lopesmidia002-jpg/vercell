@@ -37,13 +37,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-8">
               <a
                 href="#como-comecar"
-                className="min-h-[46px] px-8 py-3 text-sm sm:text-base font-bold text-black bg-[#D2FB07] hover:bg-[#c4ed00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.4)] flex items-center justify-center text-center transform active:scale-[0.98]"
+                className="min-h-[56px] sm:min-h-[62px] px-9 sm:px-11 py-3.5 sm:py-4 text-base sm:text-[17px] font-normal text-black bg-[#D2FB07] hover:bg-[#c4ed00] rounded-full transition-all duration-200 shadow-[0_2px_12px_rgba(210,251,7,0.4)] flex items-center justify-center text-center transform active:scale-[0.98]"
               >
                 Abrir minha conta
               </a>
               <a
                 href="#suporte"
-                className="min-h-[46px] px-7 py-3 text-sm sm:text-base font-medium text-[#222222] bg-white border border-neutral-300 hover:bg-neutral-50 rounded-full transition-all duration-200 shadow-sm flex items-center justify-center text-center active:scale-[0.98]"
+                className="min-h-[56px] sm:min-h-[62px] px-8 sm:px-10 py-3.5 sm:py-4 text-base sm:text-[17px] font-normal text-[#111111] bg-white border border-black/[0.12] hover:border-black/25 rounded-full transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex items-center justify-center text-center active:scale-[0.98]"
               >
                 Falar com especialista
               </a>
