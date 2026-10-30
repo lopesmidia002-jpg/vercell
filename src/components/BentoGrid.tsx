@@ -1,9 +1,9 @@
 import Image from "next/image";
 import {
   Wallet,
-  Code2,
-  Users2,
-  GitFork,
+  Code,
+  Users,
+  Split,
   Calendar,
   Eye,
   ShieldCheck,
@@ -34,7 +34,7 @@ export default function BentoGrid() {
               <div className="p-7 sm:p-9 flex flex-col justify-between max-w-md z-10 flex-1">
                 <div>
                   <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                    <Wallet className="w-5 h-5 text-[#D2FB07]" />
+                    <Wallet className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
                   </div>
 
                   <h3 className="text-2xl sm:text-[26px] font-bold text-[#111111] tracking-tight mb-3">
@@ -76,7 +76,7 @@ export default function BentoGrid() {
 
               <div className="relative z-10">
                 <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                  <Code2 className="w-5 h-5 text-[#D2FB07]" />
+                  <Code className="w-5 h-5 text-[#D2FB07]" />
                 </div>
 
                 <h3 className="text-2xl sm:text-[26px] font-bold text-[#111111] tracking-tight mb-3">
@@ -95,10 +95,10 @@ export default function BentoGrid() {
             {/* Card 3: Subcontas */}
             <div className="bg-white rounded-[32px] p-7 sm:p-8 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-start group hover:shadow-md transition-all duration-300">
               <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                <Users2 className="w-5 h-5 text-[#D2FB07]" />
+                <Users className="w-5 h-5 text-[#D2FB07]" />
               </div>
 
-              <h3 className="text-2xl sm:text-[26px] font-bold text-[#111111] tracking-tight mb-3">
+              <h3 className="text-2xl sm:text-[26px] font-bold text-[#5B7500] tracking-tight mb-3">
                 Subcontas
               </h3>
 
@@ -110,7 +110,7 @@ export default function BentoGrid() {
             {/* Card 4: Split automático */}
             <div className="bg-white rounded-[32px] p-7 sm:p-8 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-start group hover:shadow-md transition-all duration-300">
               <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                <GitFork className="w-5 h-5 text-[#D2FB07]" />
+                <Split className="w-5 h-5 text-[#D2FB07]" />
               </div>
 
               <h3 className="text-2xl sm:text-[26px] font-bold tracking-tight mb-3">

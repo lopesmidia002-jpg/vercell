@@ -68,6 +68,7 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 7. **Carrossel / Ticker:** Componente de alta fidelidade com rolagem contínua via GPU (`anim-marquee`), gradiente bilateral de atenuação suave nas bordas, fundo em micro-grid e pills brancas com squircles neon `#D2FB07` contendo ícones fiéis ao design original (`Zap`, `Code2`, `CreditCard`, `Users`, `Split`, `Calendar`, `Webhook`, `Key`, `ShieldCheck`, `Headphones`).
 8. **Banners / Cards de Valor (`ValueCards.tsx`):** Tríade de cards direcionados ao fluxo de Pix: Receba, Distribua e Movimente, interligados por chevrons conectores neon `#D2FB07`, card central destacado em gradiente e aura de iluminação difusa, e lista de benefícios com marcadores `CircleCheck` em `#5B7500`.
 9. **Navbar Superior (`Navbar.tsx`):** Barra de navegação com logotipo oficial Versell, links centrais minimalistas flutuantes (com destaque verde oliva no item "Pix"), botão "Entrar" com contorno pill e botão principal de conversão em verde neon "Falar com especialista".
+10. **Bento Grid de Soluções (`BentoGrid.tsx`):** Grid moderno de produtos e soluções Pix com ícones dedicados em squircles escuros (`Wallet`, `Code`, `Users`, `Split`, `Calendar`, `Eye`, `ShieldCheck`), layout de 3 linhas com mockups perfeitamente integrados e títulos com realce na cor `#5B7500`.
 
 ---
 

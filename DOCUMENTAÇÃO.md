@@ -40,8 +40,16 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
      - `mTLS + OAuth2`: `Key` (chave inclinada a 45º com cabeça circular inferior e dentes)
      - `Antifraude`: `ShieldCheck` (escudo com tique de verificação)
      - `Suporte`: `Headphones` (fone de ouvido com haste)
-4. **Bento Grid:**
+4. **Bento Grid (`BentoGrid.tsx`):**
    - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
+   - **Ícones 100% alinhados à referência original:**
+     - Card 1 (Conta digital Versell): `Wallet` com traço fino e proporção equilibrada.
+     - Card 2 (API de Pix): `Code` (colchetes `< >` puros sem a barra diagonal `/`).
+     - Card 3 (Subcontas): `Users` (duas silhuetas clássicas) e título `"Subcontas"` com destaque na cor verde oliva `#5B7500`.
+     - Card 4 (Split automático): `Split` (duas setas divergentes sem os nós circulares do GitFork).
+     - Card 5 (Pix Automático): `Calendar` com abas superiores.
+     - Card 6 (Painel e monitoramento): `Eye`.
+     - Card 7 (Antifraude inteligente): `ShieldCheck`.
 5. **Header / Navbar (`Navbar.tsx`):**
    - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
    - **Links bare minimalistas:** Removido o invólucro pill artificial em torno dos links de navegação; os links agora flutuam diretamente sobre o fundo da barra, com espaçamento equilibrado (`space-x-6 lg:space-x-8`).
