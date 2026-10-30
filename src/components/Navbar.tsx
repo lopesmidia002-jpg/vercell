@@ -66,44 +66,44 @@ export default function Navbar() {
           {/* Desktop Navigation Links */}
           <nav
             aria-label="Navegação Principal"
-            className="hidden md:flex items-center space-x-1 lg:space-x-2 bg-white/80 backdrop-blur-md px-4 py-1.5 rounded-full border border-black/[0.06] shadow-sm text-sm font-medium text-[#444444]"
+            className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium"
           >
             <Link
               href="#pix"
-              className="px-3.5 py-1.5 rounded-full hover:text-black hover:bg-black/[0.04] transition-colors"
+              className="text-[#5B7500] hover:text-[#455900] transition-colors"
             >
               Pix
             </Link>
             <Link
               href="#produtos"
-              className="px-3.5 py-1.5 rounded-full hover:text-black hover:bg-black/[0.04] transition-colors"
+              className="text-[#222222] hover:text-black transition-colors"
             >
               Produtos
             </Link>
             <Link
               href="#para-quem"
-              className="px-3.5 py-1.5 rounded-full hover:text-black hover:bg-black/[0.04] transition-colors"
+              className="text-[#222222] hover:text-black transition-colors"
             >
               Para quem
             </Link>
             <Link
               href="#desenvolvedores"
-              className="px-3.5 py-1.5 rounded-full hover:text-black hover:bg-black/[0.04] transition-colors"
+              className="text-[#222222] hover:text-black transition-colors"
             >
               Desenvolvedores
             </Link>
             <Link
               href="#faq"
-              className="px-3.5 py-1.5 rounded-full hover:text-black hover:bg-black/[0.04] transition-colors"
+              className="text-[#222222] hover:text-black transition-colors"
             >
               FAQ
             </Link>
             <a
               href="#desenvolvedores"
-              className="inline-flex items-center px-3.5 py-1.5 rounded-full hover:text-black hover:bg-black/[0.04] transition-colors gap-1 text-black font-semibold"
+              className="inline-flex items-center gap-1 text-[#222222] hover:text-black transition-colors"
             >
               <span>Documentação</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <ArrowUpRight className="w-3.5 h-3.5 stroke-[2]" />
             </a>
           </nav>
 
@@ -113,13 +113,13 @@ export default function Navbar() {
               href="https://finance.versell.com.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 text-sm font-semibold text-[#111111] hover:text-black transition-colors rounded-full"
+              className="px-5 py-2 text-sm font-medium text-[#111111] border border-black/15 hover:border-black/30 rounded-full transition-all bg-transparent hover:bg-black/[0.02]"
             >
               Entrar
             </a>
             <a
               href="#suporte"
-              className="px-5 py-2.5 text-sm font-bold text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all shadow-sm hover:shadow-md hover:scale-[1.02] active:scale-[0.98]"
+              className="px-5 py-2 text-sm font-semibold text-black bg-[#D2FB07] hover:bg-[#c2ea06] rounded-full transition-all shadow-sm active:scale-[0.98]"
             >
               Falar com especialista
             </a>

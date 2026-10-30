@@ -42,8 +42,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
      - `Suporte`: `Headphones` (fone de ouvido com haste)
 4. **Bento Grid:**
    - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
-5. **Header / Navbar:**
+5. **Header / Navbar (`Navbar.tsx`):**
    - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
+   - **Links bare minimalistas:** Removido o invólucro pill artificial em torno dos links de navegação; os links agora flutuam diretamente sobre o fundo da barra, com espaçamento equilibrado (`space-x-6 lg:space-x-8`).
+   - **Link Pix em destaque:** Link `"Pix"` destacado em verde oliva da marca (`#5B7500`), exatamente como na referência original.
+   - **Botão Entrar:** Estilizado como botão pill vazado com borda sutil (`rounded-full border border-black/15 px-5 py-2`), abandonando o estilo de texto puro sem contorno.
+   - **Botão CTA:** `"Falar com especialista"` em verde neon fluorescente `#D2FB07` com tipografia seminegrito.
 6. **Banners / Cards de Valor (`ValueCards.tsx`):**
    - **Badges padronizados:** Card 1 com badge pastel `"Receba"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"Distribua"` (`#D2FB07`) em vez do antigo "DIVIDA", e Card 3 com badge pastel `"Movimente"` (`#EEF3DB`).
    - **Conectores em chevron:** Inseridos chevrons (`ChevronRight`) neon `#D2FB07` alinhados entre o Card 1 e Card 2, e entre o Card 2 e Card 3.
