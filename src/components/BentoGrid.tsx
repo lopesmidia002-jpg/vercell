@@ -56,15 +56,16 @@ export default function BentoGrid() {
               </div>
 
               {/* Woman with smartphone photo framed with smooth left fade */}
-              <div className="relative w-full sm:w-[340px] md:w-[400px] lg:w-[460px] min-h-[340px] sm:min-h-full flex-shrink-0 bg-neutral-900 overflow-hidden">
+              <div className="relative w-full sm:w-[320px] md:w-[380px] lg:w-[440px] min-h-[340px] sm:min-h-full flex-shrink-0 bg-neutral-900 overflow-hidden">
                 <Image
                   src="/assets/Pagina-Versell-1-1-scaled.webp"
                   alt="Modelo usando o app mobile da Versell"
                   fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  style={{ objectPosition: "74% top" }}
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Soft left gradient fade into card background */}
-                <div className="hidden sm:block absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
+                <div className="hidden sm:block absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
                 <div className="sm:hidden absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-white to-transparent z-10 pointer-events-none" />
               </div>
             </div>

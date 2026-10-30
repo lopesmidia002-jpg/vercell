@@ -43,9 +43,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
      - `Antifraude inteligente`: `ShieldCheck` (escudo com tique de verificação e label completa)
      - `Suporte`: `Headphones` (fone de ouvido com haste)
 4. **Bento Grid (`BentoGrid.tsx`):**
+   - **Enquadramento Preciso da Foto da Modelo (Card 1):**
+     - Aplicação de `objectPosition: "74% top"` na imagem da modelo (`Pagina-Versell-1-1-scaled.webp`). Com essa calibração exata, o rosto, o cabelo trançado de ambos os lados, o suéter branco e o smartphone que ela segura ficam perfeitamente centralizados e visíveis, eliminando o corte anterior na lateral direita e replicando fielmente o mockup original.
+     - Suavização do degradê de transição lateral em `w-24 bg-gradient-to-r from-white via-white/80 to-transparent`.
    - **Ampliação de Altura dos Banners Centrais e Proporções Gerais:**
      - Linha 2 (os 3 banners: `Subcontas`, `Split automático`, `Pix Automático`): ampliada para `min-h-[350px] sm:min-h-[380px]` com padding `p-8 sm:p-10`, respeitando as proporções verticais generosas e elegantes do design de referência.
-     - Linha 1 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Card 1 com foto da modelo estendida até a cintura com corte natural e degradê suave à esquerda; Card 2 com luz ambiente difusa no canto inferior.
+     - Linha 1 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Card 1 com foto da modelo perfeitamente enquadrada; Card 2 com luz ambiente difusa no canto inferior.
      - Linha 3 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Mockup dos MacBooks centralizado e rente à base com proporção generosa.
    - **Ícones e Títulos:**
      - Card 1 (Conta digital Versell): `Wallet` com traço fino e destaque em verde oliva `#5B7500`.
