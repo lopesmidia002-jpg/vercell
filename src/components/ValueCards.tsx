@@ -48,9 +48,9 @@ export default function ValueCards() {
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
           <TagBadge text="Pix sem limites" className="mb-4" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
-            O Pix do jeito que <br className="hidden sm:inline" />
-            <span className="text-[#5B7500]">o seu negócio precisa</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
+            <span className="font-normal">O Pix do jeito que</span> <br className="hidden sm:inline" />
+            <span className="font-bold text-[#5B7500]">o seu negócio precisa</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[#666666] font-normal leading-relaxed">

@@ -19,9 +19,9 @@ export default function BentoGrid() {
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 sm:mb-16">
           <TagBadge text="Produtos" className="mb-4" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-[1.15]">
-            Tudo o que você precisa para <br />
-            <span className="text-[#5B7500]">receber e movimentar no Pix</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-[1.15]">
+            <span className="font-normal">Tudo o que você precisa para</span> <br />
+            <span className="font-bold text-[#5B7500]">receber e movimentar no Pix</span>
           </h2>
         </div>
 

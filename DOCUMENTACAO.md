@@ -26,6 +26,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - Texto de identificação de seção em `font-normal text-[#222222]` sem barras divisórias artificiais.
 2. **Hero Section:**
    - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
+   - **Tipografia do Título Principal:** A frase `"Quem vende no Pix,"` foi ajustada para peso de fonte normal (`font-normal`), sem negrito, enquanto a segunda linha `"vende com Versell."` mantém o destaque em negrito (`font-bold`) na cor verde oliva `#5B7500`, exatamente como na referência original.
    - **Botões CTA Ampliados e Proporcionais:** Botão principal ("Abrir minha conta") e secundário ("Falar com especialista") ampliados para `min-h-[56px] sm:min-h-[62px]` com padding generoso (`px-9 sm:px-11`), tipografia em peso normal (`font-normal`), sem negrito, e leve sombreamento difuso (`shadow-[0_2px_12px_rgba(210,251,7,0.4)]` no botão neon e `shadow-[0_2px_8px_rgba(0,0,0,0.03)]` no botão branco), idênticos à referência original.
    - Ícones de diferenciais inline minimalistas em verde oliva de destaque (`#5B7500` / `stroke-[2]`): `Zap` (Pix 24/7), `ShieldCheck` (escudo com tique de verificação para "Infraestrutura completa") e `Code` (`< >` para "API e sandbox"), acompanhados por texto neutro `#555555`.
 3. **Carrossel / Ticker:**

@@ -19,9 +19,9 @@ export default function Hero() {
             <TagBadge text="Conta digital + API de Pix" className="mb-6" />
 
             {/* Main Title */}
-            <h1 className="text-[34px] leading-[1.12] sm:text-5xl lg:text-[54px] font-extrabold text-[#111111] tracking-tight mb-5">
-              Quem vende no Pix, <br />
-              <span className="text-[#5B7500] inline-block">
+            <h1 className="text-[34px] leading-[1.12] sm:text-5xl lg:text-[54px] text-[#111111] tracking-tight mb-5">
+              <span className="font-normal">Quem vende no Pix,</span> <br />
+              <span className="font-bold text-[#5B7500] inline-block">
                 vende com Versell.
               </span>
             </h1>
