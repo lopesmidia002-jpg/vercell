@@ -1,4 +1,4 @@
-# CHECKLIST DE EXECUÇÃO SEQUENCIAL - PROJETO VERSELL
+<!--  --># CHECKLIST DE EXECUÇÃO SEQUENCIAL - PROJETO VERSELL
 
 > **REGRA DE OPERAÇÃO:** Conforme diretiva global de governança, o avanço entre etapas ocorre de forma estritamente sequencial. Cada passo concluído é documentado e validado antes da transição para a próxima fase, sendo que **o próximo passo só será iniciado mediante solicitação explícita do usuário**.
 
@@ -43,7 +43,7 @@
   - [x] Linha 2 (os 3 banners centrais: `Subcontas`, `Split automático`, `Pix Automático`): altura mínima ampliada para `min-h-[350px] sm:min-h-[380px]` com padding `p-8 sm:p-10`, respeitando as proporções verticais generosas e o alinhamento visual idêntico à captura original.
   - [x] Linha 1 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Foto da modelo calibrada com `objectPosition: "74% top"` eliminando cortes laterais e centralizando rosto, tranças e smartphone com degradê suave à esquerda; Card 2 com luz ambiente difusa no canto inferior.
   - [x] Linha 3 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Mockup dos MacBooks centralizado e rente à base com proporção generosa.
-- [x] **Header / Navbar (`Navbar.tsx`):** Enquadramento dos links em pílula branca central flutuante (`rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] px-8 py-2.5`), `Documentação ↗` em negrito, botão `Entrar` como link de texto limpo em negrito e botão CTA `Falar com especialista` com destaque neon.
+- [x] **Header / Navbar (`Navbar.tsx`):** Links flutuantes minimalistas com todas as palavras em peso normal (`font-normal`), "Pix" destacado em verde oliva (`text-[#5B7500]`), botão "Entrar" com contorno pill arredondado suave e botão "Falar com especialista" em peso normal com sombreamento neon difuso (`shadow-[0_4px_20px_rgba(210,251,7,0.5)]`).
 - [x] **Carrossel / Ticker (`Ticker.tsx`):** Ícones cirurgicamente alinhados: `QrCode` (QR Code e Copia e Cola), `Users` (Subcontas), `Split` (Split automático), `RefreshCw` (Pix Automático), `Webhook` (Webhooks em tempo real), `Lock` (mTLS + OAuth2), `ShieldCheck` (Antifraude inteligente), `Code` (API de Pix), `Zap` (Pix na hora, 24/7) e `Headphones` (Suporte).
 - [x] **Banners / Cards de Valor (`ValueCards.tsx`):** Três cards brancos limpos (`bg-white rounded-[32px] p-8 sm:p-9 min-h-[360px] sm:min-h-[380px]`), badges padronizados (`RECEBA`, `DIVIDA` neon `#D2FB07`, `MOVIMENTE`), títulos em negrito e ícones `Check` com traço firme `#5B7500`.
 - [x] **Hero Section Diferenciais (`Hero.tsx`):** Ícones inline calibrados para verde oliva da marca (`#5B7500` / `stroke-[2]`): `Zap` (Pix 24/7), `ShieldCheck` (escudo com tique de verificação para "Infraestrutura completa") e `Code` (`< >` para "API e sandbox"), idênticos ao design original.

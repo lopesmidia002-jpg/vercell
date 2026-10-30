@@ -63,14 +63,14 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation Links inside White Floating Pill */}
+          {/* Desktop Navigation Links (bare and minimal on page background) */}
           <nav
             aria-label="Navegação Principal"
-            className="hidden md:flex items-center space-x-7 px-8 py-2.5 rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] text-sm font-medium"
+            className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-normal"
           >
             <Link
               href="#pix"
-              className="text-[#222222] hover:text-black transition-colors"
+              className="text-[#5B7500] hover:text-[#455900] transition-colors"
             >
               Pix
             </Link>
@@ -100,26 +100,26 @@ export default function Navbar() {
             </Link>
             <a
               href="#desenvolvedores"
-              className="inline-flex items-center gap-1 font-bold text-[#111111] hover:text-[#5B7500] transition-colors"
+              className="inline-flex items-center gap-1 text-[#222222] hover:text-black transition-colors"
             >
               <span>Documentação</span>
-              <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+              <ArrowUpRight className="w-3.5 h-3.5 stroke-[1.8]" />
             </a>
           </nav>
 
           {/* Desktop Right Actions */}
-          <div className="hidden md:flex items-center space-x-5">
+          <div className="hidden md:flex items-center space-x-3.5">
             <a
               href="https://finance.versell.com.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-bold text-[#111111] hover:text-[#5B7500] transition-colors px-2 py-2"
+              className="px-5 py-2 text-sm font-normal text-[#111111] bg-white border border-black/15 hover:border-black/30 rounded-full transition-all shadow-sm"
             >
               Entrar
             </a>
             <a
               href="#suporte"
-              className="px-6 py-2.5 text-sm font-bold text-black bg-[#D2FB07] hover:bg-[#c2ea06] rounded-full transition-all shadow-sm active:scale-[0.98]"
+              className="px-6 py-2.5 text-sm font-normal text-black bg-[#D2FB07] hover:bg-[#c4ed00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.5)] active:scale-[0.98]"
             >
               Falar com especialista
             </a>
@@ -158,42 +158,42 @@ export default function Navbar() {
             <Link
               href="#pix"
               onClick={() => setIsOpen(false)}
-              className="min-h-[48px] flex items-center text-base font-semibold text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
+              className="min-h-[48px] flex items-center text-base font-normal text-[#5B7500] hover:text-[#455900] px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
             >
               Pix
             </Link>
             <Link
               href="#produtos"
               onClick={() => setIsOpen(false)}
-              className="min-h-[48px] flex items-center text-base font-semibold text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
+              className="min-h-[48px] flex items-center text-base font-normal text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
             >
               Produtos
             </Link>
             <Link
               href="#para-quem"
               onClick={() => setIsOpen(false)}
-              className="min-h-[48px] flex items-center text-base font-semibold text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
+              className="min-h-[48px] flex items-center text-base font-normal text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
             >
               Para quem
             </Link>
             <Link
               href="#desenvolvedores"
               onClick={() => setIsOpen(false)}
-              className="min-h-[48px] flex items-center text-base font-semibold text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
+              className="min-h-[48px] flex items-center text-base font-normal text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
             >
               Desenvolvedores
             </Link>
             <Link
               href="#faq"
               onClick={() => setIsOpen(false)}
-              className="min-h-[48px] flex items-center text-base font-semibold text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
+              className="min-h-[48px] flex items-center text-base font-normal text-neutral-800 hover:text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors"
             >
               FAQ
             </Link>
             <a
               href="#desenvolvedores"
               onClick={() => setIsOpen(false)}
-              className="min-h-[48px] flex items-center text-base font-bold text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors justify-between"
+              className="min-h-[48px] flex items-center text-base font-normal text-black px-4 rounded-xl hover:bg-neutral-100 active:bg-neutral-200 transition-colors justify-between"
             >
               <span>Documentação da API</span>
               <ArrowUpRight className="w-4 h-4 text-black" />
@@ -204,14 +204,14 @@ export default function Navbar() {
                 href="https://finance.versell.com.br"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[48px] w-full flex items-center justify-center text-center font-semibold text-neutral-900 bg-neutral-100 hover:bg-neutral-200 active:bg-neutral-300 rounded-full py-3 transition-colors"
+                className="min-h-[48px] w-full flex items-center justify-center text-center font-normal text-neutral-900 bg-neutral-100 hover:bg-neutral-200 active:bg-neutral-300 rounded-full py-3 transition-colors"
               >
                 Entrar no painel
               </a>
               <a
                 href="#suporte"
                 onClick={() => setIsOpen(false)}
-                className="min-h-[48px] w-full flex items-center justify-center text-center font-bold text-black bg-[#D2FB07] hover:bg-[#c4ec00] active:scale-[0.98] rounded-full py-3 shadow-md transition-all"
+                className="min-h-[48px] w-full flex items-center justify-center text-center font-normal text-black bg-[#D2FB07] hover:bg-[#c4ec00] active:scale-[0.98] rounded-full py-3 shadow-[0_4px_20px_rgba(210,251,7,0.45)] transition-all"
               >
                 Falar com especialista
               </a>

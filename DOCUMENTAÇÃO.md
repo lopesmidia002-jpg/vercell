@@ -60,9 +60,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
      - Card 7 (Antifraude inteligente): `ShieldCheck`.
 5. **Header / Navbar (`Navbar.tsx`):**
    - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
-   - **Pílula Branca Central Flutuante:** Os links de navegação (`Pix`, `Produtos`, `Para quem`, `Desenvolvedores`, `FAQ` e `Documentação ↗`) estão contidos dentro de uma elegante pílula branca arredondada (`rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] px-8 py-2.5`), com `Documentação ↗` em negrito.
-   - **Botão Entrar:** Link de texto em negrito sem borda artificial (`text-sm font-bold text-[#111111] hover:text-[#5B7500]`), idêntico à captura original.
-   - **Botão CTA:** `"Falar com especialista"` em verde neon fluorescente `#D2FB07` com tipografia em negrito e cantos arredondados full.
+   - **Tipografia Leve e Sem Negrito:** Todas as palavras da barra superior utilizam peso normal (`font-normal`), eliminando qualquer negrito tanto nos links (`Pix`, `Produtos`, `Para quem`, `Desenvolvedores`, `FAQ` e `Documentação ↗`) quanto nos botões (`Entrar` e `Falar com especialista`).
+   - **Destaque no Item "Pix":** O link `"Pix"` recebe a cor verde oliva oficial da marca (`text-[#5B7500] font-normal`), exatamente como na referência original.
+   - **Botão Entrar:** Estilizado em formato pílula com contorno suave e fundo branco (`rounded-full border border-black/15 bg-white px-5 py-2 text-sm font-normal text-[#111111] hover:border-black/30 shadow-sm`).
+   - **Botão CTA ("Falar com especialista"):** Tipografia em peso normal (`font-normal`), sem negrito, em verde neon `#D2FB07` com sombreamento/glow neon difuso característico (`shadow-[0_4px_20px_rgba(210,251,7,0.5)]`).
 6. **Banners / Cards de Valor (`ValueCards.tsx`):**
    - **Cards Brancos Puros e Proporcionais:** Três cards brancos limpos (`bg-white rounded-[32px] p-8 sm:p-9 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] min-h-[360px] sm:min-h-[380px]`) dispostos lado a lado.
    - **Badges padronizados:** Card 1 com badge pastel `"RECEBA"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"DIVIDA"` (`#D2FB07`), e Card 3 com badge pastel `"MOVIMENTE"` (`#EEF3DB`).
