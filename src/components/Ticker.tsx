@@ -1,26 +1,26 @@
 import {
   Zap,
-  Code2,
-  CreditCard,
+  Code,
+  QrCode,
   Users,
   Split,
-  Calendar,
+  RefreshCw,
   Webhook,
-  Key,
+  Lock,
   ShieldCheck,
   Headphones,
 } from "lucide-react";
 
 const tickerItems = [
   { icon: Zap, label: "Pix na hora, 24/7" },
-  { icon: Code2, label: "API de Pix" },
-  { icon: CreditCard, label: "QR Code e Copia e Cola" },
+  { icon: Code, label: "API de Pix" },
+  { icon: QrCode, label: "QR Code e Copia e Cola" },
   { icon: Users, label: "Subcontas" },
   { icon: Split, label: "Split automático" },
-  { icon: Calendar, label: "Pix Automático" },
+  { icon: RefreshCw, label: "Pix Automático" },
   { icon: Webhook, label: "Webhooks em tempo real" },
-  { icon: Key, label: "mTLS + OAuth2" },
-  { icon: ShieldCheck, label: "Antifraude" },
+  { icon: Lock, label: "mTLS + OAuth2" },
+  { icon: ShieldCheck, label: "Antifraude inteligente" },
   { icon: Headphones, label: "Suporte" },
 ];
 

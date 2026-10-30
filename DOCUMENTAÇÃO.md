@@ -18,50 +18,50 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ---
 
-## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid, Carrossel, Banners de Valor e Navbar)
+## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid, Carrossel e Navbar)
 1. **Componente de Tag Badge (`TagBadge.tsx`):**
    - Reprodução cirúrgica da pílula original: contorno externo branco com borda suave, pílula interna pastel `#EEF3DB` contendo o ponto indicador neon duplo (`#D2FB05` e núcleo `#627D08`) e texto da marca `Versell` em `#5B7500`.
-   - Texto de identificação de seção sem a barra divisória artificial `|`, idêntico à captura de tela da referência.
+   - Texto de identificação de seção sem a barra divisória artificial `|`, idêntico à captura de tela da referência (`Pix sem limites`, `Produtos`, etc.).
 2. **Hero Section:**
    - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
-   - Ícones de diferenciais inline sem caixas circulares adicionais: `Zap` (Pix 24/7), `Shield` (Infraestrutura completa) e `Code2` (API e sandbox).
+   - Ícones de diferenciais inline sem caixas circulares adicionais: `Zap` (Pix 24/7), `Shield` (Infraestrutura completa) e `Code` (API e sandbox).
 3. **Carrossel / Ticker:**
    - Degradê bilateral suave nos cantos (`w-24 sm:w-40 md:w-60 z-20`) para entrada e saída contínua de elementos.
    - Fundo com padrão sutil de grade quadriculada.
    - Tags brancas com squircle neon `#D2FB07`.
    - **Ícones 100% alinhados à referência original:**
      - `Pix na hora, 24/7`: `Zap`
-     - `API de Pix`: `Code2`
-     - `QR Code e Copia e Cola`: `CreditCard`
+     - `API de Pix`: `Code`
+     - `QR Code e Copia e Cola`: `QrCode` (ícone de código QR de resposta rápida)
      - `Subcontas`: `Users` (duas silhuetas com cabeças arredondadas)
      - `Split automático`: `Split` (bifurcação em Y com setas divergentes sem nós circulares)
-     - `Pix Automático`: `Calendar` (calendário com espirais superiores)
+     - `Pix Automático`: `RefreshCw` (setas circulares de recorrência e renovação)
      - `Webhooks em tempo real`: `Webhook` (triskelion de 3 pás oficial)
-     - `mTLS + OAuth2`: `Key` (chave inclinada a 45º com cabeça circular inferior e dentes)
-     - `Antifraude`: `ShieldCheck` (escudo com tique de verificação)
+     - `mTLS + OAuth2`: `Lock` (cadeado de autenticação segura e criptografia)
+     - `Antifraude inteligente`: `ShieldCheck` (escudo com tique de verificação e label completa)
      - `Suporte`: `Headphones` (fone de ouvido com haste)
 4. **Bento Grid (`BentoGrid.tsx`):**
-   - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
-   - **Ícones 100% alinhados à referência original:**
-     - Card 1 (Conta digital Versell): `Wallet` com traço fino e proporção equilibrada.
+   - **Ampliação de Altura dos Banners Centrais e Proporções Gerais:**
+     - Linha 2 (os 3 banners: `Subcontas`, `Split automático`, `Pix Automático`): ampliada para `min-h-[350px] sm:min-h-[380px]` com padding `p-8 sm:p-10`, respeitando as proporções verticais generosas e elegantes do design de referência.
+     - Linha 1 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Card 1 com foto da modelo estendida até a cintura com corte natural e degradê suave à esquerda; Card 2 com luz ambiente difusa no canto inferior.
+     - Linha 3 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Mockup dos MacBooks centralizado e rente à base com proporção generosa.
+   - **Ícones e Títulos:**
+     - Card 1 (Conta digital Versell): `Wallet` com traço fino e destaque em verde oliva `#5B7500`.
      - Card 2 (API de Pix): `Code` (colchetes `< >` puros sem a barra diagonal `/`).
      - Card 3 (Subcontas): `Users` (duas silhuetas clássicas) e título `"Subcontas"` com destaque na cor verde oliva `#5B7500`.
-     - Card 4 (Split automático): `Split` (duas setas divergentes sem os nós circulares do GitFork).
+     - Card 4 (Split automático): `Split` (duas setas divergentes sem nós circulares).
      - Card 5 (Pix Automático): `Calendar` com abas superiores.
      - Card 6 (Painel e monitoramento): `Eye`.
      - Card 7 (Antifraude inteligente): `ShieldCheck`.
 5. **Header / Navbar (`Navbar.tsx`):**
    - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
-   - **Links bare minimalistas:** Removido o invólucro pill artificial em torno dos links de navegação; os links agora flutuam diretamente sobre o fundo da barra, com espaçamento equilibrado (`space-x-6 lg:space-x-8`).
-   - **Link Pix em destaque:** Link `"Pix"` destacado em verde oliva da marca (`#5B7500`), exatamente como na referência original.
-   - **Botão Entrar:** Estilizado como botão pill vazado com borda sutil (`rounded-full border border-black/15 px-5 py-2`), abandonando o estilo de texto puro sem contorno.
-   - **Botão CTA:** `"Falar com especialista"` em verde neon fluorescente `#D2FB07` com tipografia seminegrito.
+   - **Pílula Branca Central Flutuante:** Os links de navegação (`Pix`, `Produtos`, `Para quem`, `Desenvolvedores`, `FAQ` e `Documentação ↗`) estão contidos dentro de uma elegante pílula branca arredondada (`rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] px-8 py-2.5`), com `Documentação ↗` em negrito.
+   - **Botão Entrar:** Link de texto em negrito sem borda artificial (`text-sm font-bold text-[#111111] hover:text-[#5B7500]`), idêntico à captura original.
+   - **Botão CTA:** `"Falar com especialista"` em verde neon fluorescente `#D2FB07` com tipografia em negrito e cantos arredondados full.
 6. **Banners / Cards de Valor (`ValueCards.tsx`):**
-   - **Badges padronizados:** Card 1 com badge pastel `"Receba"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"Distribua"` (`#D2FB07`) em vez do antigo "DIVIDA", e Card 3 com badge pastel `"Movimente"` (`#EEF3DB`).
-   - **Conectores em chevron:** Inseridos chevrons (`ChevronRight`) neon `#D2FB07` alinhados entre o Card 1 e Card 2, e entre o Card 2 e Card 3.
-   - **Card central em destaque:** Card 2 estilizado com gradiente vertical suave (`from-[#F2FCD0]/90 via-[#F9FCE9]/50 to-white`), borda sutil em tom limão `#D2FB07]/50` e aura radial de glow difuso ao fundo.
-   - **Ícones de verificação:** Substituição dos antigos checkmarks por `CircleCheck` (`CheckCircle2`) com traço fino em tom moss green `#5B7500`.
-   - **Eliminação de divisória:** Removida a linha divisória artificial `border-t` acima dos bullets, garantindo espaçamento orgânico e fluido como no design original.
+   - **Cards Brancos Puros e Proporcionais:** Três cards brancos limpos (`bg-white rounded-[32px] p-8 sm:p-9 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] min-h-[360px] sm:min-h-[380px]`) dispostos lado a lado.
+   - **Badges padronizados:** Card 1 com badge pastel `"RECEBA"` (`#EEF3DB`), Card 2 com badge neon fluorescente `"DIVIDA"` (`#D2FB07`), e Card 3 com badge pastel `"MOVIMENTE"` (`#EEF3DB`).
+   - **Ícones de verificação:** Marcadores de benefícios com ícone `Check` (tique verde `#5B7500` com traço firme `stroke-[2.5]`).
 
 ---
 
@@ -127,10 +127,8 @@ WATCHPACK_POLLING=true
 | `/assets/logo-versell4.svg` | `200 OK` | Vetor do logotipo para a barra superior |
 | `/assets/logo-versell3.svg` | `200 OK` | Vetor do logotipo para o rodapé escuro |
 | `/assets/logo_versell.webp` | `200 OK` | Ícone volumétrico 3D acrílico |
-| `/assets/MacBook-Air-2022-3.webp` | `200 OK` | Mockup do painel de monitoramento Finance |
-| `/assets/Pagina-Versell-1-1-scaled.webp` | `200 OK` | Imagem da modelo com smartphone |
-| `/assets/suporte-dentro.png` | `200 OK` | Anel orbital interno de suporte 24h |
-| `/assets/suporte-meio.png` | `200 OK` | Anel orbital intermediário |
-| `/assets/suporte-fora.png` | `200 OK` | Anel orbital externo |
-| `/assets/versell.png` | `200 OK` | Mockup completo de referência para auditoria |
-| `/api/health` | `200 OK` | Endpoint de verificação de integridade Docker |
+| `/assets/suporte-fora.png` | `200 OK` | Anel orbital externo (568x568) |
+| `/assets/suporte-meio.png` | `200 OK` | Anel orbital intermediário (445x436) |
+| `/assets/suporte-dentro.png` | `200 OK` | Anel orbital interno (301x300) |
+| `/assets/MacBook-Air-2022-3.webp` | `200 OK` | Mockup do dashboard multi-telas |
+| `/assets/Pagina-Versell-1-1-scaled.webp` | `200 OK` | Imagem editorial app smartphone |

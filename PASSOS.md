@@ -39,17 +39,12 @@
 
 ### [x] Passo 4: Refinamento Pixel-Perfect de Alinhamento com a Referência Original
 - [x] Reestruturação do Bento Grid para o layout original de 3 linhas (Linha 1: 2 colunas + 1 coluna; Linha 2: 3 colunas; Linha 3: 2 colunas + 1 coluna).
-- [x] Card 1 (Conta digital Versell): Foto da modelo posicionada à direita com máscara de degradê lateral suave e destaque em verde `#5B7500`.
-- [x] Card 2 (API de Pix): Ambient light no canto inferior direito, ícone `< >` e título minimalista idêntico ao original.
-- [x] Limpeza e remoção de barras secundárias extras nos cards de Subcontas, Split, Pix Automático e Antifraude.
-- [x] Card 6 (Painel e monitoramento): Mockup dos MacBooks centralizado e rente à base inferior, com ícone `Eye` e destaque em verde.
-- [x] Calibração de cores globais com a imagem de referência: Fundo `#F6F7F2` e verde de texto `#5B7500`.
-- [x] Ajuste da Navbar para `sticky top-0`, eliminando sobreposições em capturas full-page.
-- [x] Carrossel / Ticker com efeito de sombreamento e fade suave nas bordas bilaterais (`w-24 sm:w-40 md:w-60`), textura sutil de grid de fundo e novos pills brancos com squircle neon `#D2FB07`.
-- [x] Hero Section com tela de quadrados em efeito leve de fundo (`48x48px`) e ícones minimalistas.
-- [x] **Tag Badges Pixel-Perfect:** Criação do componente unificado `TagBadge.tsx` com a pílula interna pastel `(• Versell)` com ponto neon e texto de seção sem barra divisória `|`, idêntico à captura original.
-- [x] **Ícones do Carrossel / Ticker:** Correção e alinhamento cirúrgico dos ícones de cada pill com a referência original: substituição de `Users2` por `Users` (Subcontas), `GitFork` por `Split` (Split automático), `Calendar` para Pix Automático, `Webhook` para Webhooks em tempo real, `Key` para mTLS + OAuth2, `CreditCard` para QR Code e Copia e Cola, `ShieldCheck` e label 'Antifraude', e `Headphones` para Suporte.
-- [x] **Banners / Cards de Valor (`ValueCards.tsx`):** Ajuste dos badges (`Receba`, `Distribua` neon, `Movimente`), chevrons conectores entre cards, gradiente suave e glow no card central, e ícones circulares `CircleCheck` sem linha divisória.
-- [x] **Header / Navbar (`Navbar.tsx`):** Eliminação do container pill artificial nos links centrais (links diretos e fluidos), destaque do link `Pix` em `#5B7500`, e botão `Entrar` estilizado como botão pill vazado com borda.
-- [x] **Ícones do Bento Grid (`BentoGrid.tsx`):** Correção de `Code2` para `Code` (`< >` sem barra), `Users2` para `Users` (duas silhuetas clássicas com título Subcontas em verde `#5B7500`), e `GitFork` para `Split` (bifurcação de setas limpa sem nós circulares).
-- [x] Validação completa no container Docker em execução e compilação do build standalone de produção.
+- [x] **Ampliação de Altura e Proporções dos Banners do Bento Grid (`BentoGrid.tsx`):**
+  - [x] Linha 2 (os 3 banners centrais: `Subcontas`, `Split automático`, `Pix Automático`): altura mínima ampliada para `min-h-[350px] sm:min-h-[380px]` com padding `p-8 sm:p-10`, respeitando as proporções verticais generosas e o alinhamento visual idêntico à captura original.
+  - [x] Linha 1 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Foto da modelo enquadrada até a cintura com corte natural e degradê suave à esquerda; Card 2 com luz ambiente difusa no canto inferior.
+  - [x] Linha 3 (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`): Mockup dos MacBooks centralizado e rente à base com proporção generosa.
+- [x] **Header / Navbar (`Navbar.tsx`):** Enquadramento dos links em pílula branca central flutuante (`rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] px-8 py-2.5`), `Documentação ↗` em negrito, botão `Entrar` como link de texto limpo em negrito e botão CTA `Falar com especialista` com destaque neon.
+- [x] **Carrossel / Ticker (`Ticker.tsx`):** Ícones cirurgicamente alinhados: `QrCode` (QR Code e Copia e Cola), `Users` (Subcontas), `Split` (Split automático), `RefreshCw` (Pix Automático), `Webhook` (Webhooks em tempo real), `Lock` (mTLS + OAuth2), `ShieldCheck` (Antifraude inteligente), `Code` (API de Pix), `Zap` (Pix na hora, 24/7) e `Headphones` (Suporte).
+- [x] **Banners / Cards de Valor (`ValueCards.tsx`):** Três cards brancos limpos (`bg-white rounded-[32px] p-8 sm:p-9 min-h-[360px] sm:min-h-[380px]`), badges padronizados (`RECEBA`, `DIVIDA` neon `#D2FB07`, `MOVIMENTE`), títulos em negrito e ícones `Check` com traço firme `#5B7500`.
+- [x] **Tag Badges Pixel-Perfect:** Componente unificado `TagBadge.tsx` com pílula interna pastel `(• Versell)` com ponto neon e texto de seção sem barra divisória `|`.
+- [x] Validação completa no container Docker em execução (HTTP 200 OK) e compilação limpa sem erros.

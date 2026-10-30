@@ -63,14 +63,14 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links inside White Floating Pill */}
           <nav
             aria-label="Navegação Principal"
-            className="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm font-medium"
+            className="hidden md:flex items-center space-x-7 px-8 py-2.5 rounded-full bg-white border border-black/[0.06] shadow-[0_2px_10px_rgba(0,0,0,0.03)] text-sm font-medium"
           >
             <Link
               href="#pix"
-              className="text-[#5B7500] hover:text-[#455900] transition-colors"
+              className="text-[#222222] hover:text-black transition-colors"
             >
               Pix
             </Link>
@@ -100,26 +100,26 @@ export default function Navbar() {
             </Link>
             <a
               href="#desenvolvedores"
-              className="inline-flex items-center gap-1 text-[#222222] hover:text-black transition-colors"
+              className="inline-flex items-center gap-1 font-bold text-[#111111] hover:text-[#5B7500] transition-colors"
             >
               <span>Documentação</span>
-              <ArrowUpRight className="w-3.5 h-3.5 stroke-[2]" />
+              <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
             </a>
           </nav>
 
           {/* Desktop Right Actions */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-5">
             <a
               href="https://finance.versell.com.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 text-sm font-medium text-[#111111] border border-black/15 hover:border-black/30 rounded-full transition-all bg-transparent hover:bg-black/[0.02]"
+              className="text-sm font-bold text-[#111111] hover:text-[#5B7500] transition-colors px-2 py-2"
             >
               Entrar
             </a>
             <a
               href="#suporte"
-              className="px-5 py-2 text-sm font-semibold text-black bg-[#D2FB07] hover:bg-[#c2ea06] rounded-full transition-all shadow-sm active:scale-[0.98]"
+              className="px-6 py-2.5 text-sm font-bold text-black bg-[#D2FB07] hover:bg-[#c2ea06] rounded-full transition-all shadow-sm active:scale-[0.98]"
             >
               Falar com especialista
             </a>
