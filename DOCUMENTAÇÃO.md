@@ -4,7 +4,10 @@
 A Landing Page da Versell foi construída com foco em performance extrema, fidelidade visual de design (*pixel-perfect*), princípios **Mobile First** e isolamento total via Docker.
 
 - **Framework:** Next.js (App Router, React 18/19, TypeScript)
-- **Estilização:** Tailwind CSS com tokens customizados Neon Lime (`#D2FB07`)
+- **Estilização:** Tailwind CSS com tokens customizados:
+  - Fundo geral: `#F6F7F2` (Ivory/Off-White suave idêntico ao design original)
+  - Verde de destaque em textos claros: `#5B7500` (Moss/Olive Green de alto contraste)
+  - Verde neon de destaque em fundos dark e botões: `#D2FB07` / `#C6F500`
 - **Aceleração Gráfica:** Translações 3D com `will-change: transform` e `translate3d` para evitar quedas de frame em dispositivos móveis
 - **Ícones:** Lucide React + SVGs customizados da Versell
 - **Tipografia:** Helvetica Neue local com fallbacks geométricos (Plus Jakarta Sans, Inter)
@@ -14,7 +17,21 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ---
 
-## 2. Instruções de Execução via Docker (100% Isolado)
+## 2. Ajustes Pixel-Perfect do Bento Grid e Carrossel / Ticker
+1. **Carrossel / Ticker com Sombreamento Lateral Suave:**
+   - Adicionadas camadas bilaterais de degradê `from-[#F6F7F2] via-[#F6F7F2]/90 to-transparent` (`w-24 sm:w-40 md:w-60 z-20`) nas bordas esquerda e direita, criando o efeito de esmaecimento suave das tags ao entrar e sair da tela.
+   - Textura sutil de padrão quadriculado/grid de fundo (`32x32px`).
+   - Cards/pills em branco puro (`#FFFFFF`) com borda suave, sombra leve e ícone em squircle arredondado verde neon `#D2FB07`.
+2. **Bento Grid:**
+   - **Linha 1:** Card 1 (2 colunas) com a foto da modelo (`Pagina-Versell-1-1-scaled.webp`) e degradê suave na lateral esquerda; Card 2 (1 coluna) da API Pix com luz ambiente fluorescente no canto inferior direito.
+   - **Linha 2:** 3 Cards simétricos: Subcontas, Split automático (com destaque em verde `#5B7500`) e Pix Automático.
+   - **Linha 3:** Card 6 (2 colunas) com ícone `Eye` e mockup dos notebooks (`MacBook-Air-2022-3.webp`) alinhado na base inferior; Card 7 (1 coluna) do Antifraude inteligente.
+3. **Header / Navbar:**
+   - Utilização de `sticky top-0` com efeito backdrop-blur, evitando sobreposição indevida em capturas completas de tela (*full-page screenshots*).
+
+---
+
+## 3. Instruções de Execução via Docker (100% Isolado)
 
 ### Pré-requisitos
 - Docker Desktop ou Docker Engine instalado e em execução no host.
@@ -58,61 +75,13 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ---
 
-## 3. Variáveis de Ambiente
+## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:
 ```env
 PORT=3000
 NODE_ENV=development
 HOSTNAME=0.0.0.0
 WATCHPACK_POLLING=true
-```
-
----
-
-## 4. Estrutura do Projeto
-```
-├── public/
-│   ├── assets/
-│   │   ├── logo-versell3.svg        # Logo branca (Footer)
-│   │   ├── logo-versell4.svg        # Logo preta (Navbar)
-│   │   ├── logo_versell.webp        # Ícone 3D em acrílico verde neon
-│   │   ├── MacBook-Air-2022-3.webp  # Mockup de notebooks com dashboard
-│   │   ├── Pagina-Versell-1-1-scaled.webp # Imagem editorial mobile app
-│   │   ├── suporte-dentro.png       # Anel orbital interno (300px)
-│   │   ├── suporte-meio.png         # Anel orbital intermediário (445px)
-│   │   ├── suporte-fora.png         # Anel orbital externo (568px)
-│   │   └── versell.png              # Mockup de referência
-│   └── fonts/                       # Arquivos OTF/TTF Helvetica Neue
-├── src/
-│   ├── app/
-│   │   ├── layout.tsx               # Root layout com metadataBase, fontes e metadados
-│   │   ├── page.tsx                 # Composição da Landing Page
-│   │   └── globals.css              # Estilos globais e keyframes GPU (spin-gpu, float-gpu, marquee-gpu)
-│   └── components/
-│       ├── Navbar.tsx               # Barra de navegação com drawer mobile, backdrop e atalhos de acessibilidade (Escape)
-│       ├── Hero.tsx                 # Seção hero com elemento 3D flutuante e glow radial
-│       ├── Ticker.tsx               # Marquee infinito acelerado por hardware com benefícios Pix
-│       ├── ValueCards.tsx           # 3 cards "O Pix do jeito que o seu negócio precisa"
-│       ├── BentoGrid.tsx            # Grade de produtos e recursos
-│       ├── SolutionsGrid.tsx        # Segmentos atendidos (SaaS, E-commerce, etc.)
-│       ├── ThreeSteps.tsx           # Fluxo de onboarding em 3 passos
-│       ├── DevSection.tsx           # Terminal dark interativo de API (cURL, Node, Python)
-│       ├── SecuritySection.tsx      # Infraestrutura Baas Pago e segurança
-│       ├── OrbitalSupport.tsx       # Sistema orbital animado de suporte 24/7 (3 anéis concêntricos + touch pause)
-│       ├── FaqSection.tsx           # Acordeão interativo com acessibilidade ARIA
-│       ├── VersellPayBanner.tsx     # Card de integração cartão/checkout
-│       ├── PreFooterCta.tsx         # Chamada final de alto impacto
-│       └── Footer.tsx               # Rodapé completo com dados regulatórios
-├── Dockerfile                       # Multi-stage build node:20-alpine (deps, dev, builder, runner)
-├── docker-compose.yml               # Configuração do serviço Docker
-├── .dockerignore                    # Exclusões de contexto Docker
-├── .gitignore                       # Ignorados pelo Git
-├── README.md                        # Documentação de apresentação do projeto
-├── tailwind.config.ts               # Paleta de cores, sombras e animações
-├── PROMPT.md                        # Registro original da missão
-├── CONTEXTO.md                      # Contexto de negócio e tokens de design
-├── PASSOS.md                        # Checklist auditável sequencial
-└── DOCUMENTACAO.md                  # Manual técnico do desenvolvedor
 ```
 
 ---

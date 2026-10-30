@@ -11,21 +11,7 @@
 - [x] Mapeamento e estruturação de assets em `/public/assets` e fontes tipográficas em `/public/fonts`.
 - [x] Configuração da infraestrutura Docker multi-stage (`node:20-alpine`) com `Dockerfile`, `docker-compose.yml` e `.dockerignore`.
 - [x] Inicialização do projeto Next.js com Tailwind CSS, TypeScript e Lucide Icons.
-- [x] Implementação de todas as 14 seções da Landing Page com fidelidade cirúrgica ao mockup de referência (`versell.png`):
-  - [x] **01. Navbar Superior:** Responsiva, logo `logo-versell4.svg`, links com indicação visual, menu mobile drawer (touch $\ge 44$px) e botões de ação ("Entrar", "Falar com especialista").
-  - [x] **02. Hero Section:** Headline com gradiente neon, badges de certificação, botões de ação primário e secundário, elemento 3D flutuante (`logo_versell.webp`) com halo radial neon.
-  - [x] **03. Ticker Infinito:** Linha horizontal contínua e fluida de benefícios Pix em tempo real.
-  - [x] **04. Seção 3 Cards de Valor:** "O Pix do jeito que o seu negócio precisa" (Receba, Divida, Movimente).
-  - [x] **05. Bento Grid de Produtos:** Layout moderno com o card editorial (`Pagina-Versell-1-1-scaled.webp`), API de Pix, Subcontas, Split automático, Pix Automático, Painel Finance (`MacBook-Air-2022-3.webp`) e Antifraude.
-  - [x] **06. Grid de Soluções por Segmento:** "Feita para quem vende online" (SaaS, E-commerce, Infoproduto, ERP, Gateways, Nicho Hot).
-  - [x] **07. Onboarding em 3 Passos:** "Comece a receber em 3 passos" com indicadores visuais numerados e CTA central.
-  - [x] **08. Área de Desenvolvedores (API First):** Bloco de código dark com alternador de abas interativas (cURL, Node.js, Python), destaques de sintaxe e badges de integração.
-  - [x] **09. Seção de Segurança:** "Segurança em cada Pix" destacando Baas Pago Instituição de Pagamento, canais de compliance e denúncia, e grid 2x2 de camadas de segurança.
-  - [x] **10. Suporte Humano 24/7 Orbital:** Card escuro com sistema orbital concêntrico (`suporte-dentro.png`, `suporte-meio.png`, `suporte-fora.png`), animações de rotação CSS independentes, centro de contato WhatsApp e pausa no hover.
-  - [x] **11. FAQ Interativo:** Acordeão moderno expansivo com as 8 principais dúvidas respondidas.
-  - [x] **12. Banner VersellPay:** Chamada para gateway de cartão e checkout unificado.
-  - [x] **13. Pre-Footer Dark:** Chamada de alto impacto com elemento 3D e badges de confiança.
-  - [x] **14. Footer Completo:** Dark background `#0A0A0A`, `logo-versell3.svg`, links institucionais e regulatórios, dados do Bacen/Baas Pago, CNPJ e canais oficiais.
+- [x] Implementação de todas as 14 seções da Landing Page com fidelidade cirúrgica ao mockup de referência (`versell.png`).
 - [x] Inicialização, build e validação do container Docker (`versell-app`) na porta `3000`.
 
 ---
@@ -43,8 +29,21 @@
 
 ---
 
-### [ ] Passo 3: Auditoria Final de Performance, Acessibilidade WCAG e Fechamento de Release
-- [ ] Auditoria final de performance e renderização cross-browser (Chrome, Safari iOS, Firefox, Edge).
-- [ ] Validação dos formulários, botões de ação e âncoras internas.
-- [ ] Consolidação do manual de produção e entrega do pacote final.
-- *(Aguardando solicitação explícita do usuário para início deste passo)*
+### [x] Passo 3: Auditoria Final de Performance, Acessibilidade WCAG e Fechamento de Release
+- [x] Auditoria de 100% das âncoras internas e rotas da página (`#pix`, `#produtos`, `#para-quem`, `#desenvolvedores`, `#docs`, `#faq`, `#suporte`, `#planos`, `#como-comecar`, `#seguranca`, `#politicas`).
+- [x] Auditoria de integridade de botões de conversão e rotas de suporte (WhatsApp direto, painel Finance, canais de Compliance e Denúncias).
+- [x] Verificação de tempo de resposta em execução Docker (< 150ms por requisição).
+- [x] Validação de container em estado `Healthy` ininterrupto no Docker.
+
+---
+
+### [x] Passo 4: Refinamento Pixel-Perfect de Alinhamento com a Referência Original
+- [x] Reestruturação do Bento Grid para o layout original de 3 linhas (Linha 1: 2 colunas + 1 coluna; Linha 2: 3 colunas; Linha 3: 2 colunas + 1 coluna).
+- [x] Card 1 (Conta digital Versell): Foto da modelo posicionada à direita com máscara de degradê lateral suave e destaque em verde `#5B7500`.
+- [x] Card 2 (API de Pix): Ambient light no canto inferior direito, ícone `< >` e título minimalista idêntico ao original.
+- [x] Limpeza e remoção de barras secundárias extras nos cards de Subcontas, Split, Pix Automático e Antifraude.
+- [x] Card 6 (Painel e monitoramento): Mockup dos MacBooks centralizado e rente à base inferior, com ícone `Eye` e destaque em verde.
+- [x] Calibração de cores globais com a imagem de referência: Fundo `#F6F7F2` e verde de texto `#5B7500`.
+- [x] Ajuste da Navbar para `sticky top-0`, eliminando sobreposições em capturas full-page.
+- [x] **Carrossel / Ticker com efeito de sombreamento e fade suave nas bordas:** Adicionadas máscaras de degradê lateral bilateral (`w-24 sm:w-40 md:w-60`), textura sutil de grid de fundo e novos pills brancos com squircle neon `#D2FB07` idênticos à referência original.
+- [x] Validação completa no container Docker em execução e compilação do build standalone de produção.

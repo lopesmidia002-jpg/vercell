@@ -41,7 +41,7 @@ export default function ValueCards() {
   ];
 
   return (
-    <section id="pix" className="py-20 md:py-28 bg-[#FAFAFA]">
+    <section id="pix" className="py-20 md:py-28 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
@@ -56,7 +56,7 @@ export default function ValueCards() {
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
             O Pix do jeito que <br className="hidden sm:inline" />
-            <span className="text-black">o seu negócio precisa</span>
+            <span className="text-[#5B7500]">o seu negócio precisa</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[#666666] font-normal leading-relaxed">

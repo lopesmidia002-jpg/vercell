@@ -2,7 +2,7 @@ import { CreditCard, ArrowUpRight } from "lucide-react";
 
 export default function VersellPayBanner() {
   return (
-    <section className="py-8 bg-[#FAFAFA]">
+    <section className="py-8 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <a
           href="https://versellpay.com"

@@ -36,8 +36,8 @@ export default function SecuritySection() {
   ];
 
   return (
-    <section className="py-20 md:py-28 bg-[#FAFAFA]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="seguranca" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
+      <div id="politicas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Baas Pago info */}
           <div className="lg:col-span-5 flex flex-col items-start">
@@ -52,7 +52,7 @@ export default function SecuritySection() {
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
               Segurança em <br />
-              <span className="text-black">cada Pix</span>
+              <span className="text-[#5B7500]">cada Pix</span>
             </h2>
 
             <p className="text-base text-[#666666] font-normal leading-relaxed mb-6">

@@ -46,6 +46,8 @@
   --font-helvetica: 'Helvetica Neue', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --lime-primary: #D2FB07;
   --lime-neon: #C6F500;
+  --moss-green: #5B7500;
+  --bg-page: #F6F7F2;
 }
 
 * {
@@ -59,7 +61,7 @@ html {
 
 body {
   font-family: var(--font-helvetica);
-  background-color: #FAFAFA;
+  background-color: #F6F7F2;
   color: #111111;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;

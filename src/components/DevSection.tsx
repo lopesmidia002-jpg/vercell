@@ -56,8 +56,8 @@ print("QR Code Copia e Cola:", response.copia_e_cola)`,
   };
 
   return (
-    <section id="desenvolvedores" className="py-20 md:py-28 bg-[#FAFAFA]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="desenvolvedores" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
+      <div id="docs" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: API Info */}
           <div className="lg:col-span-5 flex flex-col items-start">
@@ -72,7 +72,7 @@ print("QR Code Copia e Cola:", response.copia_e_cola)`,
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
               API de Pix <br />
-              <span className="text-black">simples e robusta</span>
+              <span className="text-[#5B7500]">simples e robusta</span>
             </h2>
 
             <p className="text-base text-[#666666] font-normal leading-relaxed mb-8">

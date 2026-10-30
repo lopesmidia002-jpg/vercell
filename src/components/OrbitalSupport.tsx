@@ -8,13 +8,13 @@ export default function OrbitalSupport() {
   const [isPaused, setIsPaused] = useState(false);
 
   return (
-    <section id="suporte" className="py-20 md:py-28 bg-[#FAFAFA]">
+    <section id="suporte" className="py-20 md:py-28 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#0C0D0E] rounded-3xl p-6 sm:p-12 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden">
+        <div className="bg-[#0C0D0E] rounded-3xl p-5 sm:p-12 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden">
           {/* Subtle Ambient Radial Glow */}
           <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-80 sm:w-96 h-80 sm:h-96 lime-glow-dark rounded-full blur-3xl pointer-events-none" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10">
             {/* Left Content */}
             <div className="lg:col-span-5 flex flex-col items-start text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 shadow-sm mb-6 text-xs sm:text-sm font-medium text-neutral-300">
@@ -68,14 +68,13 @@ export default function OrbitalSupport() {
                 onMouseLeave={() => setIsPaused(false)}
                 onTouchStart={() => setIsPaused(true)}
                 onTouchEnd={() => setIsPaused(false)}
-                className="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[480px] md:h-[480px] lg:w-[530px] lg:h-[530px] flex items-center justify-center group cursor-pointer"
+                className="relative w-[230px] h-[230px] sm:w-[380px] sm:h-[380px] md:w-[460px] md:h-[460px] lg:w-[520px] lg:h-[520px] flex items-center justify-center group cursor-pointer"
                 title="Toque ou passe o mouse para pausar as órbitas"
               >
                 {/* Outer Ring (suporte-fora.png) */}
                 <div
-                  className={`absolute inset-0 flex items-center justify-center anim-orbit-outer pointer-events-none ${
-                    isPaused ? "paused" : ""
-                  }`}
+                  className={`absolute inset-0 flex items-center justify-center anim-orbit-outer pointer-events-none ${isPaused ? "paused" : ""
+                    }`}
                 >
                   <Image
                     src="/assets/suporte-fora.png"
@@ -89,9 +88,8 @@ export default function OrbitalSupport() {
 
                 {/* Middle Ring (suporte-meio.png - Counter Clockwise) */}
                 <div
-                  className={`absolute w-[78%] h-[78%] flex items-center justify-center anim-orbit-middle pointer-events-none ${
-                    isPaused ? "paused" : ""
-                  }`}
+                  className={`absolute w-[78%] h-[78%] flex items-center justify-center anim-orbit-middle pointer-events-none ${isPaused ? "paused" : ""
+                    }`}
                 >
                   <Image
                     src="/assets/suporte-meio.png"
@@ -105,9 +103,8 @@ export default function OrbitalSupport() {
 
                 {/* Inner Ring (suporte-dentro.png) */}
                 <div
-                  className={`absolute w-[54%] h-[54%] flex items-center justify-center anim-orbit-inner pointer-events-none ${
-                    isPaused ? "paused" : ""
-                  }`}
+                  className={`absolute w-[54%] h-[54%] flex items-center justify-center anim-orbit-inner pointer-events-none ${isPaused ? "paused" : ""
+                    }`}
                 >
                   <Image
                     src="/assets/suporte-dentro.png"

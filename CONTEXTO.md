@@ -36,10 +36,11 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 ### Cores Principais
 | Token | Hex | Aplicação |
 |---|---|---|
-| `lime-primary` | `#D2F800` / `#C6F500` / `#D2FB07` | Cor de destaque primária da marca, CTAs, tags neon, acentos |
-| `lime-glow` | `rgba(210, 248, 0, 0.25)` | Halo de luz radial e reflexos neon nos elementos 3D |
-| `background-light` | `#FAFAFA` a `#FFFFFF` | Superfície principal clara da landing page |
-| `surface-card` | `#FFFFFF` | Cards brancos puros com borda `rgba(0,0,0,0.06)` e sombra suave |
+| `moss-green` | `#5B7500` / `#658200` | Cor de destaque em palavras-chave sobre fundos claros |
+| `lime-primary` | `#D2FB07` / `#C6F500` | Cor de destaque primária da marca, CTAs, botões pill, halos neon |
+| `lime-glow` | `rgba(210, 251, 7, 0.25)` | Halo de luz radial e reflexos neon nos elementos 3D |
+| `background-page` | `#F6F7F2` | Superfície principal suave e texturizada da landing page |
+| `surface-card` | `#FFFFFF` | Cards brancos puros com borda `rgba(0,0,0,0.05)` e sombra suave |
 | `dark-deep` | `#0A0A0A` a `#0C0D0E` | Seção orbital de suporte 24h, terminal de código e footer |
 | `text-dark` | `#111111` / `#000000` | Títulos e elementos de alto contraste |
 | `text-muted` | `#666666` | Textos de apoio, subtítulos e descrições secundárias |
@@ -71,5 +72,7 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.
 - `README.md`: Documentação de apresentação da fintech, arquitetura Docker, guia de início rápido e catálogo de conformidade com o Banco Central.
 - `PROMPT.md`, `CONTEXTO.md`, `PASSOS.md`, `DOCUMENTACAO.md`: Quatro pilares de rastreabilidade e governança contínua.
+- **Status do Projeto:** v1.0.0 Release Concluída com 100% de integridade em Docker e conformidade Mobile First.
+
 
 

@@ -48,7 +48,7 @@ const solutions = [
 
 export default function SolutionsGrid() {
   return (
-    <section id="para-quem" className="py-20 md:py-28 bg-[#FAFAFA]">
+    <section id="para-quem" className="py-20 md:py-28 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
@@ -62,7 +62,7 @@ export default function SolutionsGrid() {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
-            Feita para quem <span className="text-black">vende online</span>
+            Feita para quem <span className="text-[#5B7500]">vende online</span>
           </h2>
 
           <p className="text-base sm:text-lg text-[#666666] font-normal leading-relaxed">

@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative pt-28 pb-16 sm:pt-36 sm:pb-20 md:pt-40 md:pb-24 overflow-hidden bg-gradient-to-b from-[#FAFAFA] via-[#FFFFFF] to-[#FAFAFA]">
+    <section className="relative pt-12 pb-16 sm:pt-20 sm:pb-20 md:pt-24 md:pb-24 overflow-hidden bg-gradient-to-b from-[#F6F7F2] via-white to-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           {/* Left Column: Text & CTA */}
@@ -21,7 +21,7 @@ export default function Hero() {
             {/* Main Title */}
             <h1 className="text-[32px] leading-[1.12] sm:text-5xl md:text-6xl font-extrabold text-[#111111] tracking-tight mb-5 sm:mb-6">
               Quem vende no Pix, <br />
-              <span className="text-black inline-block relative">
+              <span className="text-[#5B7500] inline-block relative">
                 vende com Versell.
               </span>
             </h1>
@@ -36,7 +36,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-8 sm:mb-10">
               <a
-                href="#planos"
+                href="#como-comecar"
                 className="min-h-[48px] px-8 py-3.5 text-base font-bold text-black bg-[#D2FB07] hover:bg-[#c4ed00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.35)] hover:shadow-[0_6px_25px_rgba(210,251,7,0.5)] flex items-center justify-center text-center transform active:scale-[0.98]"
               >
                 Abrir minha conta

@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 export default function PreFooterCta() {
   return (
-    <section className="py-16 md:py-24 bg-[#FAFAFA]">
+    <section className="py-16 md:py-24 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#0C0D0E] rounded-3xl p-8 sm:p-14 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden flex flex-col items-center text-center">
           {/* Ambient Glow */}
@@ -45,7 +45,7 @@ export default function PreFooterCta() {
 
             {/* Primary Action Button */}
             <a
-              href="#planos"
+              href="#como-comecar"
               className="min-h-[48px] px-9 py-3.5 text-base font-bold text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_25px_rgba(210,251,7,0.4)] flex items-center justify-center text-center mb-8 transform active:scale-[0.98]"
             >
               Abrir minha conta

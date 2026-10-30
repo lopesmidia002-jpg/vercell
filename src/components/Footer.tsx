@@ -38,7 +38,7 @@ export default function Footer() {
                 Falar com especialista
               </a>
               <a
-                href="#planos"
+                href="#como-comecar"
                 className="min-h-[44px] px-6 py-2.5 text-xs sm:text-sm font-medium text-white bg-white/5 border border-white/15 hover:bg-white/10 rounded-full transition-all text-center flex items-center justify-center"
               >
                 Abrir conta grátis
