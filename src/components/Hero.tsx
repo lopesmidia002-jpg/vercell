@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Zap, Shield, Code2 } from "lucide-react";
+import TagBadge from "./TagBadge";
 
 export default function Hero() {
   return (
@@ -14,16 +15,8 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Text & CTA */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            {/* Tag Badge: Pill inside Pill (idêntico à imagem original) */}
-            <div className="inline-flex items-center gap-2 p-1 pr-3.5 rounded-full bg-white border border-black/[0.08] shadow-[0_2px_8px_rgba(0,0,0,0.02)] mb-6 text-xs font-medium">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#E9F88C]/60 text-black font-semibold">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#99B600]" />
-                Versell
-              </span>
-              <span className="text-[#555555] font-normal">
-                Conta digital + API de Pix
-              </span>
-            </div>
+            {/* Tag Badge: idêntico à imagem original */}
+            <TagBadge text="Conta digital + API de Pix" className="mb-6" />
 
             {/* Main Title */}
             <h1 className="text-[34px] leading-[1.12] sm:text-5xl lg:text-[54px] font-extrabold text-[#111111] tracking-tight mb-5">

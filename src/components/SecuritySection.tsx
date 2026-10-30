@@ -6,6 +6,7 @@ import {
   ArrowRight,
   Mail,
 } from "lucide-react";
+import TagBadge from "./TagBadge";
 
 export default function SecuritySection() {
   const securityFeatures = [
@@ -41,14 +42,7 @@ export default function SecuritySection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Column: Baas Pago info */}
           <div className="lg:col-span-5 flex flex-col items-start">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.08] shadow-sm mb-4 text-xs sm:text-sm font-medium text-neutral-600">
-              <span className="flex items-center gap-1 font-semibold text-black">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D2FB07]" />
-                Versell
-              </span>
-              <span className="text-neutral-300">|</span>
-              <span>Segurança</span>
-            </div>
+            <TagBadge text="Segurança" className="mb-4" />
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
               Segurança em <br />

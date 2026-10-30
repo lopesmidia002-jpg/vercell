@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { MessageCircle, Clock, ShieldCheck, Zap } from "lucide-react";
+import { MessageCircle, Clock, Zap } from "lucide-react";
+import TagBadge from "./TagBadge";
 
 export default function OrbitalSupport() {
   const [isPaused, setIsPaused] = useState(false);
@@ -17,14 +18,7 @@ export default function OrbitalSupport() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10">
             {/* Left Content */}
             <div className="lg:col-span-5 flex flex-col items-start text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 shadow-sm mb-6 text-xs sm:text-sm font-medium text-neutral-300">
-                <span className="flex items-center gap-1.5 font-semibold text-white">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#D2FB07]" />
-                  Versell
-                </span>
-                <span className="text-neutral-500">|</span>
-                <span>Suporte 24h</span>
-              </div>
+              <TagBadge text="Suporte 24h" isDark className="mb-6" />
 
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6">
                 Um time do seu lado <br />

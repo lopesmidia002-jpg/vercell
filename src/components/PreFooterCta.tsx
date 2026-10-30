@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
+import TagBadge from "./TagBadge";
 
 export default function PreFooterCta() {
   return (
@@ -22,14 +23,7 @@ export default function PreFooterCta() {
 
           <div className="relative z-10 max-w-2xl flex flex-col items-center">
             {/* Tag Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 shadow-sm mb-6 text-xs sm:text-sm font-medium text-neutral-300">
-              <span className="flex items-center gap-1.5 font-semibold text-white">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D2FB07]" />
-                Versell
-              </span>
-              <span className="text-neutral-500">|</span>
-              <span>Vamos crescer juntos?</span>
-            </div>
+            <TagBadge text="Vamos crescer juntos?" isDark className="mb-6" />
 
             {/* Title */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">

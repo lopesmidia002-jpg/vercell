@@ -46,5 +46,6 @@
 - [x] Calibração de cores globais com a imagem de referência: Fundo `#F6F7F2` e verde de texto `#5B7500`.
 - [x] Ajuste da Navbar para `sticky top-0`, eliminando sobreposições em capturas full-page.
 - [x] Carrossel / Ticker com efeito de sombreamento e fade suave nas bordas bilaterais (`w-24 sm:w-40 md:w-60`), textura sutil de grid de fundo e novos pills brancos com squircle neon `#D2FB07`.
-- [x] **Hero Section Pixel-Perfect:** Aplicação da grade sutil de quadrados de fundo (`48x48px`), badge em pílula aninhada com fundo lime suave, e ícones minimalistas diretos (`Zap`, `Shield`, `Code2`).
+- [x] Hero Section com tela de quadrados em efeito leve de fundo (`48x48px`) e ícones minimalistas.
+- [x] **Tag Badges Pixel-Perfect:** Criação do componente unificado `TagBadge.tsx` com a pílula interna pastel `(• Versell)` com ponto neon e texto de seção sem barra divisória `|`, idêntico à captura original.
 - [x] Validação completa no container Docker em execução e compilação do build standalone de produção.

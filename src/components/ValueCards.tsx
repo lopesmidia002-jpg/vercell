@@ -1,4 +1,5 @@
 import { ArrowRight, Check } from "lucide-react";
+import TagBadge from "./TagBadge";
 
 export default function ValueCards() {
   const cards = [
@@ -45,14 +46,7 @@ export default function ValueCards() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-black/[0.08] shadow-sm mb-4 text-xs sm:text-sm font-medium text-neutral-600">
-            <span className="flex items-center gap-1 font-semibold text-black">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D2FB07]" />
-              Versell
-            </span>
-            <span className="text-neutral-300">|</span>
-            <span>Pix sem limites</span>
-          </div>
+          <TagBadge text="Pix sem limites" className="mb-4" />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111111] tracking-tight leading-tight mb-4">
             O Pix do jeito que <br className="hidden sm:inline" />

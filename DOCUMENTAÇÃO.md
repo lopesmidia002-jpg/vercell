@@ -18,18 +18,20 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ---
 
-## 2. Ajustes Pixel-Perfect (Hero, Bento Grid e Carrossel)
-1. **Hero Section:**
+## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid e Carrossel)
+1. **Componente de Tag Badge (`TagBadge.tsx`):**
+   - Reprodução cirúrgica da pílula original: contorno externo branco com borda suave, pílula interna pastel `#EEF3DB` contendo o ponto indicador neon duplo (`#D2FB05` e núcleo `#627D08`) e texto da marca `Versell` em `#5B7500`.
+   - Texto de identificação de seção sem a barra divisória artificial `|`, idêntico à captura de tela da referência.
+2. **Hero Section:**
    - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
-   - Badge superior em pílula aninhada: contorno externo branco com pílula verde suave interna `(• Versell)` e subtítulo `Conta digital + API de Pix`.
    - Ícones de diferenciais inline sem caixas circulares adicionais: `Zap` (Pix 24/7), `Shield` (Infraestrutura completa) e `Code2` (API e sandbox).
-2. **Carrossel / Ticker:**
+3. **Carrossel / Ticker:**
    - Degradê bilateral suave nos cantos (`w-24 sm:w-40 md:w-60 z-20`) para entrada e saída contínua de elementos.
    - Fundo com padrão sutil de grade quadriculada.
    - Tags brancas com squircle neon `#D2FB07`.
-3. **Bento Grid:**
+4. **Bento Grid:**
    - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
-4. **Header / Navbar:**
+5. **Header / Navbar:**
    - `sticky top-0` com backdrop-blur para estabilidade visual perfeita.
 
 ---
