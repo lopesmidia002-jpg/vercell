@@ -20,8 +20,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid, Carrossel e Navbar)
 1. **Componente de Tag Badge (`TagBadge.tsx`):**
-   - Reprodução cirúrgica da pílula original: contorno externo branco com borda suave, pílula interna pastel `#EEF3DB` contendo o ponto indicador neon duplo (`#D2FB05` e núcleo `#627D08`) e texto da marca `Versell` em `#5B7500`.
-   - Texto de identificação de seção sem a barra divisória artificial `|`, idêntico à captura de tela da referência (`Pix sem limites`, `Produtos`, etc.).
+   - Reprodução cirúrgica da pílula original: contorno externo branco com borda suave `border border-black/[0.08]` e sombra sutil `shadow-[0_2px_8px_rgba(0,0,0,0.02)]`.
+   - Pílula interna pastel `#EEF3DB` com ponto indicador circular neon limpo e sólido (`w-2.5 h-2.5 rounded-full bg-[#D2FB07]`, sem anéis escuros internos).
+   - Nome **Versell** em peso normal (`font-normal`), sem negrito, na cor `#556F00`, aplicado automaticamente em todos os locais da página onde o componente é utilizado (Hero, ValueCards, BentoGrid, SolutionsGrid, ThreeSteps, DevSection, SecuritySection, FaqSection, OrbitalSupport e PreFooterCta).
+   - Texto de identificação de seção em `font-normal text-[#222222]` sem barras divisórias artificiais.
 2. **Hero Section:**
    - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
    - Ícones de diferenciais inline sem caixas circulares adicionais: `Zap` (Pix 24/7), `Shield` (Infraestrutura completa) e `Code` (API e sandbox).

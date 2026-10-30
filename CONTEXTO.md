@@ -69,6 +69,7 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 8. **Banners / Cards de Valor (`ValueCards.tsx`):** Tríade de cards brancos puros direcionados ao fluxo de Pix: RECEBA, DIVIDA (neon `#D2FB07`) e MOVIMENTE, com tipografia em negrito, altura generosa (`min-h-[360px] sm:min-h-[380px]`) e lista de benefícios com marcadores `Check` em `#5B7500`.
 9. **Navbar Superior (`Navbar.tsx`):** Barra de navegação com logotipo oficial Versell, links centrais contidos em elegante pílula branca arredondada flutuante com sombra suave, link de "Documentação ↗" em negrito, botão de texto limpo "Entrar" e botão de conversão neon "Falar com especialista".
 10. **Bento Grid de Soluções (`BentoGrid.tsx`):** Grid moderno com proporções generosas idênticas ao original: Linha 2 (Subcontas, Split automático, Pix Automático) com altura ampliada para `min-h-[350px] sm:min-h-[380px]`, Linha 1 com enquadramento natural da modelo até a cintura (`min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]`), e ícones dedicados em squircles escuros (`Wallet`, `Code`, `Users`, `Split`, `Calendar`, `Eye`, `ShieldCheck`).
+11. **Tag Badges Padronizados (`TagBadge.tsx`):** Pílula branca com sombra suave, inner pill pastel `#EEF3DB` com ponto indicador circular neon limpo e sólido (`bg-[#D2FB07]`) e nome `Versell` em peso normal (`font-normal`), sem negrito, aplicado globalmente em todos os pontos da página.
 
 ---
 
