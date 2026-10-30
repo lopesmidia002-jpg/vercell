@@ -72,6 +72,7 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 11. **Padrão Tipográfico Dual-Weight Global:** Em conformidade com o design original, todas as frases e títulos do projeto adotam o contraste elegante entre texto preto em peso regular (`font-normal`) e destaques de marca em verde oliva/neon em negrito (`font-bold text-[#5B7500]` / `font-bold text-[#D2FB07]`).
 12. **Diferenciais da Hero (`Hero.tsx`):** Ícones inline em verde oliva da marca (`#5B7500`): `Zap` (Pix 24/7), `ShieldCheck` com checkmark (Infraestrutura completa) e `Code` `< >` (API e sandbox), com tipografia neutra `#555555`.
 13. **Botões de Ação da Hero (`Hero.tsx`):** Botões ampliados para dimensões generosas (`min-h-[56px] sm:min-h-[62px] px-9 sm:px-11`), com peso de fonte normal (`font-normal`), sem negrito, e sombreamento sutil e elegante idêntico ao original.
+14. **Cards de Soluções e Segmentos (`SolutionsGrid.tsx`):** Grade de 6 cards com proporções verticais generosas (`min-h-[260px] sm:min-h-[280px] p-8 sm:p-9 md:p-10 rounded-[32px]`), squircles ampliados `w-12 h-12 rounded-2xl bg-[#0D0E10]` com ícones neon `w-6 h-6 stroke-[1.8]` rigorosamente fiéis à captura original: `Layers` (SaaS), `ShoppingCart` (E-commerce), `MonitorPlay` (Infoproduto), `Building` (ERP), `Landmark` (Gateways e plataformas) e `Eye` (Nicho hot).
 
 ---
 

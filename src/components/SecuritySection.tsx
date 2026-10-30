@@ -96,13 +96,13 @@ export default function SecuritySection() {
               return (
                 <div
                   key={idx}
-                  className="bg-white rounded-3xl p-7 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-md transition-all flex flex-col justify-start"
+                  className="bg-white rounded-[32px] p-8 sm:p-9 border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-md transition-all flex flex-col justify-start min-h-[220px]"
                 >
-                  <div className="w-10 h-10 rounded-2xl bg-black flex items-center justify-center text-white mb-5 shadow-sm">
-                    <Icon className="w-5 h-5 text-[#D2FB07]" />
+                  <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                    <Icon className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
                   </div>
 
-                  <h3 className="text-lg font-normal text-black tracking-tight mb-2">
+                  <h3 className="text-lg sm:text-xl font-normal text-black tracking-tight mb-2">
                     {item.title}
                   </h3>
 

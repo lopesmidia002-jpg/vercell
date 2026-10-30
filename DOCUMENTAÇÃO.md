@@ -98,6 +98,19 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - Aumento proporcional de escala: padding expandido para `px-5 py-2.5 sm:px-6 sm:py-3`, squircle neon ampliado para `w-7 h-7 sm:w-8 sm:h-8 rounded-xl bg-[#D2FB07]` e tamanho do texto ajustado para `text-sm sm:text-[15px]`.
    - Ícone de chave `Key` para "mTLS + OAuth2" e label simplificado "Antifraude" conforme a captura original.
 
+9. **Calibração Visual dos Cards de Soluções (`SolutionsGrid.tsx`):**
+   - **Correção dos 6 Ícones:**
+     - **SaaS:** Ícone `Layers` (3 camadas isométricas empilhadas).
+     - **E-commerce:** Ícone `ShoppingCart` (carrinho de compras).
+     - **Infoproduto:** Ícone `MonitorPlay` (tela de monitor com botão de play no centro e pedestal).
+     - **ERP:** Ícone `Building` (edifício comercial com janelas e portal).
+     - **Gateways e plataformas:** Ícone `Landmark` (instituição bancária com colunas e frontão).
+     - **Nicho hot:** Ícone `Eye` (olho com pupila central).
+   - **Dimensões, Squircles e Padding dos Cards:**
+     - Squircles escuros ampliados para `w-12 h-12 rounded-2xl bg-[#0D0E10]` com ícones em verde neon `#D2FB07` ampliados para `w-6 h-6 stroke-[1.8]`.
+     - Proporções verticais dos cards aumentadas com padding generoso `p-8 sm:p-9 md:p-10`, bordas arredondadas `rounded-[32px]` e altura mínima `min-h-[260px] sm:min-h-[280px]`.
+     - Espaçamento vertical generoso `mb-6 sm:mb-8` entre o ícone e o título.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

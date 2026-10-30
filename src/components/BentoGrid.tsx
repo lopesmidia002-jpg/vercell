@@ -33,8 +33,8 @@ export default function BentoGrid() {
             <div className="lg:col-span-2 bg-white rounded-[32px] border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] overflow-hidden flex flex-col sm:flex-row justify-between relative group hover:shadow-md transition-all duration-300 min-h-[440px] sm:min-h-[480px] lg:min-h-[520px]">
               <div className="p-8 sm:p-10 lg:p-12 flex flex-col justify-between max-w-md z-10 flex-1">
                 <div>
-                  <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                    <Wallet className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+                  <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                    <Wallet className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
                   </div>
 
                   <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
@@ -77,8 +77,8 @@ export default function BentoGrid() {
               <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-[#D2FB07]/30 rounded-full blur-3xl pointer-events-none group-hover:bg-[#D2FB07]/40 transition-colors" />
 
               <div className="relative z-10">
-                <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                  <Code className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+                <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                  <Code className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
                 </div>
 
                 <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
@@ -97,8 +97,8 @@ export default function BentoGrid() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
             {/* Card 3: Subcontas */}
             <div className="bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-start min-h-[350px] sm:min-h-[380px] group hover:shadow-md transition-all duration-300">
-              <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                <Users className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+              <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                <Users className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
               </div>
 
               <h3 className="text-2xl sm:text-[26px] font-bold text-[#5B7500] tracking-tight mb-3">
@@ -112,8 +112,8 @@ export default function BentoGrid() {
 
             {/* Card 4: Split automático */}
             <div className="bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-start min-h-[350px] sm:min-h-[380px] group hover:shadow-md transition-all duration-300">
-              <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                <Split className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+              <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                <Split className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
               </div>
 
               <h3 className="text-2xl sm:text-[26px] tracking-tight mb-3">
@@ -128,8 +128,8 @@ export default function BentoGrid() {
 
             {/* Card 5: Pix Automático */}
             <div className="bg-white rounded-[32px] p-8 sm:p-10 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-start min-h-[350px] sm:min-h-[380px] group hover:shadow-md transition-all duration-300">
-              <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                <Calendar className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+              <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                <Calendar className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
               </div>
 
               <h3 className="text-2xl sm:text-[26px] tracking-tight mb-3">
@@ -148,8 +148,8 @@ export default function BentoGrid() {
             {/* Card 6: Painel e monitoramento (spans 2 columns) */}
             <div className="lg:col-span-2 bg-white rounded-[32px] p-8 sm:p-10 lg:p-12 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] overflow-hidden flex flex-col justify-between min-h-[440px] sm:min-h-[480px] lg:min-h-[520px] group hover:shadow-md transition-all duration-300">
               <div>
-                <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                  <Eye className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+                <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                  <Eye className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
                 </div>
 
                 <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">
@@ -175,8 +175,8 @@ export default function BentoGrid() {
 
             {/* Card 7: Antifraude inteligente (1 column) */}
             <div className="lg:col-span-1 bg-white rounded-[32px] p-8 sm:p-10 lg:p-12 border border-black/[0.05] shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-start min-h-[440px] sm:min-h-[480px] lg:min-h-[520px] group hover:shadow-md transition-all duration-300">
-              <div className="w-11 h-11 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
-                <ShieldCheck className="w-5 h-5 text-[#D2FB07] stroke-[2]" />
+              <div className="w-12 h-12 rounded-2xl bg-[#0D0E10] flex items-center justify-center text-white mb-6 shadow-sm">
+                <ShieldCheck className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
               </div>
 
               <h3 className="text-2xl sm:text-[28px] tracking-tight mb-3">

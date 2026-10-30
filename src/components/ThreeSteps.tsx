@@ -40,7 +40,7 @@ export default function ThreeSteps() {
           {steps.map((item, idx) => (
             <div
               key={idx}
-              className="flex flex-col items-center text-center p-6 bg-white rounded-3xl border border-black/[0.06] shadow-sm relative group hover:shadow-md transition-all"
+              className="flex flex-col items-center text-center p-8 sm:p-9 bg-white rounded-[32px] border border-black/[0.06] shadow-sm relative group hover:shadow-md transition-all min-h-[250px]"
             >
               <div className="w-12 h-12 rounded-full border border-black/[0.1] bg-[#FAFAFA] flex items-center justify-center font-mono text-base font-normal text-neutral-800 mb-6 group-hover:bg-[#D2FB07] group-hover:border-transparent transition-colors">
                 {item.step}

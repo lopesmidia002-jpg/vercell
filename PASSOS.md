@@ -69,3 +69,19 @@
   - [x] Atualização de todos os ícones da checklist para círculos checados (`CheckCircle2`) em verde oliva `#5B7500` com traço fino.
   - [x] Inclusão de setas conectoras de fluxo (`ChevronRight` neon) posicionadas no espaço entre os cards no desktop.
 - [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).
+
+---
+
+### [x] Passo 6: Calibração de Ícones, Dimensões e Escala dos Cards de Soluções (`SolutionsGrid.tsx`)
+- [x] **Correção Cirúrgica de 100% dos Ícones da Grade de Soluções:**
+  - [x] **SaaS:** Ícone atualizado para `Layers` (3 camadas isométricas sobrepostas, substituindo o antigo `CloudLightning`).
+  - [x] **E-commerce:** Mantido `ShoppingCart` (carrinho de compras clássico).
+  - [x] **Infoproduto:** Ícone atualizado para `MonitorPlay` (tela de vídeo com botão play central e suporte, substituindo o antigo `GraduationCap`).
+  - [x] **ERP:** Ícone atualizado para `Building` (edifício comercial clássico com janelas e portal, substituindo `Layers`).
+  - [x] **Gateways e plataformas:** Ícone atualizado para `Landmark` (instituição financeira com colunas e frontão, substituindo `Network`).
+  - [x] **Nicho hot:** Ícone atualizado para `Eye` (olho com pupila, substituindo `Flame`).
+- [x] **Ampliação de Altura, Padding e Escala dos Cards:**
+  - [x] Proporções calibradas com o mockup original: padding generoso `p-8 sm:p-9 md:p-10`, bordas arredondadas `rounded-[32px]` e altura mínima `min-h-[260px] sm:min-h-[280px]`.
+  - [x] Dimensões do squircle e ícones ampliadas: container escuro `w-12 h-12 rounded-2xl bg-[#0D0E10]` com ícones neon `w-6 h-6 text-[#D2FB07] stroke-[1.8]`.
+- [x] **Padronização Global de Squircles:** Replicado o padrão proporcional `w-12 h-12 rounded-2xl` e ícones `w-6 h-6 stroke-[1.8]` em `BentoGrid.tsx`, `SecuritySection.tsx` e `ThreeSteps.tsx`.
+- [x] Validação de compilação limpa no container Docker (HTTP 200 OK).
