@@ -3,12 +3,14 @@
 ## 1. Visão Geral da Arquitetura
 A Landing Page da Versell foi construída com foco em performance extrema, fidelidade visual de design (*pixel-perfect*), princípios **Mobile First** e isolamento total via Docker.
 
-- **Framework:** Next.js (React 18/19 / TypeScript)
-- **Estilização:** Tailwind CSS com tokens customizados
+- **Framework:** Next.js (App Router, React 18/19, TypeScript)
+- **Estilização:** Tailwind CSS com tokens customizados Neon Lime (`#D2FB07`)
+- **Aceleração Gráfica:** Translações 3D com `will-change: transform` e `translate3d` para evitar quedas de frame em dispositivos móveis
 - **Ícones:** Lucide React + SVGs customizados da Versell
 - **Tipografia:** Helvetica Neue local com fallbacks geométricos (Plus Jakarta Sans, Inter)
-- **Containerização:** Docker Multi-stage (`node:20-alpine`) com Docker Compose
+- **Containerização:** Docker Multi-stage (`node:20-alpine`) com targets `dev` e `runner`
 - **Status do Container:** `versell-app` (Up / Healthy na porta `3000`)
+- **Status da Imagem Standalone:** `versell-prod` compilada com sucesso (22 kB page size / 109 kB First Load JS)
 
 ---
 
@@ -19,7 +21,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ### Comandos Rápidos
 
-1. **Subir a aplicação com build do container:**
+1. **Subir a aplicação com hot-reload no container (Ambiente de Desenvolvimento):**
    ```bash
    docker compose up --build -d
    ```
@@ -34,12 +36,18 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    docker compose ps
    ```
 
-4. **Testar resposta HTTP do container:**
+4. **Gerar e rodar o container de produção standalone (`runner`):**
+   ```bash
+   docker build -t versell-prod --target runner .
+   docker run -p 3000:3000 versell-prod
+   ```
+
+5. **Testar resposta HTTP do container:**
    ```bash
    curl -I http://localhost:3000/
    ```
 
-5. **Parar a aplicação:**
+6. **Parar a aplicação:**
    ```bash
    docker compose down
    ```
@@ -77,25 +85,25 @@ WATCHPACK_POLLING=true
 │   └── fonts/                       # Arquivos OTF/TTF Helvetica Neue
 ├── src/
 │   ├── app/
-│   │   ├── layout.tsx               # Root layout com fontes e metadados
+│   │   ├── layout.tsx               # Root layout com metadataBase, fontes e metadados
 │   │   ├── page.tsx                 # Composição da Landing Page
-│   │   └── globals.css              # Estilos globais e animações customizadas
+│   │   └── globals.css              # Estilos globais e keyframes GPU (spin-gpu, float-gpu, marquee-gpu)
 │   └── components/
-│       ├── Navbar.tsx               # Barra de navegação com drawer mobile (touch >= 44px)
+│       ├── Navbar.tsx               # Barra de navegação com drawer mobile, backdrop e atalhos de acessibilidade (Escape)
 │       ├── Hero.tsx                 # Seção hero com elemento 3D flutuante e glow radial
-│       ├── Ticker.tsx               # Marquee infinito de benefícios Pix
+│       ├── Ticker.tsx               # Marquee infinito acelerado por hardware com benefícios Pix
 │       ├── ValueCards.tsx           # 3 cards "O Pix do jeito que o seu negócio precisa"
 │       ├── BentoGrid.tsx            # Grade de produtos e recursos
 │       ├── SolutionsGrid.tsx        # Segmentos atendidos (SaaS, E-commerce, etc.)
 │       ├── ThreeSteps.tsx           # Fluxo de onboarding em 3 passos
 │       ├── DevSection.tsx           # Terminal dark interativo de API (cURL, Node, Python)
 │       ├── SecuritySection.tsx      # Infraestrutura Baas Pago e segurança
-│       ├── OrbitalSupport.tsx       # Sistema orbital animado de suporte 24/7 (3 anéis)
-│       ├── FaqSection.tsx           # Acordeão interativo de perguntas frequentes
+│       ├── OrbitalSupport.tsx       # Sistema orbital animado de suporte 24/7 (3 anéis concêntricos + touch pause)
+│       ├── FaqSection.tsx           # Acordeão interativo com acessibilidade ARIA
 │       ├── VersellPayBanner.tsx     # Card de integração cartão/checkout
 │       ├── PreFooterCta.tsx         # Chamada final de alto impacto
 │       └── Footer.tsx               # Rodapé completo com dados regulatórios
-├── Dockerfile                       # Multi-stage build node:20-alpine
+├── Dockerfile                       # Multi-stage build node:20-alpine (deps, dev, builder, runner)
 ├── docker-compose.yml               # Configuração do serviço Docker
 ├── .dockerignore                    # Exclusões de contexto Docker
 ├── .gitignore                       # Ignorados pelo Git

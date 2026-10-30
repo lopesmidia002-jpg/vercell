@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://versell.com.br"),
   title: "Versell | Quem vende no Pix, vende com Versell",
   description: "Conta digital, API de Pix, subcontas e split em uma só plataforma. Receba na hora, todos os dias, e faça a sua operação crescer sem travas.",
   keywords: [

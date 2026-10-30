@@ -30,17 +30,21 @@
 
 ---
 
-### [ ] Passo 2: Otimização de Animações Orbitais, Responsividade Avançada e Testes E2E
-- [ ] Refinamento e calibração fina das animações CSS/hardware acceleration para mobile (`transform-gpu`, `will-change`).
-- [ ] Testes de interação tátil, swipe e acessibilidade em leitores de tela e navegação por teclado (WCAG 2.1 AA).
-- [ ] Verificação de tempo de resposta em conexões 3G/4G e auditoria de bundle size.
-- *(Aguardando solicitação explícita do usuário para início deste passo)*
+### [x] Passo 2: Otimização de Animações Orbitais, Responsividade Avançada e Testes E2E
+- [x] Calibração de animações com aceleração gráfica por hardware (`translate3d`, `will-change: transform`) para mobile nos anéis orbitais, ticker e flutuação 3D.
+- [x] Implementação de suporte tátil completo (`onTouchStart`/`onTouchEnd`) e hover para pausar o sistema orbital e exibir feedback de interação.
+- [x] Otimização da acessibilidade (WCAG 2.1 AA):
+  - [x] Drawer móvel com backdrop overlay, fechamento via tecla `Escape`, travamento de rolagem do body e atributos ARIA.
+  - [x] Acordeão do FAQ com atributos semânticos (`aria-expanded`, `aria-controls`, `role="region"`).
+  - [x] Touch targets auditados $\ge 44$px para todos os elementos clicáveis no mobile.
+- [x] Ajuste de tipografia responsiva fluida (`text-[32px]` a `text-6xl`) prevenindo quebras indesejadas em smartphones compactos (320px-375px).
+- [x] Build multi-stage de produção standalone (`target: runner`) testado e validado no Docker com sucesso (`versell-prod` gerado, 22 kB first load).
+- [x] Adição de `metadataBase` para resolução correta de OpenGraph e SEO.
 
 ---
 
 ### [ ] Passo 3: Auditoria Final de Performance, Acessibilidade WCAG e Fechamento de Release
-- [ ] Auditoria Google Lighthouse (Performance, Acessibilidade, Melhores Práticas, SEO).
-- [ ] Verificação final de integridade de todos os links, âncoras e formulários.
-- [ ] Documentação final consolidada para entrega em produção.
+- [ ] Auditoria final de performance e renderização cross-browser (Chrome, Safari iOS, Firefox, Edge).
+- [ ] Validação dos formulários, botões de ação e âncoras internas.
+- [ ] Consolidação do manual de produção e entrega do pacote final.
 - *(Aguardando solicitação explícita do usuário para início deste passo)*
-

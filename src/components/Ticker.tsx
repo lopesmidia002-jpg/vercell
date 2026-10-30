@@ -26,15 +26,15 @@ const tickerItems = [
 
 export default function Ticker() {
   return (
-    <section className="py-4 border-y border-neutral-200/80 bg-white overflow-hidden select-none">
+    <section className="py-3.5 border-y border-neutral-200/80 bg-white overflow-hidden select-none">
       <div className="relative w-full flex overflow-x-hidden group">
-        <div className="flex animate-marquee whitespace-nowrap py-1 group-hover:[animation-play-state:paused]">
+        <div className="flex anim-marquee whitespace-nowrap py-1 group-hover:[animation-play-state:paused]">
           {tickerItems.concat(tickerItems).map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={index}
-                className="inline-flex items-center gap-2.5 mx-5 px-3 py-1.5 rounded-full bg-[#FAFAFA] border border-black/[0.05] text-xs sm:text-sm font-medium text-neutral-700"
+                className="inline-flex items-center gap-2.5 mx-4 sm:mx-5 px-3 py-1.5 rounded-full bg-[#FAFAFA] border border-black/[0.05] text-xs sm:text-sm font-medium text-neutral-700 flex-shrink-0"
               >
                 <div className="w-5 h-5 rounded-full bg-[#D2FB07] flex items-center justify-center text-black flex-shrink-0">
                   <Icon className="w-3 h-3 stroke-[2.5]" />
@@ -47,14 +47,14 @@ export default function Ticker() {
 
         <div
           aria-hidden="true"
-          className="flex absolute top-0 animate-marquee2 whitespace-nowrap py-1 group-hover:[animation-play-state:paused]"
+          className="flex anim-marquee whitespace-nowrap py-1 group-hover:[animation-play-state:paused]"
         >
           {tickerItems.concat(tickerItems).map((item, index) => {
             const Icon = item.icon;
             return (
               <div
                 key={`clone-${index}`}
-                className="inline-flex items-center gap-2.5 mx-5 px-3 py-1.5 rounded-full bg-[#FAFAFA] border border-black/[0.05] text-xs sm:text-sm font-medium text-neutral-700"
+                className="inline-flex items-center gap-2.5 mx-4 sm:mx-5 px-3 py-1.5 rounded-full bg-[#FAFAFA] border border-black/[0.05] text-xs sm:text-sm font-medium text-neutral-700 flex-shrink-0"
               >
                 <div className="w-5 h-5 rounded-full bg-[#D2FB07] flex items-center justify-center text-black flex-shrink-0">
                   <Icon className="w-3 h-3 stroke-[2.5]" />
@@ -68,4 +68,3 @@ export default function Ticker() {
     </section>
   );
 }
-

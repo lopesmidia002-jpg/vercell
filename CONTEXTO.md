@@ -26,6 +26,8 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 - **Tipografia Fluida:** Títulos e chamadas responsivas com escalonamento via Tailwind (`text-2xl sm:text-4xl md:text-5xl lg:text-6xl`).
 - **Sem Overflow Horizontal:** Garantia de 100% de integridade visual e sem overflow horizontal desde telas de 320px até ultrawide 4K.
 - **Otimização de Assets Mobile:** Carregamento otimizado de imagens WebP e SVG vetoriais com suporte a telas retina de alta densidade de pixels.
+- **Aceleração por Hardware (GPU):** Translações 3D isoladas (`translate3d(0, 0, 0)`, `will-change: transform`) para animações dos anéis concêntricos e ticker sem consumo excessivo de bateria.
+- **Acessibilidade Semântica (WCAG 2.1 AA):** Navegação por teclado (fechamento por tecla Escape no menu), controle de rolagem de tela e marcação ARIA em acordeões e drawers.
 
 ---
 
