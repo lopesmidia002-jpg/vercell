@@ -29,6 +29,17 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - Degradê bilateral suave nos cantos (`w-24 sm:w-40 md:w-60 z-20`) para entrada e saída contínua de elementos.
    - Fundo com padrão sutil de grade quadriculada.
    - Tags brancas com squircle neon `#D2FB07`.
+   - **Ícones 100% alinhados à referência original:**
+     - `Pix na hora, 24/7`: `Zap`
+     - `API de Pix`: `Code2`
+     - `QR Code e Copia e Cola`: `CreditCard`
+     - `Subcontas`: `Users` (duas silhuetas com cabeças arredondadas)
+     - `Split automático`: `Split` (bifurcação em Y com setas divergentes sem nós circulares)
+     - `Pix Automático`: `Calendar` (calendário com espirais superiores)
+     - `Webhooks em tempo real`: `Webhook` (triskelion de 3 pás oficial)
+     - `mTLS + OAuth2`: `Key` (chave inclinada a 45º com cabeça circular inferior e dentes)
+     - `Antifraude`: `ShieldCheck` (escudo com tique de verificação)
+     - `Suporte`: `Headphones` (fone de ouvido com haste)
 4. **Bento Grid:**
    - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
 5. **Header / Navbar:**
@@ -98,8 +109,10 @@ WATCHPACK_POLLING=true
 | `/assets/logo-versell4.svg` | `200 OK` | Vetor do logotipo para a barra superior |
 | `/assets/logo-versell3.svg` | `200 OK` | Vetor do logotipo para o rodapé escuro |
 | `/assets/logo_versell.webp` | `200 OK` | Ícone volumétrico 3D acrílico |
-| `/assets/suporte-fora.png` | `200 OK` | Anel orbital externo (568x568) |
-| `/assets/suporte-meio.png` | `200 OK` | Anel orbital intermediário (445x436) |
-| `/assets/suporte-dentro.png` | `200 OK` | Anel orbital interno (301x300) |
-| `/assets/MacBook-Air-2022-3.webp` | `200 OK` | Mockup do dashboard multi-telas |
-| `/assets/Pagina-Versell-1-1-scaled.webp` | `200 OK` | Imagem editorial app smartphone |
+| `/assets/MacBook-Air-2022-3.webp` | `200 OK` | Mockup do painel de monitoramento Finance |
+| `/assets/Pagina-Versell-1-1-scaled.webp` | `200 OK` | Imagem da modelo com smartphone |
+| `/assets/suporte-dentro.png` | `200 OK` | Anel orbital interno de suporte 24h |
+| `/assets/suporte-meio.png` | `200 OK` | Anel orbital intermediário |
+| `/assets/suporte-fora.png` | `200 OK` | Anel orbital externo |
+| `/assets/versell.png` | `200 OK` | Mockup completo de referência para auditoria |
+| `/api/health` | `200 OK` | Endpoint de verificação de integridade Docker |

@@ -65,6 +65,7 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 4. `MacBook-Air-2022-3.webp`: Mockup triplo do painel de monitoramento Finance da Versell.
 5. `Pagina-Versell-1-1-scaled.webp`: Imagem de alta resolução no card de soluções/conta digital.
 6. `suporte-dentro.png`, `suporte-meio.png`, `suporte-fora.png`: Sistema de 3 anéis orbitais concêntricos com animação de rotação contínua (horário e anti-horário) com pausa em `:hover`.
+7. **Carrossel / Ticker:** Componente de alta fidelidade com rolagem contínua via GPU (`anim-marquee`), gradiente bilateral de atenuação suave nas bordas, fundo em micro-grid e pills brancas com squircles neon `#D2FB07` contendo ícones fiéis ao design original (`Zap`, `Code2`, `CreditCard`, `Users`, `Split`, `Calendar`, `Webhook`, `Key`, `ShieldCheck`, `Headphones`).
 
 ---
 

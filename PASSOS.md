@@ -48,4 +48,5 @@
 - [x] Carrossel / Ticker com efeito de sombreamento e fade suave nas bordas bilaterais (`w-24 sm:w-40 md:w-60`), textura sutil de grid de fundo e novos pills brancos com squircle neon `#D2FB07`.
 - [x] Hero Section com tela de quadrados em efeito leve de fundo (`48x48px`) e ícones minimalistas.
 - [x] **Tag Badges Pixel-Perfect:** Criação do componente unificado `TagBadge.tsx` com a pílula interna pastel `(• Versell)` com ponto neon e texto de seção sem barra divisória `|`, idêntico à captura original.
+- [x] **Ícones do Carrossel / Ticker:** Correção e alinhamento cirúrgico dos ícones de cada pill com a referência original: substituição de `Users2` por `Users` (Subcontas), `GitFork` por `Split` (Split automático), `Calendar` para Pix Automático, `Webhook` para Webhooks em tempo real, `Key` para mTLS + OAuth2, `CreditCard` para QR Code e Copia e Cola, `ShieldCheck` e label 'Antifraude', e `Headphones` para Suporte.
 - [x] Validação completa no container Docker em execução e compilação do build standalone de produção.

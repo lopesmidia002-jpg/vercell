@@ -2,26 +2,26 @@ import {
   Zap,
   Code2,
   CreditCard,
-  Users2,
-  GitFork,
+  Users,
+  Split,
   Calendar,
-  Network,
-  KeyRound,
+  Webhook,
+  Key,
   ShieldCheck,
-  MessageCircle,
+  Headphones,
 } from "lucide-react";
 
 const tickerItems = [
   { icon: Zap, label: "Pix na hora, 24/7" },
   { icon: Code2, label: "API de Pix" },
   { icon: CreditCard, label: "QR Code e Copia e Cola" },
-  { icon: Users2, label: "Subcontas" },
-  { icon: GitFork, label: "Split automático" },
+  { icon: Users, label: "Subcontas" },
+  { icon: Split, label: "Split automático" },
   { icon: Calendar, label: "Pix Automático" },
-  { icon: Network, label: "Webhooks em tempo real" },
-  { icon: KeyRound, label: "mTLS + OAuth2" },
+  { icon: Webhook, label: "Webhooks em tempo real" },
+  { icon: Key, label: "mTLS + OAuth2" },
   { icon: ShieldCheck, label: "Antifraude" },
-  { icon: MessageCircle, label: "Suporte" },
+  { icon: Headphones, label: "Suporte" },
 ];
 
 export default function Ticker() {

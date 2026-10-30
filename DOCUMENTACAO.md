@@ -29,6 +29,17 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
    - Degradê bilateral suave nos cantos (`w-24 sm:w-40 md:w-60 z-20`) para entrada e saída contínua de elementos.
    - Fundo com padrão sutil de grade quadriculada.
    - Tags brancas com squircle neon `#D2FB07`.
+   - **Ícones 100% alinhados à referência original:**
+     - `Pix na hora, 24/7`: `Zap`
+     - `API de Pix`: `Code2`
+     - `QR Code e Copia e Cola`: `CreditCard`
+     - `Subcontas`: `Users` (duas silhuetas com cabeças arredondadas)
+     - `Split automático`: `Split` (bifurcação em Y com setas divergentes sem nós circulares)
+     - `Pix Automático`: `Calendar` (calendário com espirais superiores)
+     - `Webhooks em tempo real`: `Webhook` (triskelion de 3 pás oficial)
+     - `mTLS + OAuth2`: `Key` (chave inclinada a 45º com cabeça circular inferior e dentes)
+     - `Antifraude`: `ShieldCheck` (escudo com tique de verificação)
+     - `Suporte`: `Headphones` (fone de ouvido com haste)
 4. **Bento Grid:**
    - Layout de 3 linhas com enquadramento proporcional de fotos e mockups, máscara de degradê na modelo e luz fluorescente na API Pix.
 5. **Header / Navbar:**
