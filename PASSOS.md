@@ -582,3 +582,15 @@
   - [x] Auditoria CDP confirmando ausência de linha acima do parágrafo regulatório e presença da borda única abaixo dele.
   - [x] Comparativo visual gerado [footer_disclaimer_border_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/footer_disclaimer_border_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 41: Ampliação e Centralização do Sombreamento Neon da Logo na Hero (`Hero.tsx`)
+- [x] **Centralização e Expansão do Halo Neon Atrás da Logo 3D:**
+  - [x] Inserida camada radial dedicada de iluminação verde neon diretamente atrás do ícone 3D da Versell na coluna da Hero (`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2`), com dimensões responsivas de até `560x560px` (`w-[340px] sm:w-[440px] md:w-[520px] lg:w-[560px] h-[340px] sm:h-[440px] md:h-[520px] lg:h-[560px] rounded-full`).
+  - [x] Aplicação de gradiente radial aveludado multicamada: `bg-[radial-gradient(circle,rgba(210,251,7,0.6)_0%,rgba(210,251,7,0.3)_45%,rgba(210,251,7,0.1)_65%,transparent_80%)] blur-3xl pointer-events-none`.
+  - [x] Refinamento da sombra de profundidade do elemento 3D para `drop-shadow-[0_25px_45px_rgba(0,0,0,0.18)]`, garantindo contraste realista e tridimensionalidade sobre a malha quadriculada.
+  - [x] O halo fluorescente agora se expande suavemente por trás da cavidade do 'V' e se irradia por toda a área circundante, com decaimento luminoso idêntico à captura original (`media_1793456041021_25f548fc.jpg`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando alinhamento concêntrico perfeito e dimensões de 451px de altura da logo com halo irradiando em 360°.
+  - [x] Comparativo visual gerado [hero_logo_glow_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_glow_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

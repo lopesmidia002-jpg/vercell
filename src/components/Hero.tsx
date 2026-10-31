@@ -66,15 +66,18 @@ export default function Hero() {
 
           {/* Right Column: 3D Acrylic Logo Visual */}
           <div className="lg:col-span-5 flex items-center justify-center relative mt-2 lg:mt-0">
+            {/* Ambient Radial Lime Glow centered exactly behind the 3D Logo (sombreamento neon fiel ao original) */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[440px] md:w-[520px] lg:w-[560px] h-[340px] sm:h-[440px] md:h-[520px] lg:h-[560px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.6)_0%,rgba(210,251,7,0.3)_45%,rgba(210,251,7,0.1)_65%,transparent_80%)] blur-3xl pointer-events-none" />
+
             {/* 3D Floating Element with GPU acceleration */}
-            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] flex items-center justify-center">
+            <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] flex items-center justify-center">
               <Image
                 src="/assets/logo_versell.webp"
                 alt="Versell 3D Icon"
                 width={480}
                 height={480}
                 priority
-                className="w-full h-auto object-contain filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)] anim-float"
+                className="w-full h-auto object-contain filter drop-shadow-[0_25px_45px_rgba(0,0,0,0.18)] anim-float"
               />
             </div>
           </div>

@@ -276,7 +276,13 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 32. **Ajuste da Linha Divisória do Texto Regulatório no Rodapé (`Footer.tsx`):**
     - **Listra Posicionada Exclusivamente Abaixo do Disclaimer:** Remoção da borda superior acima do parágrafo de conformidade legal e aplicação da listra divisória sutil (`border-b border-white/10`) estritamente abaixo do texto regulatório, além da atualização da razão social e CNPJ de acordo com a captura original do rodapé.
 
----## 4. Variáveis de Ambiente
+---
+33. **Ampliação do Sombreamento Neon da Logo na Hero (`Hero.tsx`):**
+    - **Halo Radial Neon Expansivo Centrado no Ícone 3D:** Implementação de elemento de luz ambiente radial concêntrico posicionado diretamente atrás do logotipo volumétrico 3D de acrílico da Versell (`w-[340px] sm:w-[440px] md:w-[520px] lg:w-[560px] h-[340px] sm:h-[440px] md:h-[520px] lg:h-[560px] rounded-full` com `radial-gradient(circle, rgba(210,251,7,0.6)...) blur-3xl`), projetando um halo luminoso verde neon aveludado e contínuo que ilumina o fundo quadriculado com transição suave, fiel à referência visual original.
+
+---
+
+## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:
 ```env
 PORT=3000

@@ -95,6 +95,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 29. **Remoção de Negrito nos Títulos dos Passos (`ThreeSteps.tsx`):** Aplicação de `font-light text-[#111111]` (peso 300) aos 3 títulos da seção de passos (`"Fale com a gente"`, `"Conta aprovada"` e `"Integre e receba"`), retirando a espessura de negrito e unificando o visual leve com as demais seções.
 
 ---
+36. **Sombreamento Neon da Logo na Hero (`Hero.tsx`):** Adição de camada de iluminação ambiente radial (`radial-gradient` neon `#D2FB07` com `blur-3xl`) de até 560px centralizada perfeitamente atrás do ícone 3D de acrílico, proporcionando o halo esverdeado fluorescente amplo e contínuo que banha a grade do hero conforme a referência original.
+
+---
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.
