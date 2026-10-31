@@ -314,6 +314,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 41. **Calibração Final do Espaçamento dos Cards no Mobile (`BentoGrid.tsx`):**
     - **Cards Compactos com Proporções Orgânicas:** Remoção do `sm:min-h-[480px]` dos cards de coluna única antes do desktop, reajuste do padding móvel para `p-6 sm:p-8 lg:p-12` e encurtamento das margens dos ícones (`mb-4 sm:mb-6`) e títulos (`mb-2 sm:mb-3`). Com isso, a altura do card de API de Pix no mobile passou para 200px (vão inferior reduzido para 25px) e dos demais cards textuais para 222px, extinguindo o excesso de espaço em branco no mobile e preservando 100% da integridade da grade simétrica no desktop.
 
+---
+42. **Deslocamento dos Laptops para a Direita no Card Painel e Monitoramento (`BentoGrid.tsx`):**
+    - **Alinhamento Preciso no Canto Inferior Direito:** Reajuste da margem de sangria direita para `lg:-mr-[155px]`, deslocando o mockup em +80px para a direita. O notch do laptop central foi reposicionado em 52.3% da largura do card, o laptop direito passa a ser cortado na altura do gráfico circular roxo e o laptop esquerdo inicia-se sob "seus webhooks pelo Finance, o", liberando um respiro amplo na margem esquerda e espelhando exatamente a composição da referência visual original.
+
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:

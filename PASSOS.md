@@ -691,3 +691,16 @@
   - [x] Auditoria CDP confirmando redução de altura para 200px no Card 2 e 222px nos demais cards textuais em viewport mobile (390x844).
   - [x] Comparativo visual gerado [bento_card_mobile_spacing_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/bento_card_mobile_spacing_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 50: Deslocamento dos Laptops para a Direita no Card Painel e Monitoramento (`BentoGrid.tsx`)
+- [x] **Alinhamento e Sangria Horizontal no Canto Direito Fiel ao Mockup Original:**
+  - [x] Ajustada a margem direita de sangria do contêiner do mockup de computadores de `lg:-mr-[75px]` para `lg:-mr-[155px]`, deslocando todo o conjunto em +80px horizontalmente para a direita.
+  - [x] O entalhe (notch) do laptop central agora posiciona-se a 52.3% da largura do card (exatamente alinhado com a referência original), e a extremidade esquerda do laptop esquerdo inicia-se a 33% da margem esquerda, logo abaixo de `"seus webhooks pelo Finance, o"`.
+  - [x] O laptop direito agora apresenta o corte exato no gráfico circular roxo pela borda arredondada direita do card, mantendo o respiro limpo na área sob a descrição textual na metade esquerda e reproduzindo com fidelidade total o mockup de referência (`media_1793476836082_47adfed7.png`).
+  - [x] Responsividade mantida em todos os breakpoints: mobile (`-mr-8`), tablet (`sm:-mr-20`) e desktop (`lg:-mr-[155px]`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando deslocamento da margem esquerda dos laptops de 154px para 234px e sangria direita de -106px sobre o card de 798px.
+  - [x] Comparativo visual gerado [card6_laptops_shift_right_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/card6_laptops_shift_right_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

@@ -123,6 +123,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 ---
 44. **Calibração Final do Espaçamento dos Cards no Mobile (`BentoGrid.tsx`):** Otimização do espaçamento vertical dos cards no mobile com padding `p-6 sm:p-8`, margens `mb-4` em ícones e `mb-2` em títulos, e eliminação de `sm:min-h-[480px]` em cards empilhados. A altura dos cards no mobile foi padronizada em 200px-222px com vão inferior de apenas 25px, eliminando grandes áreas em branco.
 
+---
+45. **Deslocamento dos Laptops para a Direita no Card Painel e Monitoramento (`BentoGrid.tsx`):** Calibração de sangria horizontal (`lg:-mr-[155px]`) deslocando o mockup em 80px à direita. O conjunto de computadores posiciona-se agora na metade direita do card (notch a 52.3% da largura), com o laptop direito suavemente recortado pela quina do card e o laptop esquerdo iniciando-se alinhado com a segunda linha descritiva.
+
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.
