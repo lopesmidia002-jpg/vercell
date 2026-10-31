@@ -142,3 +142,23 @@
   - [x] `OrbitalSupport.tsx` ("Suporte 24h")
   - [x] `PreFooterCta.tsx` ("Vamos crescer juntos?")
 - [x] Validação visual via screenshot headless em Docker (Next.js compilado com sucesso, HTTP 200 OK).
+
+---
+
+### [x] Passo 10: Refinamento Pixel-Perfect da Seção de Segurança (`SecuritySection.tsx`)
+- [x] **Alinhamento do Título em Linha Única:**
+  - [x] `"Segurança em "` em negrito preto (`font-bold text-[#111111]`) e `"cada Pix"` em negrito verde oliva (`font-bold text-[#5B7500]`) em linha contínua sem quebras artificiais.
+- [x] **Redação Institucional da Infraestrutura:**
+  - [x] Ajustado para `"Bass Pago Instituição de Pagamento"` com destaque em negrito (`font-bold text-[#111111]`).
+- [x] **Remoção de Ícones e Estilização de E-mails com Destaque e Sublinhado:**
+  - [x] Removidos os ícones de envelope/carta (`Mail`).
+  - [x] Removida a linha divisória superior.
+  - [x] E-mails de canal oficial formatados em negrito e sublinhados: `denuncia@versell.com.br` e `compliance@versell.com.br`.
+- [x] **Correção Cirúrgica de 100% dos Ícones dos Cards:**
+  - [x] Card 1 (`Análise de cada conta`): `UserCheck` (usuário com verificação) e texto `"análise do negócio"`.
+  - [x] Card 2 (`Monitoramento 24/7`): `Eye` (olho com pupila, substituindo a onda ECG anterior).
+  - [x] Card 3 (`API protegida`): `Key` (chave mTLS/credenciais, substituindo o escudo anterior).
+  - [x] Card 4 (`Privacidade e LGPD`): `ShieldCheck` (escudo com tique de verificação, substituindo o cadeado anterior).
+- [x] **Tipografia dos Títulos dos Cards:**
+  - [x] Títulos dos 4 cards definidos em negrito (`font-bold text-[#111111]`).
+- [x] Validação visual por screenshot headless em Docker (Next.js compilado com sucesso, HTTP 200 OK).

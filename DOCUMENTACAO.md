@@ -130,6 +130,20 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
       - Adição da seção de retorno documentada (`# Resposta` com `status: ATIVA` e `pixCopiaECola`).
       - Rodapé com nota documental: `"Exemplo resumido da "` em cinza neutro e `"documentação oficial"` em link verde neon com sublinhado ao passar o cursor.
 
+12. **Refinamento Pixel-Perfect da Seção de Segurança (`SecuritySection.tsx`):**
+    - **Alinhamento do Título em Linha Única:** O título `"Segurança em cada Pix"` foi unificado em uma única linha fluida com `"Segurança em "` em negrito preto (`font-bold text-[#111111]`) e `"cada Pix"` em negrito verde oliva (`font-bold text-[#5B7500]`).
+    - **Texto Institucional Bass Pago:** Redação atualizada para `"Bass Pago Instituição de Pagamento"` com destaque em negrito (`font-bold text-[#111111]`).
+    - **Remoção dos Ícones de Carta e Formatação dos E-mails:**
+      - Eliminados todos os ícones de envelope/carta (`Mail`).
+      - Removida a borda divisória artificial superior (`border-t`).
+      - E-mails de canal oficial estilizados com destaque em negrito e sublinhado (`font-bold text-[#111111] underline underline-offset-2`): `denuncia@versell.com.br` e `compliance@versell.com.br`.
+    - **Correção dos 4 Ícones dos Cards:**
+      - Card 1 (`Análise de cada conta`): mantido `UserCheck` (silhueta de usuário com selo de verificação) e texto ajustado para `"análise do negócio"`.
+      - Card 2 (`Monitoramento 24/7`): ícone atualizado para `Eye` (olho com pupila), substituindo a onda de ECG anterior.
+      - Card 3 (`API protegida`): ícone atualizado para `Key` (chave de credenciais/mTLS), substituindo o escudo anterior.
+      - Card 4 (`Privacidade e LGPD`): ícone atualizado para `ShieldCheck` (escudo com tique de verificação de proteção legal), substituindo o cadeado anterior.
+    - **Tipografia dos Títulos dos Cards:** Títulos dos 4 cards definidos em negrito (`font-bold text-[#111111]`) com proporções generosas idênticas ao mockup original.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)
