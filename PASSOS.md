@@ -162,3 +162,21 @@
 - [x] **Tipografia dos Títulos dos Cards:**
   - [x] Títulos dos 4 cards definidos em negrito (`font-bold text-[#111111]`).
 - [x] Validação visual por screenshot headless em Docker (Next.js compilado com sucesso, HTTP 200 OK).
+
+---
+
+### [x] Passo 11: Padronização Pixel-Perfect da Seção Orbital de Suporte 24h (`OrbitalSupport.tsx`)
+- [x] **Ocultação de Elementos Suprérfluos:**
+  - [x] Remoção dos badges de status ("Tempo médio de resposta: < 2 min" e "Plantão técnico 24/7/365").
+  - [x] Remoção do botão inferior "Chamar no WhatsApp".
+  - [x] Remoção da legenda textual ("Toque ou passe o mouse nos anéis para pausar o movimento").
+- [x] **Harmonização do Título Principal:**
+  - [x] Linha 1: `"Um time do seu lado "` em branco + `"24"` em verde neon fluorescente (`#D2FB07`).
+  - [x] Linha 2: `"horas por dia"` em verde neon fluorescente em negrito (`font-bold text-[#D2FB07]`).
+- [x] **Núcleo Central do WhatsApp Ampliado e Fiel:**
+  - [x] Círculo menor do centro ampliado para um círculo sólido em verde neon fluorescente (`w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#D2FB07]`).
+  - [x] Ícone oficial do WhatsApp em preto puro vazado no interior do círculo neon.
+- [x] **Remoção de Iluminação no Segundo Círculo:**
+  - [x] Remoção da iluminação neon deslocada sobre o anel intermediário (`suporte-meio.png`).
+  - [x] Luz ambiente radial difusa centralizada exclusivamente atrás do núcleo do WhatsApp, iluminando suavemente a órbita menor.
+- [x] Validação visual por screenshot headless em Docker (Next.js compilado com sucesso, HTTP 200 OK).

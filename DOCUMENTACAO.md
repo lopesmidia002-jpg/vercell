@@ -144,6 +144,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
       - Card 4 (`Privacidade e LGPD`): ícone atualizado para `ShieldCheck` (escudo com tique de verificação de proteção legal), substituindo o cadeado anterior.
     - **Tipografia dos Títulos dos Cards:** Títulos dos 4 cards definidos em negrito (`font-bold text-[#111111]`) com proporções generosas idênticas ao mockup original.
 
+13. **Padronização Pixel-Perfect da Seção Orbital de Suporte 24h (`OrbitalSupport.tsx`):**
+    - **Ocultação de Elementos Suprérfluos:** Removidos os dois badges de status ("Tempo médio de resposta: < 2 min", "Plantão técnico 24/7/365"), o botão inferior "Chamar no WhatsApp" e o texto de instrução tátil ("Toque ou passe o mouse nos anéis..."), mantendo o layout limpo e minimalista fiel à referência original.
+    - **Harmonização do Título:** Primeira linha `"Um time do seu lado 24"` com o numeral `"24"` destacado em verde neon fluorescente (`#D2FB07`), e segunda linha `"horas por dia"` em verde neon fluorescente em negrito (`font-bold text-[#D2FB07]`).
+    - **Novo Ícone e Círculo WhatsApp:** Núcleo central ampliado para um círculo sólido em verde neon fluorescente (`w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#D2FB07]`) contendo o ícone oficial do WhatsApp em preto puro vazado.
+    - **Remoção de Iluminação no Segundo Círculo:** Eliminada a iluminação neon deslocada sobre o anel intermediário (`suporte-meio.png`), com a luz ambiente radial suave centralizada exclusivamente atrás do núcleo do WhatsApp, iluminando suavemente a órbita menor.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)
