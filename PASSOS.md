@@ -605,3 +605,14 @@
   - [x] Auditoria CDP confirmando distribuição equilibrada de brilho (decaimento simétrico de [234, 247, 174] a 80px à esquerda e [233, 246, 169] a 80px à direita da logo).
   - [x] Comparativo visual gerado [hero_logo_right_glow_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_right_glow_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 43: Suavização da Iluminação Neon de Fundo da Logo na Hero (`Hero.tsx`)
+- [x] **Calibração de Intensidade e Decaimento Suave:**
+  - [x] Reduzida a opacidade do halo radial principal de 70% para 42% no núcleo (`rgba(210,251,7,0.42)` a 0%, `0.22` a 35% e `0.08` a 60%), contendo a dispersão excessiva nas quinas e mantendo o fundo quadriculado limpo e nítido (`[245, 247, 236]` próximo ao topo/laterais).
+  - [x] Ajustada a camada de foco da haste direita para `rgba(210,251,7,0.3)` a 0% e `0.12` a 45% com dimensões de até `500x500px`, conferindo um acabamento aveludado, elegante e equilibrado que abraça a logo e sua cavidade sem saturar a malha quadriculada.
+  - [x] O efeito agora reflete com rigor a iluminação suave e aveludada do design original (`media_1793456559508_bac6cd77.jpg`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando redução da saturação nas quinas de `[241, 247, 209]` para `[245, 247, 236]`, alinhada com os `[245, 246, 238]` da referência.
+  - [x] Comparativo visual gerado [hero_logo_softened_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_softened_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

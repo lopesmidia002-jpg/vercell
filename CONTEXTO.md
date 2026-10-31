@@ -101,6 +101,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 37. **Expansão do Sombreamento Neon da Logo na Hero no Lado Direito (`Hero.tsx`):** Eliminação de assimetrias luminosas através da expansão do halo radial para 940px e inclusão de camada complementar sob a haste direita (`left-[56%]`), estendendo o degradê neon verde fluorescente tanto para a esquerda quanto para a direita da logo de forma uniforme e fiel ao mockup.
 
 ---
+38. **Suavização da Iluminação Neon da Logo na Hero (`Hero.tsx`):** Calibração de opacidade para 42% no halo principal e 30% na camada de realce sob a haste direita, atingindo uma difusão aveludada contida e equilibrada que ilumina suavemente o entorno e a cavidade do 'V' sem espalhar verde-limão saturado nas quinas do grid.
+
+---
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.

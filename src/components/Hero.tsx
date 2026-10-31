@@ -63,11 +63,11 @@ export default function Hero() {
 
           {/* Right Column: 3D Acrylic Logo Visual */}
           <div className="lg:col-span-5 flex items-center justify-center relative mt-2 lg:mt-0">
-            {/* Ambient Radial Lime Glow expansivo abrangendo centro, esquerda e irradiando fortemente para a direita */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[680px] md:w-[800px] lg:w-[940px] h-[520px] sm:h-[680px] md:h-[800px] lg:h-[940px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.7)_0%,rgba(210,251,7,0.45)_30%,rgba(210,251,7,0.22)_55%,rgba(210,251,7,0.08)_75%,transparent_90%)] blur-3xl pointer-events-none" />
+            {/* Ambient Radial Lime Glow suave e aveludado abrangendo a logo em 360° com decaimento harmonioso */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] sm:w-[580px] md:w-[680px] lg:w-[780px] h-[460px] sm:h-[580px] md:h-[680px] lg:h-[780px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.42)_0%,rgba(210,251,7,0.22)_35%,rgba(210,251,7,0.08)_60%,transparent_78%)] blur-3xl pointer-events-none" />
 
-            {/* Foco de iluminação neon extra posicionado sob a haste direita e cavidade da logo */}
-            <div className="absolute top-[48%] left-[56%] -translate-x-1/2 -translate-y-1/2 w-[360px] sm:w-[460px] md:w-[540px] lg:w-[620px] h-[360px] sm:h-[460px] md:h-[540px] lg:h-[620px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.5)_0%,rgba(210,251,7,0.25)_45%,transparent_75%)] blur-2xl pointer-events-none" />
+            {/* Suave realce neon calibrado sob a haste direita e cavidade da logo */}
+            <div className="absolute top-[48%] left-[55%] -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[380px] md:w-[440px] lg:w-[500px] h-[300px] sm:h-[380px] md:h-[440px] lg:h-[500px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.3)_0%,rgba(210,251,7,0.12)_45%,transparent_72%)] blur-2xl pointer-events-none" />
 
             {/* 3D Floating Element with GPU acceleration */}
             <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] flex items-center justify-center">

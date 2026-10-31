@@ -285,6 +285,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Halo Duplo de 360° com Cobertura Integral da Haste Direita:** Ampliação do raio do gradiente radial concêntrico para até 940px e adição de camada de foco neon a 56% horizontal cobrindo toda a haste vertical direita e a abertura do 'V', banhando o lado direito da grade com luz fluorescente contínua, sem cortes abruptos e em perfeita correspondência com a captura original.
 
 ---
+35. **Suavização da Iluminação Neon de Fundo da Logo na Hero (`Hero.tsx`):**
+    - **Gradiente Aveludado e Calibração de Opacidade:** Redução da opacidade central do halo radial para 42% e da camada da haste direita para 30%, proporcionando uma iluminação suave, harmoniosa e aveludada em 360° ao redor do ícone volumétrico sem estourar as quinas da malha quadriculada, preservando a pureza do fundo `#F6F7F2` e a fidelidade pixel-perfect ao mockup de referência.
+
+---
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:
