@@ -53,3 +53,4 @@ for y in range(150, arr_orig.shape[0]):
             if x > right_x:
                 right_x = x
 print(f"orig laptops horizontal span: x=[{left_x}, {right_x}], width={right_x - left_x}")
+

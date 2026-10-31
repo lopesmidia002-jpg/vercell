@@ -678,3 +678,16 @@
   - [x] Auditoria CDP confirmando redução da proporção dos laptops na largura do card de 94% para ~68%, reproduzindo fielmente as proporções e o zoom do mockup original.
   - [x] Comparativo visual gerado [card6_laptop_zoom_reduced_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/card6_laptop_zoom_reduced_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 49: Calibração Final do Espaçamento dos Cards no Mobile (`BentoGrid.tsx`)
+- [x] **Redução Cirúrgica do Espaço em Branco nos Cards Textuais:**
+  - [x] Removida a classe `sm:min-h-[480px]` do Card 2 (`API de Pix`) e do Card 7 (`Antifraude inteligente`), restringindo a altura mínima estática exclusivamente ao breakpoint desktop `lg:min-h-[520px]`.
+  - [x] Calibrado o padding interno no mobile de `p-8` (32px) para `p-6` (24px) em todos os cards textuais (`p-6 sm:p-8 lg:p-12`), proporcionando maior área de leitura para o texto e eliminando o vazio inferior.
+  - [x] Compactados os espaçamentos internos no mobile: margem inferior dos ícones reduzida de `mb-6` (24px) para `mb-4 sm:mb-6` (16px), e margem inferior dos títulos de `mb-3` (12px) para `mb-2 sm:mb-3` (8px).
+  - [x] A altura do Card 2 no mobile foi reduzida para 200px (com espaço restante abaixo do texto de apenas ~25px), e os Cards 3, 4, 5 e 7 para 222px, atingindo uma diagramação compacta, equilibrada e sem vãos vazios, idêntica ao design esperado.
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando redução de altura para 200px no Card 2 e 222px nos demais cards textuais em viewport mobile (390x844).
+  - [x] Comparativo visual gerado [bento_card_mobile_spacing_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/bento_card_mobile_spacing_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

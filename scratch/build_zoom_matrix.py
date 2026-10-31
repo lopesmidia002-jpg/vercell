@@ -36,3 +36,4 @@ comp.paste(opt4_r, (40 + target_w_orig, y2))
 
 comp.save('scratch/compare_zoom_matrix.png')
 print('Saved scratch/compare_zoom_matrix.png')
+

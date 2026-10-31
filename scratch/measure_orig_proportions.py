@@ -75,3 +75,4 @@ for y in range(160, 230):
                 notch_x = x
 
 print(f"Middle Laptop Notch: x={notch_x} ({(notch_x - card_left) / card_w:.1%} of card width), y={min_notch_y} ({(min_notch_y - card_top) / card_h:.1%} of card height)")
+

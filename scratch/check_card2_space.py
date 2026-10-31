@@ -25,3 +25,4 @@ for y in range(50, 250):
 
 print(f"Text ends at y={text_bottom_y}")
 print(f"Empty space below text: {y - text_bottom_y}px")
+

@@ -22,3 +22,4 @@ comp.paste(im1_r, (0, 0))
 comp.paste(im2_r, (w + 20, 0))
 comp.save(r'scratch/side_by_side_user_images.png')
 print("Saved scratch/side_by_side_user_images.png")
+

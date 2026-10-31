@@ -49,3 +49,4 @@ print(f"Laptops height: {lap_max_y - lap_min_y} px ({ (lap_max_y - lap_min_y) / 
 print(f"Laptops left offset: {lap_min_x - card_left} px ({ (lap_min_x - card_left) / card_w :.1%} of card width)")
 print(f"Laptops right margin: {card_right - lap_max_x} px")
 print(f"Laptops bottom margin: {card_bottom - lap_max_y} px")
+

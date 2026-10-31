@@ -33,3 +33,4 @@ comp.paste(desk_r, (x3, 45))
 
 comp.save('scratch/final_zoom_comparison.png')
 print('Saved scratch/final_zoom_comparison.png')
+

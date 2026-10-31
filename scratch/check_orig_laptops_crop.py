@@ -10,3 +10,4 @@ left_crop = orig.crop((180, orig.height - 200, 400, orig.height))
 left_crop.save(r'scratch/orig_left_laptop.png')
 
 print("Saved right and left crops of orig")
+

@@ -47,3 +47,4 @@ def analyze(path, name):
 
 analyze(r'C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/.user_uploaded/media_1793475351304_dedc412b.jpg', 'Current (dedc412b.jpg)')
 analyze(r'C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/.user_uploaded/media_1793475387104_d83a993c.png', 'Original (d83a993c.png)')
+

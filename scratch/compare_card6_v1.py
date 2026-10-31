@@ -21,3 +21,4 @@ comp.paste(curr_r, (30 + target_w_orig, 35))
 
 comp.save('scratch/compare_card6_v1.png')
 print('Saved scratch/compare_card6_v1.png')
+

@@ -89,3 +89,4 @@ print(f"Asset right in orig: {asset_right_in_orig:.1f}px (overflow beyond card r
 asset_top_in_orig = orig_notch_y - (notch_y_asset * scale)
 asset_bottom_in_orig = asset_top_in_orig + scaled_h
 print(f"Asset bottom in orig: {asset_bottom_in_orig:.1f}px (overflow beyond card bottom {card_bottom}: {asset_bottom_in_orig - card_bottom:.1f}px = {(asset_bottom_in_orig - card_bottom)/card_h:.1%})")
+

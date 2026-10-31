@@ -36,3 +36,4 @@ for title, img in options:
 
 sheet.save('scratch/all_zoom_options_sheet.png')
 print('Saved scratch/all_zoom_options_sheet.png')
+

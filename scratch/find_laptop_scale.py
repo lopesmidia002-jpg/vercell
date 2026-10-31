@@ -62,3 +62,4 @@ print(f"Asset left offset from card left: {(asset_left_in_orig - card_left) / ca
 print(f"Asset right offset from card right: {(asset_left_in_orig + scaled_w - 643) / card_w:.1%}")
 print(f"Asset bottom offset from card bottom: {asset_top_in_orig + scaled_h - card_bottom}px (overflow: {(asset_top_in_orig + scaled_h - card_bottom)/card_h:.1%})")
 print(f"Asset top offset from card top: {(asset_top_in_orig - 2) / card_h:.1%}")
+
