@@ -98,6 +98,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 36. **Sombreamento Neon da Logo na Hero (`Hero.tsx`):** Adição de camada de iluminação ambiente radial (`radial-gradient` neon `#D2FB07` com `blur-3xl`) de até 560px centralizada perfeitamente atrás do ícone 3D de acrílico, proporcionando o halo esverdeado fluorescente amplo e contínuo que banha a grade do hero conforme a referência original.
 
 ---
+37. **Expansão do Sombreamento Neon da Logo na Hero no Lado Direito (`Hero.tsx`):** Eliminação de assimetrias luminosas através da expansão do halo radial para 940px e inclusão de camada complementar sob a haste direita (`left-[56%]`), estendendo o degradê neon verde fluorescente tanto para a esquerda quanto para a direita da logo de forma uniforme e fiel ao mockup.
+
+---
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.

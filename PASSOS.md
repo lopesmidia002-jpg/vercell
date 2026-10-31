@@ -594,3 +594,14 @@
   - [x] Auditoria CDP confirmando alinhamento concêntrico perfeito e dimensões de 451px de altura da logo com halo irradiando em 360°.
   - [x] Comparativo visual gerado [hero_logo_glow_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_glow_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 42: Expansão do Sombreamento Neon no Lado Direito da Logo na Hero (`Hero.tsx`)
+- [x] **Ampla Irradiação Fluorescente no Lado Direito e em 360°:**
+  - [x] Removido o elemento de luz ambiente deslocado na seção geral (`right-1/4`), que concentrava luminosidade apenas à esquerda da logo.
+  - [x] Ampliado o halo principal radial concêntrico atrás da logo para até `940x940px` (`w-[520px] sm:w-[680px] md:w-[800px] lg:w-[940px] h-[520px] sm:h-[680px] md:h-[800px] lg:h-[940px]`), expandindo a curva de atenuação até 90% (`rgba(210,251,7,0.7)` no centro a `transparent` a 90%).
+  - [x] Adicionada uma segunda camada de foco luminoso neon direcionada sob a haste direita e cavidade da logo (`left-[56%] top-[48%]`, dimensões de até `620x620px` com `blur-2xl`), garantindo que a malha quadriculada à direita da haste vertical do 'V' receba irradiação fluorescente intensa e vibrante, exatamente idêntica à referência original (`media_1793456559508_bac6cd77.jpg`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando distribuição equilibrada de brilho (decaimento simétrico de [234, 247, 174] a 80px à esquerda e [233, 246, 169] a 80px à direita da logo).
+  - [x] Comparativo visual gerado [hero_logo_right_glow_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_right_glow_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

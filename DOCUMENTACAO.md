@@ -281,6 +281,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Halo Radial Neon Expansivo Centrado no Ícone 3D:** Implementação de elemento de luz ambiente radial concêntrico posicionado diretamente atrás do logotipo volumétrico 3D de acrílico da Versell (`w-[340px] sm:w-[440px] md:w-[520px] lg:w-[560px] h-[340px] sm:h-[440px] md:h-[520px] lg:h-[560px] rounded-full` com `radial-gradient(circle, rgba(210,251,7,0.6)...) blur-3xl`), projetando um halo luminoso verde neon aveludado e contínuo que ilumina o fundo quadriculado com transição suave, fiel à referência visual original.
 
 ---
+34. **Expansão do Sombreamento Neon no Lado Direito da Logo na Hero (`Hero.tsx`):**
+    - **Halo Duplo de 360° com Cobertura Integral da Haste Direita:** Ampliação do raio do gradiente radial concêntrico para até 940px e adição de camada de foco neon a 56% horizontal cobrindo toda a haste vertical direita e a abertura do 'V', banhando o lado direito da grade com luz fluorescente contínua, sem cortes abruptos e em perfeita correspondência com a captura original.
+
+---
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:

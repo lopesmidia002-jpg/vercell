@@ -9,9 +9,6 @@ export default function Hero() {
       {/* Tela com quadrados em efeito leve no fundo (grid sutil como na imagem original) */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000009_1px,transparent_1px),linear-gradient(to_bottom,#00000009_1px,transparent_1px)] bg-[size:48px_48px] pointer-events-none" />
 
-      {/* Radial soft lime glow centered towards the 3D element */}
-      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[350px] sm:w-[500px] h-[350px] sm:h-[500px] rounded-full lime-glow-hero blur-3xl pointer-events-none opacity-80" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Text & CTA */}
@@ -66,8 +63,11 @@ export default function Hero() {
 
           {/* Right Column: 3D Acrylic Logo Visual */}
           <div className="lg:col-span-5 flex items-center justify-center relative mt-2 lg:mt-0">
-            {/* Ambient Radial Lime Glow centered exactly behind the 3D Logo (sombreamento neon fiel ao original) */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[440px] md:w-[520px] lg:w-[560px] h-[340px] sm:h-[440px] md:h-[520px] lg:h-[560px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.6)_0%,rgba(210,251,7,0.3)_45%,rgba(210,251,7,0.1)_65%,transparent_80%)] blur-3xl pointer-events-none" />
+            {/* Ambient Radial Lime Glow expansivo abrangendo centro, esquerda e irradiando fortemente para a direita */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] sm:w-[680px] md:w-[800px] lg:w-[940px] h-[520px] sm:h-[680px] md:h-[800px] lg:h-[940px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.7)_0%,rgba(210,251,7,0.45)_30%,rgba(210,251,7,0.22)_55%,rgba(210,251,7,0.08)_75%,transparent_90%)] blur-3xl pointer-events-none" />
+
+            {/* Foco de iluminação neon extra posicionado sob a haste direita e cavidade da logo */}
+            <div className="absolute top-[48%] left-[56%] -translate-x-1/2 -translate-y-1/2 w-[360px] sm:w-[460px] md:w-[540px] lg:w-[620px] h-[360px] sm:h-[460px] md:h-[540px] lg:h-[620px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.5)_0%,rgba(210,251,7,0.25)_45%,transparent_75%)] blur-2xl pointer-events-none" />
 
             {/* 3D Floating Element with GPU acceleration */}
             <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] flex items-center justify-center">
