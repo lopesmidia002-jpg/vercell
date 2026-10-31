@@ -443,3 +443,50 @@
   - [x] Inspeção CDP comprovando que título, subtítulo, botão de políticas e links de e-mail iniciam na coordenada exata `left: 16.0px` (`text-align: left`).
   - [x] Comparativo visual gerado [security_mobile_justified_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/security_mobile_justified_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 30: Padronização Global de Todas as Badges Justificadas à Esquerda no Mobile (`Hero`, `ValueCards`, `BentoGrid`, `SolutionsGrid`, `ThreeSteps`, `DevSection`, `SecuritySection`, `OrbitalSupport`, `FaqSection`, `PreFooterCta`)
+- [x] **Alinhamento à Esquerda de 100% das Badges do Projeto no Mobile:**
+  - [x] `Hero.tsx`: Badge `"Conta digital + API de Pix"` posicionado rente à margem esquerda (`items-start text-left`), idêntico à captura do usuário (`media_1793452183478_de4c285a.png`).
+  - [x] `ValueCards.tsx`: Cabeçalho e badge `"Pix sem limites"` alinhados à esquerda no mobile (`items-start text-left sm:items-center sm:text-center`).
+  - [x] `BentoGrid.tsx`: Cabeçalho e badge `"Produtos"` alinhados à esquerda no mobile (`items-start text-left sm:items-center sm:text-center`).
+  - [x] `SolutionsGrid.tsx`: Cabeçalho e badge `"Para quem é"` alinhados à esquerda no mobile (`items-start text-left sm:items-center sm:text-center`).
+  - [x] `ThreeSteps.tsx`: Cabeçalho e badge `"Como começar"` alinhados à esquerda no mobile (`items-start text-left sm:items-center sm:text-center`).
+  - [x] `DevSection.tsx`: Badge `"Desenvolvedores"` posicionado na margem esquerda (`items-start text-left`).
+  - [x] `SecuritySection.tsx`: Badge `"Segurança"` posicionado na margem esquerda (`items-start text-left`).
+  - [x] `OrbitalSupport.tsx`: Badge `"Suporte 24h"` posicionado na margem esquerda interna do card escuro (`items-start text-left`).
+  - [x] `FaqSection.tsx`: Badge `"Perguntas Frequentes"` posicionado na margem esquerda (`items-start text-left`).
+  - [x] `PreFooterCta.tsx`: Badge `"Vamos crescer juntos?"` posicionado na margem esquerda no mobile (`justify-start sm:justify-center`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP em viewport de 390px confirmando que 100% das 10 badges iniciam na margem esquerda do contêiner (`left: 16px` para seções normais e `left: 49px`/`41px` para cards escuros com preenchimento interno).
+  - [x] Comparativo visual gerado [all_badges_left_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/all_badges_left_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 31: Títulos de Seção em Linha Única e Justificados à Esquerda no Mobile (`ValueCards.tsx`, `SolutionsGrid.tsx`, `ThreeSteps.tsx`)
+- [x] **Título da Seção de Destaques em Linha Única (`ValueCards.tsx`):**
+  - [x] Unificação da frase `"O Pix do jeito que o seu negócio precisa"` em uma linha única e contínua com `whitespace-nowrap`, removendo quebras de linha que isolavam `"precisa"` na segunda linha conforme captura do usuário (`media_1793452264787_119be73d.png`).
+  - [x] Escala tipográfica responsiva calibrada (`text-[18px] min-[375px]:text-[19px] min-[390px]:text-[20px] sm:text-4xl md:text-5xl`), garantindo encaixe perfeito em linha única e alinhamento rente à margem esquerda no mobile (`w-full text-left sm:text-center`).
+- [x] **Propagação nos Demais Títulos de Seção:**
+  - [x] `SolutionsGrid.tsx`: Título `"Feita para quem vende online"` alinhado à esquerda e protegido com `whitespace-nowrap text-[21px] min-[375px]:text-[23px] sm:text-4xl md:text-5xl`.
+  - [x] `ThreeSteps.tsx`: Título `"Comece a receber em 3 passos"` alinhado à esquerda e protegido com `whitespace-nowrap text-[21px] min-[375px]:text-[23px] sm:text-4xl md:text-5xl`.
+- [x] **Validação Visual e Docker:**
+  - [x] Medição CDP no viewport mobile (390px) comprovando altura de 25px para o título de `ValueCards` (linha única), alinhamento `left: 16px` e `text-align: left`.
+  - [x] Comparativo visual gerado [valuecards_title_single_line_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/valuecards_title_single_line_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 32: Centralização das Badges e Ações da Seção de Desenvolvedores no Mobile (`DevSection.tsx`)
+- [x] **Alinhamento Centralizado e Side-by-Side no Mobile:**
+  - [x] Botão principal `"Ver documentação"` e link `"Baixar coleção Postman →"` agrupados em contêiner com `justify-center lg:justify-start`, centrados geometricamente no mobile.
+  - [x] Calibradas as proporções para dispositivos móveis (`!px-4 sm:!px-8`, `!text-xs sm:!text-base`, `!min-h-[42px] sm:!min-h-[48px]` e `gap-2.5 sm:gap-6`), permitindo que ambas as ações caibam lado a lado na mesma linha sem quebra vertical (`sameLine: true`).
+- [x] **Validação Visual e Docker:**
+  - [x] Medição CDP no viewport mobile (390px) comprovando que o conjunto das duas ações está perfeitamente centralizado com desvio zero (`combinedCenterDelta: 0.0px`), com início em `left: 48.2px` e término em `right: 341.8px`.
+  - [x] Comparativo visual gerado [dev_buttons_centered_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/dev_buttons_centered_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

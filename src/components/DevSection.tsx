@@ -28,11 +28,9 @@ export default function DevSection() {
     <section id="desenvolvedores" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="docs" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: API Info (Badge centralizada no mobile, textos e subtítulos justificados à esquerda) */}
+          {/* Left Column: API Info (Badge e textos justificados à esquerda) */}
           <div className="lg:col-span-5 flex flex-col items-start text-left">
-            <div className="w-full flex justify-center lg:justify-start">
-              <TagBadge text="Desenvolvedores" className="mb-6" />
-            </div>
+            <TagBadge text="Desenvolvedores" className="mb-6" />
 
             <h2 className="w-full text-left text-[21px] min-[375px]:text-[23px] sm:text-3xl md:text-[44px] lg:text-[46px] text-[#111111] tracking-tight leading-[1.15] mb-5 whitespace-nowrap">
               <span className="font-normal text-[#111111]">API de Pix </span>
@@ -53,17 +51,17 @@ export default function DevSection() {
               ))}
             </div>
 
-            {/* Action Buttons (alinhados à esquerda) */}
-            <div className="w-full flex flex-wrap items-center justify-start gap-4 sm:gap-6">
-              <CtaButton href="#docs" size="md">
+            {/* Action Buttons (centralizados no mobile, alinhados à esquerda no desktop) */}
+            <div className="w-full flex items-center justify-center lg:justify-start gap-2.5 sm:gap-6 flex-wrap sm:flex-nowrap">
+              <CtaButton href="#docs" size="md" className="!px-4 sm:!px-8 !text-xs sm:!text-base !min-h-[42px] sm:!min-h-[48px] whitespace-nowrap">
                 Ver documentação
               </CtaButton>
               <a
                 href="#postman"
-                className="inline-flex items-center justify-center gap-1.5 text-sm sm:text-[15px] font-normal text-[#5B7500] hover:text-[#455900] transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 text-xs sm:text-[15px] font-normal text-[#5B7500] hover:text-[#455900] transition-colors py-2 whitespace-nowrap"
               >
                 <span>Baixar coleção Postman</span>
-                <ArrowRight className="w-4 h-4 text-[#5B7500] stroke-[1.8]" />
+                <ArrowRight className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-[#5B7500] stroke-[1.8]" />
               </a>
             </div>
           </div>

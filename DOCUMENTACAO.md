@@ -195,19 +195,20 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Título `DevSection.tsx` em Linha Única:** Remoção da quebra `<br />` que dividia `"API de Pix simples e"` e `"robusta"`, unificando em uma única linha contínua com `whitespace-nowrap` e escala fluida `text-[21px] min-[375px]:text-[23px] sm:text-3xl md:text-[44px] lg:text-[46px]`.
     - **Subtítulos e Recursos Justificados à Esquerda:** Parágrafos explicativos (`DevSection`, `SecuritySection`, `OrbitalSupport` e `FaqSection`) ajustados para alinhamento à esquerda (`text-left mx-0`), garantindo início nivelado na margem esquerda e leitura confortável no mobile, acompanhados de listas de recursos e canais de contato com `items-start text-left w-full`.
 
-20. **Centralização do Badge da Hero e Proteção de Linha Única (`TagBadge.tsx`, `Hero.tsx`):**
-    - **Centralização Universal de Badges no Mobile:** Badge `"Conta digital + API de Pix"` na `Hero.tsx` centralizado com `<div className="w-full flex justify-center lg:justify-start">`, unificando 100% dos badges do projeto em alinhamento centralizado no mobile.
+20. **Proteção de Linha Única nos Badges (`TagBadge.tsx`):**
     - **Texto Estritamente em Linha Única:** Inclusão de `whitespace-nowrap` no contêiner e no texto do componente `TagBadge`, com escala proporcional (`text-xs sm:text-[15px]` e respiros responsivos), impedindo qualquer quebra de linha interna ou deformação de badge em telas móveis compactas.
 
 21. **Alinhamento à Esquerda dos Textos e Contatos de Segurança (`SecuritySection.tsx`):**
     - **Subtítulo, Políticas e Canais de E-mail:** Na coluna institucional de `SecuritySection`, subtítulo explicativo, link `"Conheça nossas políticas →"` e canais de compliance/denúncia formatados com alinhamento rigoroso à esquerda (`items-start text-left w-full`), nivelados no ponto `left: 16px` no mobile.
 
-20. **Centralização do Badge da Hero e Proteção de Linha Única (`TagBadge.tsx`, `Hero.tsx`):**
-    - **Centralização Universal de Badges no Mobile:** Badge `"Conta digital + API de Pix"` na `Hero.tsx` centralizado com `<div className="w-full flex justify-center lg:justify-start">`, unificando 100% dos badges do projeto em alinhamento centralizado no mobile.
-    - **Texto Estritamente em Linha Única:** Inclusão de `whitespace-nowrap` no contêiner e no texto do componente `TagBadge`, com escala proporcional (`text-xs sm:text-[15px]` e respiros responsivos), impedindo qualquer quebra de linha interna ou deformação de badge em telas móveis compactas.
+22. **Padronização Global de Todas as Badges Justificadas à Esquerda no Mobile:**
+    - **Alinhamento Unificado à Margem Esquerda:** Todas as 10 badges do projeto (`Hero`, `ValueCards`, `BentoGrid`, `SolutionsGrid`, `ThreeSteps`, `DevSection`, `SecuritySection`, `OrbitalSupport`, `FaqSection` e `PreFooterCta`) ajustadas para alinhamento à esquerda no mobile (`items-start text-left` / `justify-start`), criando um ritmo vertical limpo, padronizado e simétrico com os títulos e subtítulos.
 
-21. **Alinhamento à Esquerda dos Textos e Contatos de Segurança (`SecuritySection.tsx`):**
-    - **Subtítulo, Políticas e Canais de E-mail:** Na coluna institucional de `SecuritySection`, subtítulo explicativo, link `"Conheça nossas políticas →"` e canais de compliance/denúncia formatados com alinhamento rigoroso à esquerda (`items-start text-left w-full`), nivelados no ponto `left: 16px` no mobile.
+23. **Títulos de Seção em Linha Única e Justificados à Esquerda no Mobile (`ValueCards.tsx`, `SolutionsGrid.tsx`, `ThreeSteps.tsx`):**
+    - **Linha Única sem Quebras:** Títulos principais de seções (`"O Pix do jeito que o seu negócio precisa"`, `"Feita para quem vende online"` e `"Comece a receber em 3 passos"`) protegidos com `whitespace-nowrap` e alinhados à margem esquerda (`text-left`) no mobile, eliminando palavras isoladas na segunda linha.
+
+24. **Centralização das Ações e Badges da Seção Dev no Mobile (`DevSection.tsx`):**
+    - **Ações Lado a Lado Centralizadas:** O botão `"Ver documentação"` e o link `"Baixar coleção Postman →"` calibrados com padding compacto responsivo e `justify-center`, permanecendo centralizados no mobile na mesma linha horizontal sem quebra indesejada.
 
 ---
 

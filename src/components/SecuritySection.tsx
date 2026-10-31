@@ -39,11 +39,9 @@ export default function SecuritySection() {
     <section id="seguranca" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="politicas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Bass Pago info (Badge centralizada no mobile, textos e subtítulo justificados à esquerda) */}
+          {/* Left Column: Bass Pago info (Badge e textos justificados à esquerda) */}
           <div className="lg:col-span-5 flex flex-col items-start text-left">
-            <div className="w-full flex justify-center lg:justify-start">
-              <TagBadge text="Segurança" className="mb-5" />
-            </div>
+            <TagBadge text="Segurança" className="mb-5" />
 
             <h2 className="w-full text-left text-2xl sm:text-3xl md:text-[34px] lg:text-[36px] xl:text-[40px] text-[#111111] tracking-tight leading-tight mb-5 whitespace-normal xl:whitespace-nowrap">
               <span className="font-bold text-[#111111]">Segurança em </span>

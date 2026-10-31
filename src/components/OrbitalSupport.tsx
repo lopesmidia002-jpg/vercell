@@ -12,11 +12,9 @@ export default function OrbitalSupport() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#0C0D0E] rounded-3xl p-8 sm:p-12 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10">
-            {/* Left Content (Badge centralizada no mobile, textos e subtítulo justificados à esquerda) */}
+            {/* Left Content (Badge e textos justificados à esquerda) */}
             <div className="lg:col-span-6 flex flex-col items-start text-left">
-              <div className="w-full flex justify-center lg:justify-start">
-                <TagBadge text="Suporte 24h" isDark className="mb-6" />
-              </div>
+              <TagBadge text="Suporte 24h" isDark className="mb-6" />
 
               <h2 className="w-full text-left text-3xl sm:text-4xl md:text-[40px] lg:text-[42px] text-white tracking-tight leading-tight mb-6">
                 <span className="font-normal text-white">Um time do seu lado </span>

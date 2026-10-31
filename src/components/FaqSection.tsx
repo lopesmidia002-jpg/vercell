@@ -72,11 +72,9 @@ export default function FaqSection() {
     <section id="faq" className="py-20 md:py-28 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Left Title: Badge centralizada no mobile, textos e subtítulo justificados à esquerda */}
+          {/* Left Title: Badge e textos justificados à esquerda */}
           <div className="lg:col-span-5 flex flex-col items-start text-left lg:sticky lg:top-28">
-            <div className="w-full flex justify-center lg:justify-start">
-              <TagBadge text="Perguntas Frequentes" className="mb-4" />
-            </div>
+            <TagBadge text="Perguntas Frequentes" className="mb-4" />
 
             <h2 className="w-full text-left text-3xl sm:text-4xl md:text-[46px] lg:text-[48px] font-normal tracking-tight leading-tight mb-4">
               <span className="text-[#111111] font-normal">Perguntas</span>{" "}

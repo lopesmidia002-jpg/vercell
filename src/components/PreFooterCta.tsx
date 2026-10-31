@@ -30,8 +30,10 @@ export default function PreFooterCta() {
           </div>
 
           <div className="relative z-10 max-w-2xl lg:max-w-[700px] flex flex-col items-center">
-            {/* Tag Badge */}
-            <TagBadge text="Vamos crescer juntos?" isDark className="mb-6 sm:mb-8" />
+            {/* Tag Badge (justificado à esquerda no mobile) */}
+            <div className="w-full flex justify-start sm:justify-center">
+              <TagBadge text="Vamos crescer juntos?" isDark className="mb-6 sm:mb-8" />
+            </div>
 
             {/* Title */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl text-white tracking-tight leading-tight mb-4 sm:mb-5">

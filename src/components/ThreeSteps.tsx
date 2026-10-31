@@ -26,11 +26,11 @@ export default function ThreeSteps() {
   return (
     <section id="como-comecar" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="planos" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 sm:mb-20">
+        {/* Header (Badge e textos justificados à esquerda no mobile) */}
+        <div className="flex flex-col items-start text-left sm:items-center sm:text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <TagBadge text="Como começar" className="mb-4" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight">
+          <h2 className="w-full text-left sm:text-center text-[21px] min-[375px]:text-[23px] sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight whitespace-nowrap">
             <span className="font-normal text-[#111111]">Comece a receber em </span>
             <span className="font-bold text-[#5B7500]">3 passos</span>
           </h2>

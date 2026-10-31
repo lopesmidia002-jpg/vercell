@@ -47,12 +47,12 @@ export default function ValueCards() {
   return (
     <section id="pix" className="relative py-20 md:py-28 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        {/* Section Header (Badge e textos justificados à esquerda no mobile) */}
+        <div className="flex flex-col items-start text-left sm:items-center sm:text-center max-w-3xl mx-auto mb-16">
           <TagBadge text="Pix sem limites" className="mb-4" />
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
-            <span className="font-normal">O Pix do jeito que</span> <br className="hidden sm:inline" />
+          <h2 className="w-full text-left sm:text-center text-[18px] min-[375px]:text-[19px] min-[390px]:text-[20px] sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4 whitespace-nowrap">
+            <span className="font-normal">O Pix do jeito que </span>
             <span className="font-bold text-[#5B7500]">o seu negócio precisa</span>
           </h2>
 
@@ -67,11 +67,10 @@ export default function ValueCards() {
             {cards.map((card, idx) => (
               <div
                 key={idx}
-                className={`rounded-[32px] p-8 sm:p-9 transition-all duration-300 flex flex-col justify-between min-h-[360px] sm:min-h-[380px] relative overflow-hidden ${
-                  card.isHighlighted
+                className={`rounded-[32px] p-8 sm:p-9 transition-all duration-300 flex flex-col justify-between min-h-[360px] sm:min-h-[380px] relative overflow-hidden ${card.isHighlighted
                     ? "bg-[linear-gradient(180deg,#F1FBC4_0%,#F8FDE2_42%,#FFFFFF_68%)] border border-[#D2FB07]/70 shadow-[0_10px_35px_rgba(210,251,7,0.2)] hover:shadow-xl"
                     : "bg-white border border-black/[0.06] shadow-[0_8px_30px_rgba(0,0,0,0.03)] hover:shadow-md"
-                }`}
+                  }`}
               >
                 <div className="relative z-10">
                   <span
