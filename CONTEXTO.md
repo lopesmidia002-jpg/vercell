@@ -6,20 +6,20 @@ A **Versell** é uma fintech brasileira de tecnologia voltada para infraestrutur
 - **Posicionamento:** "Quem vende no Pix, vende com Versell."
 - **Parceiro de Infraestrutura Bancária (BaaS):** A Versell opera sobre a infraestrutura da **Baas Pago Instituição de Pagamento** (CNPJ: 37.387.828/0001-08), garantindo liquidação direta, segurança regulatória compatível com os padrões do Banco Central do Brasil (Bacen) e segregação de contas de pagamento.
 - **Diferencial Central:** Liquidação em 1 segundo, operação 24/7 (incluindo noites, fins de semana e feriados), taxas competitivas a partir de 0,49%, antifraude inteligente e suporte humano de prontidão 24 horas por dia.
+30. **Remoção de Negrito no Botão CTA "Abrir minha conta" (`CtaButton.tsx`, `Footer.tsx`):** Padronização do componente `CtaButton` com `font-light text-black` (peso 300) com `HelveticaNeueLight.otf`, aplicando tipografia leve e eliminando qualquer aspecto pesado no botão principal da landing page e no rodapé.
+31. **Correção da Quebra de Linha do Título Dev (`DevSection.tsx`):** Restauração da quebra original em 2 linhas (`"API de Pix simples e"` + `<br />` + `"robusta"`), removendo o corte sob o card do terminal e mantendo alinhamento visual exato com a referência do design.
 
----
-
-## 2. Personas e Mercados Atendidos
+---## 2. Personas e Mercados Atendidos
 1. **SaaS e Assinaturas Recorrentes:** Cobranças automatizadas via Pix com autorização única (*Pix Automático*).
 2. **E-commerce:** Checkout ultra-rápido com confirmação instantânea e liberação imediata de pedidos.
 3. **Infoprodutores e Afiliados:** Venda de cursos, mentorias e comunidades com divisão automática (*split*) para coprodutores e afiliados na hora do pagamento.
 4. **ERPs e Plataformas de Gestão:** Centralização de recebimentos integrada nativamente via API aos ERPs parceiros.
 5. **Gateways e Plataformas:** Operação massiva de Pix em escala para múltiplos sellers com subcontas segregadas.
 6. **Nicho Hot (+18):** Operações com verificação de maioridade legal, com privacidade, discrição e segurança jurídica.
+32. **Sombreamento Neon Expandido no WhatsApp (`OrbitalSupport.tsx`):** Aura difusa com desfoque profundo (`blur-2xl`) e sombras multicamadas em verde neon `#D2FB07`, iluminando o núcleo e as órbitas internas de atendimento com o mesmo alcance e suavidade do layout original.
+33. **Espaçamento Calibrado dos Ícones Pré-Footer (`PreFooterCta.tsx`):** Ajuste de `gap-x-[18px]` e `gap-1.5` nos 3 destaques de rodapé (Pix 24/7, Infraestrutura completa, API e sandbox), aproximando os ícones e eliminando proximidade com o visual 3D.
 
----
-
-## 3. Diretriz Arquitetural: Mobile First
+---## 3. Diretriz Arquitetural: Mobile First
 A experiência do usuário foi projetada estritamente com abordagem **Mobile First**:
 - **Área de Toque Mínima (Touch Target):** Mínimo de 44x44px para botões, links de menu, accordions e itens interativos.
 - **Espaçamento e Ergonomia:** Zonas de toque confortáveis (*thumb zone*), navegação por drawer/hamburger fluida em telas pequenas.
@@ -28,10 +28,10 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 - **Otimização de Assets Mobile:** Carregamento otimizado de imagens WebP e SVG vetoriais com suporte a telas retina de alta densidade de pixels.
 - **Aceleração por Hardware (GPU):** Translações 3D isoladas (`translate3d(0, 0, 0)`, `will-change: transform`) para animações dos anéis concêntricos e ticker sem consumo excessivo de bateria.
 - **Acessibilidade Semântica (WCAG 2.1 AA):** Navegação por teclado (fechamento por tecla Escape no menu), controle de rolagem de tela e marcação ARIA em acordeões e drawers.
+34. **Espaçamento Calibrado do Botão Topo (`Footer.tsx`):** Troca de `justify-between` por `justify-start` com `mt-7` (gap de 28px entre CNPJ e botão), aproximando o botão "Voltar para o Topo" do bloco de texto e ajustando o título para "Fale Conosco" sem caixa alta integral.
+35. **Listra Divisória do Rodapé (`Footer.tsx`):** Eliminação da linha branca superior e manutenção da listra divisória unicamente abaixo do texto regulatório institucional, com atualização de razão social e CNPJs institucionais idênticos à referência.
 
----
-
-## 4. Design System & Design Tokens
+---## 4. Design System & Design Tokens
 
 ### Cores Principais
 | Token | Hex | Aplicação |
@@ -89,6 +89,10 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 25. **Padronização Global de Todas as Badges Justificadas à Esquerda no Mobile:** Alinhamento à margem esquerda de 100% das 10 badges de seções da landing page no mobile (`Hero`, `ValueCards`, `BentoGrid`, `SolutionsGrid`, `ThreeSteps`, `DevSection`, `SecuritySection`, `OrbitalSupport`, `FaqSection` e `PreFooterCta`), unificando o design com início na margem esquerda e consistência visual total com a captura original.
 26. **Títulos Maiores em Linha Única no Mobile:** Títulos de destaque de seções como `ValueCards.tsx` (`"O Pix do jeito que o seu negócio precisa"`), `SolutionsGrid.tsx` e `ThreeSteps.tsx` com `whitespace-nowrap` e escala responsiva calibrada, garantindo exibição em linha única contínua e alinhamento à margem esquerda no mobile.
 27. **Centralização das Ações da Seção Dev no Mobile (`DevSection.tsx`):** Botão "Ver documentação" e link "Baixar coleção Postman →" com espaçamento responsivo e `justify-center`, permanecendo perfeitamente centralizados lado a lado no mobile com desvio zero em relação ao centro da tela.
+28. **Remoção de Negrito em Links e Títulos de Soluções (`BentoGrid.tsx`, `SolutionsGrid.tsx`, `globals.css`):** Ajuste do link "Abrir conta grátis →" para peso regular `font-normal` (400) e registro da fonte `HelveticaNeueLight.otf` (300) em `globals.css`, aplicando `font-light` aos 6 títulos dos cards de soluções (`SaaS`, `E-commerce`, `Infoproduto`, `ERP`, `Gateways e plataformas` e `Nicho hot`), removendo a sensação de negrito e alinhando-se com as capturas de tela.
+29. **Remoção de Negrito nos Títulos dos Passos (`ThreeSteps.tsx`):** Aplicação de `font-light text-[#111111]` (peso 300) aos 3 títulos da seção de passos (`"Fale com a gente"`, `"Conta aprovada"` e `"Integre e receba"`), retirando a espessura de negrito e unificando o visual leve com as demais seções.
+28. **Remoção de Negrito em Links e Títulos de Soluções (`BentoGrid.tsx`, `SolutionsGrid.tsx`, `globals.css`):** Ajuste do link "Abrir conta grátis →" para peso regular `font-normal` (400) e registro da fonte `HelveticaNeueLight.otf` (300) em `globals.css`, aplicando `font-light` aos 6 títulos dos cards de soluções (`SaaS`, `E-commerce`, `Infoproduto`, `ERP`, `Gateways e plataformas` e `Nicho hot`), removendo a sensação de negrito e alinhando-se com as capturas de tela.
+29. **Remoção de Negrito nos Títulos dos Passos (`ThreeSteps.tsx`):** Aplicação de `font-light text-[#111111]` (peso 300) aos 3 títulos da seção de passos (`"Fale com a gente"`, `"Conta aprovada"` e `"Integre e receba"`), retirando a espessura de negrito e unificando o visual leve com as demais seções.
 
 ---
 

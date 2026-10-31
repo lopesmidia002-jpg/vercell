@@ -88,12 +88,15 @@ export default function OrbitalSupport() {
                   />
                 </div>
 
+                {/* Ambient Neon Glow Aura behind WhatsApp button (sombreamento neon fiel ao original) */}
+                <div className="absolute z-10 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 rounded-full bg-[#D2FB07]/20 blur-2xl pointer-events-none" />
+
                 {/* Center Core: Círculo menor ampliado, neon sólido com ícone oficial WhatsApp preto */}
                 <a
                   href="https://wa.me/5584992315908"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative z-20 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-[#D2FB07] flex items-center justify-center shadow-[0_0_25px_rgba(210,251,7,0.2),0_0_45px_rgba(210,251,7,0.08)] group-hover:scale-105 active:scale-95 transition-all duration-300"
+                  className="relative z-20 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-[#D2FB07] flex items-center justify-center shadow-[0_0_30px_rgba(210,251,7,0.5),0_0_65px_rgba(210,251,7,0.28),0_0_100px_rgba(210,251,7,0.15)] group-hover:scale-105 active:scale-95 transition-all duration-300"
                   aria-label="Abrir atendimento no WhatsApp"
                 >
                   <svg

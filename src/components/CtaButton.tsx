@@ -54,7 +54,7 @@ export default function CtaButton({
       target={target}
       rel={rel}
       aria-label={ariaLabel}
-      className={`group relative inline-flex items-center justify-center font-normal text-black bg-[#D2FB07] hover:bg-[#cbf502] rounded-full transition-all duration-300 ease-out shadow-[0_2px_12px_rgba(210,251,7,0.35)] hover:shadow-[0_0_32px_rgba(210,251,7,0.75),0_0_55px_rgba(210,251,7,0.35)] active:scale-[0.98] select-none text-center ${sizeStyles} ${className}`}
+      className={`group relative inline-flex items-center justify-center font-light text-black bg-[#D2FB07] hover:bg-[#cbf502] rounded-full transition-all duration-300 ease-out shadow-[0_2px_12px_rgba(210,251,7,0.35)] hover:shadow-[0_0_32px_rgba(210,251,7,0.75),0_0_55px_rgba(210,251,7,0.35)] active:scale-[0.98] select-none text-center ${sizeStyles} ${className}`}
     >
       {/* Centered Label */}
       <span className="relative z-10 transition-transform duration-200">

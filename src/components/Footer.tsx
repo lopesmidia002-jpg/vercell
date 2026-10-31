@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <footer className="bg-[#0A0A0A] text-white pt-20 pb-12 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Links */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        {/* Main Footer Links (sem borda inferior para manter a listra exclusivamente abaixo do disclaimer) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-10 sm:pb-12">
           {/* Brand & Action Buttons */}
           <div className="lg:col-span-4 flex flex-col items-start">
             <Link href="/" className="mb-6 block">
@@ -32,7 +32,7 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-row items-center gap-2.5 sm:gap-3 flex-wrap sm:flex-nowrap">
-              <CtaButton href="#suporte" size="sm" className="whitespace-nowrap font-normal px-4 sm:px-6">
+              <CtaButton href="#suporte" size="sm" className="whitespace-nowrap font-light px-4 sm:px-6">
                 Falar com especialista
               </CtaButton>
               <a
@@ -155,9 +155,9 @@ export default function Footer() {
           </div>
 
           {/* Column: Fale Conosco */}
-          <div className="lg:col-span-3 flex flex-col justify-between">
+          <div className="lg:col-span-3 flex flex-col justify-start">
             <div>
-              <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-5">
+              <h4 className="text-base font-normal text-white mb-4">
                 Fale Conosco
               </h4>
               <div className="space-y-2 text-xs sm:text-sm text-neutral-400">
@@ -189,21 +189,21 @@ export default function Footer() {
                 </p>
                 <p className="pt-1">
                   <a
-                    href="https://wa.me/5584992315908"
+                    href="https://wa.me/5564992231968"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-neutral-300 hover:text-[#D2FB07] transition-colors"
                   >
-                    +55 84 9 9231-5908
+                    +55 64 9 9223-1968
                   </a>
                 </p>
                 <p className="pt-2 text-neutral-500 font-mono text-xs">
-                  CNPJ: 56.522.426/0001-23
+                  CNPJ: 38.322.428/0001-23
                 </p>
               </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-7">
               <button
                 onClick={scrollToTop}
                 className="min-h-[38px] px-5 py-2 rounded-full border border-[#D2FB07] bg-transparent hover:bg-[#D2FB07]/10 text-xs font-normal text-[#D2FB07] transition-all"
@@ -215,14 +215,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Regulatory & Disclaimer */}
-        <div className="py-8 border-b border-white/5 text-xs text-neutral-500 leading-relaxed max-w-5xl">
+        {/* Regulatory & Disclaimer (listra branca/cinza posicionada exclusivamente embaixo do texto conforme o original) */}
+        <div className="pt-2 pb-8 sm:pb-10 border-b border-white/10 text-xs text-neutral-400 leading-relaxed max-w-5xl">
           <p>
-            A Versell Tecnologia LTDA (CNPJ 56.522.426/0001-23) é uma empresa de
-            tecnologia e não é instituição financeira nem instituição de
-            pagamento credenciada pelo Banco Central do Brasil. As contas de
-            pagamento, as transações Pix e a liquidação de recursos são operadas
-            pela Baas Pago Instituição de Pagamento (CNPJ 37.387.828/0001-08).
+            A Versell Technology Ltda (CNPJ 38.322.428/0001-23) é uma empresa de tecnologia e não é instituição financeira nem instituição de pagamento autorizada pelo Banco Central do Brasil. As contas de pagamento, as transações Pix e a liquidação de recursos são operadas pela Bass Pago Instituição de Pagamento (CNPJ 37.293.930/0001-90).
           </p>
         </div>
 

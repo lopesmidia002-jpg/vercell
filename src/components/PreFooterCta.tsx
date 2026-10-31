@@ -58,16 +58,16 @@ export default function PreFooterCta() {
             </CtaButton>
 
             {/* Highlights List with bare neon icons (fiel ao mockup original) */}
-            <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-5 sm:gap-x-7 text-xs sm:text-[13px] font-normal text-neutral-400">
-              <div className="flex items-center gap-1.5 sm:gap-2">
+            <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-3.5 sm:gap-x-[18px] text-xs sm:text-[13px] font-normal text-neutral-400">
+              <div className="flex items-center gap-1.5">
                 <Zap className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D2FB07] stroke-[1.8]" />
                 <span>Pix 24/7</span>
               </div>
-              <div className="flex items-center gap-1.5 sm:gap-2">
+              <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D2FB07] stroke-[1.8]" />
                 <span>Infraestrutura completa</span>
               </div>
-              <div className="flex items-center gap-1.5 sm:gap-2">
+              <div className="flex items-center gap-1.5">
                 <Code className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#D2FB07] stroke-[1.8]" />
                 <span>API e sandbox</span>
               </div>

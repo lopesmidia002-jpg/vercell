@@ -50,7 +50,7 @@ export default function ThreeSteps() {
                   {item.step}
                 </div>
 
-                <h3 className="text-xl sm:text-2xl font-normal text-[#111111] tracking-tight mb-3">
+                <h3 className="text-xl sm:text-2xl font-light text-[#111111] tracking-tight mb-3">
                   {item.title}
                 </h3>
 

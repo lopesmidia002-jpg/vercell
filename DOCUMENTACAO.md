@@ -15,10 +15,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 - **Containerização:** Docker Multi-stage (`node:20-alpine`) com targets `dev` e `runner`
 - **Status do Container:** `versell-app` (Up / Healthy na porta `3000`)
 - **Status da Imagem Standalone:** `versell-prod` compilada com sucesso (22 kB page size / 109 kB First Load JS)
+27. **Remoção de Negrito no Botão CTA "Abrir minha conta" (`CtaButton.tsx`, `Footer.tsx`):**
+    - **Tipografia Leve nos Botões de Ação:** O componente reutilizável `CtaButton.tsx` teve sua tipografia alterada para `font-light text-black` (peso 300), utilizando a fonte leve `HelveticaNeueLight.otf`. Isso converte as ações principais ("Abrir minha conta" no Hero, ThreeSteps e PreFooterCta, além de "Falar com especialista" no Footer) para peso leve e elegante sem negrito.
+28. **Correção da Quebra de Linha do Título de Desenvolvedores (`DevSection.tsx`):**
+    - **Eliminação de Sobreposição com o Terminal:** Removida a imposição de linha única (`whitespace-nowrap`) no título de `DevSection.tsx`, restaurando a divisão idêntica ao design original com `<br />`: `"API de Pix simples e"` na primeira linha e `"robusta"` isolada na segunda linha, eliminando qualquer colisão ou corte de texto sob a janela do terminal no desktop.
 
----
-
-## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid, Carrossel e Navbar)
+---## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid, Carrossel e Navbar)
 1. **Componente de Tag Badge (`TagBadge.tsx`):**
    - Reprodução cirúrgica da pílula original com escala e proporções ampliadas para o tamanho real: altura total calibrada para ~52-54px com contorno externo branco limpo `border border-black/[0.08]` e sombra sutil `shadow-[0_2px_10px_rgba(0,0,0,0.03)]`.
    - Pílula interna pastel `#EDF4D4` ampliada (`px-4 py-2` / altura ~38-40px) com ponto indicador circular neon limpo (`w-2.5 h-2.5 rounded-full bg-[#D2FB07]`) e halo luminoso difuso (`shadow-[0_0_8px_rgba(210,251,7,0.9)]`).
@@ -210,9 +212,25 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 24. **Centralização das Ações e Badges da Seção Dev no Mobile (`DevSection.tsx`):**
     - **Ações Lado a Lado Centralizadas:** O botão `"Ver documentação"` e o link `"Baixar coleção Postman →"` calibrados com padding compacto responsivo e `justify-center`, permanecendo centralizados no mobile na mesma linha horizontal sem quebra indesejada.
 
----
+25. **Remoção de Negrito em Links e Títulos de Soluções (`BentoGrid.tsx`, `SolutionsGrid.tsx`, `globals.css`):**
+    - **Link de Ação "Abrir conta grátis →":** O link no card de produtos foi ajustado para `font-normal text-[#5B7500]` (peso 400), removendo o negrito (`font-semibold`).
+    - **Títulos dos Cards de Soluções:** Adicionada a variante `HelveticaNeueLight.otf` para `font-weight: 300` em `globals.css` e aplicou-se `font-light text-[#111111]` aos 6 títulos (`"SaaS"`, `"E-commerce"`, `"Infoproduto"`, `"ERP"`, `"Gateways e plataformas"` e `"Nicho hot"`), eliminando a impressão de negrito e conferindo leveza e elegância visual fiéis às capturas de tela.
 
-## 3. Instruções de Execução via Docker (100% Isolado)
+26. **Remoção de Negrito nos Títulos dos 3 Passos (`ThreeSteps.tsx`):**
+    - **Títulos dos Passos Leves e Sem Negrito:** Os títulos `"Fale com a gente"`, `"Conta aprovada"` e `"Integre e receba"` na seção de introdução rápida foram atualizados para `font-light text-[#111111]` (peso 300), eliminando a espessura pesada e padronizando o peso da tipografia em sintonia com a grade de soluções.
+
+25. **Remoção de Negrito em Links e Títulos de Soluções (`BentoGrid.tsx`, `SolutionsGrid.tsx`, `globals.css`):**
+    - **Link de Ação "Abrir conta grátis →":** O link no card de produtos foi ajustado para `font-normal text-[#5B7500]` (peso 400), removendo o negrito (`font-semibold`).
+    - **Títulos dos Cards de Soluções:** Adicionada a variante `HelveticaNeueLight.otf` para `font-weight: 300` em `globals.css` e aplicou-se `font-light text-[#111111]` aos 6 títulos (`"SaaS"`, `"E-commerce"`, `"Infoproduto"`, `"ERP"`, `"Gateways e plataformas"` e `"Nicho hot"`), eliminando a impressão de negrito e conferindo leveza e elegância visual fiéis às capturas de tela.
+
+26. **Remoção de Negrito nos Títulos dos 3 Passos (`ThreeSteps.tsx`):**
+    - **Títulos dos Passos Leves e Sem Negrito:** Os títulos `"Fale com a gente"`, `"Conta aprovada"` e `"Integre e receba"` na seção de introdução rápida foram atualizados para `font-light text-[#111111]` (peso 300), eliminando a espessura pesada e padronizando o peso da tipografia em sintonia com a grade de soluções.
+29. **Ampliação do Sombreamento Neon no Núcleo do Suporte WhatsApp (`OrbitalSupport.tsx`):**
+    - **Sombreamento Neon Amplo e Fiel ao Original:** Implementação de dupla camada de iluminação ambiente para o botão central do WhatsApp: uma aura difusa com `bg-[#D2FB07]/20 blur-2xl` e um degradê de sombra triplo (`shadow-[0_0_30px_rgba(210,251,7,0.5),0_0_65px_rgba(210,251,7,0.28),0_0_100px_rgba(210,251,7,0.15)]`), fazendo a luminosidade verde neon se irradiar amplamente sobre a órbita escura interna exatamente como na referência visual original.
+30. **Calibração de Espaçamento dos Ícones de Destaque Pré-Footer (`PreFooterCta.tsx`):**
+    - **Espaçamento Mais Compacto e Harmônico:** Redução do gap horizontal dos 3 itens de destaque ("Pix 24/7", "Infraestrutura completa" e "API e sandbox") para `gap-x-3.5 sm:gap-x-[18px]` e respiro de `gap-1.5` entre ícone e texto, evitando dispersão excessiva e afastando os elementos do logotipo 3D do canto inferior direito.
+
+---## 3. Instruções de Execução via Docker (100% Isolado)
 
 ### Pré-requisitos
 - Docker Desktop ou Docker Engine instalado e em execução no host.
@@ -253,10 +271,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 ### Portas e Acessos
 - **URL da Aplicação:** `http://localhost:3000`
 - **Mapeamento de Porta:** `3000:3000`
+31. **Calibração de Espaçamento do Botão "Voltar para o Topo" no Rodapé (`Footer.tsx`):**
+    - **Aproximação Vertical do Botão com o Texto:** Remoção de `justify-between` na coluna "Fale Conosco", aplicando `justify-start` com `mt-7` (gap de 28px), eliminando o vão exagerado de 109px e deixando o botão pílula neon posicionado harmoniosamente logo abaixo dos dados de contato e CNPJ, além de padronizar a tipografia do cabeçalho da coluna para "Fale Conosco" em peso regular.
+32. **Ajuste da Linha Divisória do Texto Regulatório no Rodapé (`Footer.tsx`):**
+    - **Listra Posicionada Exclusivamente Abaixo do Disclaimer:** Remoção da borda superior acima do parágrafo de conformidade legal e aplicação da listra divisória sutil (`border-b border-white/10`) estritamente abaixo do texto regulatório, além da atualização da razão social e CNPJ de acordo com a captura original do rodapé.
 
----
-
-## 4. Variáveis de Ambiente
+---## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:
 ```env
 PORT=3000

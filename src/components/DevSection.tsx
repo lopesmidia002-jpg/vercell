@@ -32,9 +32,11 @@ export default function DevSection() {
           <div className="lg:col-span-5 flex flex-col items-start text-left">
             <TagBadge text="Desenvolvedores" className="mb-6" />
 
-            <h2 className="w-full text-left text-[21px] min-[375px]:text-[23px] sm:text-3xl md:text-[44px] lg:text-[46px] text-[#111111] tracking-tight leading-[1.15] mb-5 whitespace-nowrap">
+            <h2 className="w-full text-left text-[26px] min-[375px]:text-[28px] sm:text-4xl md:text-[44px] lg:text-[46px] text-[#111111] tracking-tight leading-[1.15] mb-5">
               <span className="font-normal text-[#111111]">API de Pix </span>
-              <span className="font-bold text-[#5B7500]">simples e robusta</span>
+              <span className="font-bold text-[#5B7500]">simples e</span>
+              <br />
+              <span className="font-bold text-[#5B7500]">robusta</span>
             </h2>
 
             <p className="text-base text-[#666666] font-normal leading-relaxed mb-8 max-w-lg text-left mx-0">

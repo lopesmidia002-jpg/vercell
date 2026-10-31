@@ -490,3 +490,95 @@
   - [x] Medição CDP no viewport mobile (390px) comprovando que o conjunto das duas ações está perfeitamente centralizado com desvio zero (`combinedCenterDelta: 0.0px`), com início em `left: 48.2px` e término em `right: 341.8px`.
   - [x] Comparativo visual gerado [dev_buttons_centered_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/dev_buttons_centered_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 33: Remoção de Negrito em Links e Títulos de Cards (`BentoGrid.tsx`, `SolutionsGrid.tsx`, `globals.css`)
+- [x] **Remoção de Negrito em Link de Ação (`BentoGrid.tsx`):**
+  - [x] O link `"Abrir conta grátis →"` no card principal de produtos foi ajustado de `font-semibold` para `font-normal text-[#5B7500]`, eliminando o negrito em conformidade estrita com a captura do usuário (`media_1793453256267_6aef18e5.png`).
+- [x] **Remoção de Negrito nos Títulos dos Cards de Soluções (`SolutionsGrid.tsx`):**
+  - [x] Adicionado `@font-face` para `font-weight: 300` com `HelveticaNeueLight.otf` em `globals.css`.
+  - [x] Os títulos dos 6 cards de soluções (`"SaaS"`, `"E-commerce"`, `"Infoproduto"`, `"ERP"`, `"Gateways e plataformas"` e `"Nicho hot"`) foram atualizados para `font-light text-[#111111]`, removendo o aspecto pesado e aplicando a tipografia leve idêntica às capturas do usuário (`media_1793453313865_dab1822f.png` e `media_1793453324026_e33bb9fb.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando `fontWeight: '400'` para o link em BentoGrid e `fontWeight: '300'` para os 6 títulos de soluções.
+  - [x] Comparativos visuais gerados [abrir_conta_unbold_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/abrir_conta_unbold_comparison.png) e [solutions_titles_unbold_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/solutions_titles_unbold_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 34: Remoção de Negrito nos Títulos dos 3 Passos (`ThreeSteps.tsx`)
+- [x] **Remoção de Negrito na Seção "Como começar em 3 passos":**
+  - [x] Os títulos dos 3 passos (`"Fale com a gente"`, `"Conta aprovada"` e `"Integre e receba"`) foram atualizados de `font-normal` para `font-light text-[#111111]`, utilizando a variante `HelveticaNeueLight.otf` (peso 300) registrada no projeto.
+  - [x] Removido o peso pesado/negrito em conformidade estrita com a captura do usuário (`media_1793453377585_ad0fd42f.png`), harmonizando a tipografia leve com a grade de soluções.
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando `fontWeight: '300'` para os 3 títulos (`Fale com a gente`, `Conta aprovada`, `Integre e receba`).
+  - [x] Comparativo visual gerado [threesteps_unbold_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/threesteps_unbold_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 35: Remoção de Negrito no Botão CTA "Abrir minha conta" (`CtaButton.tsx`, `Footer.tsx`)
+- [x] **Remoção de Negrito nos Botões Principais de Ação:**
+  - [x] O componente base `CtaButton.tsx` foi atualizado de `font-normal` para `font-light text-black` (peso 300), aplicando a fonte `HelveticaNeueLight.otf`.
+  - [x] O texto `"Abrir minha conta"` em todas as instâncias (`Hero`, `ThreeSteps`, `PreFooterCta`) e `"Falar com especialista"` em `Footer.tsx` agora são renderizados sem qualquer aspecto de negrito, idênticos à captura do usuário (`media_1793453396470_cfbbb98e.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando `fontWeight: '300'` para os 3 botões "Abrir minha conta".
+  - [x] Comparativo visual gerado [abrir_minha_conta_unbold_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/abrir_minha_conta_unbold_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 36: Correção de Quebra de Linha do Título da Seção Dev (`DevSection.tsx`)
+- [x] **Eliminação de Colisão com a Imagem/Card do Terminal:**
+  - [x] Removido o `whitespace-nowrap` do título principal de `DevSection.tsx`, que estava forçando a frase em uma única linha extensa e provocando sobreposição com o terminal card (`media_1793453452730_55e073e0.png`).
+  - [x] Restaurada a quebra de linha exata da referência original (`media_1793453518218_89fb4e60.jpg`):
+    - **Linha 1:** `"API de Pix "` (preto) + `"simples e"` (verde oliva em negrito)
+    - **Linha 2:** `<br />` + `"robusta"` (verde oliva em negrito)
+- [x] **Validação Visual e Docker:**
+  - [x] Medição CDP confirmando largura de 475px contida perfeitamente na coluna da esquerda sem qualquer sobreposição com o terminal no desktop (`left: 32px`), e renderização responsiva impecável no mobile (`left: 16px`).
+  - [x] Comparativo visual gerado [dev_title_overlap_fixed_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/dev_title_overlap_fixed_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 37: Ampliação do Sombreamento Neon no Núcleo do Suporte WhatsApp (`OrbitalSupport.tsx`)
+- [x] **Calibração do Brilho e Difusão Neon:**
+  - [x] Inserida camada de aura ambiente difusa em desfoque gaussiano profundo (`bg-[#D2FB07]/20 blur-2xl`) com dimensões responsivas (`w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56`) posicionada imediatamente atrás do botão central do WhatsApp.
+  - [x] Expandido o conjunto de sombras diretas do botão para três camadas de dispersão progressiva: `shadow-[0_0_30px_rgba(210,251,7,0.5),0_0_65px_rgba(210,251,7,0.28),0_0_100px_rgba(210,251,7,0.15)]`.
+  - [x] O sombreamento agora se propaga suavemente além da primeira órbita tracejada, recriando com exatidão a intensidade e o raio do design original (`media_1793453577763_f0bfaa07.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Análise quantitativa de píxeis demonstrando propagação de brilho contínua até 2.5x o raio do botão (`G: 39` a 2x e `G: 31` a 2.5x do raio), idêntica ao original.
+  - [x] Comparativo visual gerado [orbital_neon_glow_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/orbital_neon_glow_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 38: Calibração de Espaçamento dos Ícones de Destaque no CTA Pré-Footer (`PreFooterCta.tsx`)
+- [x] **Redução de Espaçamento entre os Ícones e Recursos:**
+  - [x] O contêiner de destaques (`"Pix 24/7"`, `"Infraestrutura completa"` e `"API e sandbox"`) teve seu espaçamento horizontal reduzido de `gap-x-5 sm:gap-x-7` (28px) para `gap-x-3.5 sm:gap-x-[18px]` (18px).
+  - [x] O respiro interno entre cada ícone SVG neon e o seu rótulo de texto foi ajustado para `gap-1.5`.
+  - [x] A redução concentrou o conjunto na largura de 369px, proporcionando maior respiro e eliminando qualquer proximidade indesejada com o logotipo 3D da borda direita (`media_1793453655428_c0209d52.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando espaçamento exato de 18.0px entre os blocos e perfeita centralização no card escuro.
+  - [x] Comparativo visual gerado [prefooter_icons_spacing_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/prefooter_icons_spacing_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 39: Calibração de Espaçamento do Botão "Voltar para o Topo" com o Texto no Rodapé (`Footer.tsx`)
+- [x] **Redução de Espaçamento Vertical entre CNPJ e Badge:**
+  - [x] Substituída a classe `justify-between` da coluna "Fale Conosco" por `justify-start`, eliminando o distanciamento artificial de 109px que empurrava o botão até a borda inferior do grid (`media_1793453729225_3061870f.png`).
+  - [x] O botão pílula `"Voltar para o Topo"` agora é posicionado diretamente abaixo do CNPJ com espaçamento exato e compacto de 28px (`mt-7`), idêntico à referência original (`media_1793453741505_9964db23.png`).
+  - [x] O título da coluna foi ajustado para `"Fale Conosco"` em caixa alta/baixa com `font-normal text-base text-white mb-4`, alinhando-se com a referência.
+- [x] **Validação Visual e Docker:**
+  - [x] Medição CDP confirmando redução do gap vertical de 109px para 28px entre a linha do CNPJ e o topo do botão.
+  - [x] Comparativo visual gerado [footer_badge_spacing_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/footer_badge_spacing_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 40: Ajuste da Linha Divisória do Texto Regulatório no Rodapé (`Footer.tsx`)
+- [x] **Remoção da Borda Superior e Aplicação da Linha Inferior:**
+  - [x] Removida a borda inferior do grid de links do rodapé (`border-b border-white/10` em line 17), que gerava uma listra divisória indesejada acima do texto regulatório (`media_1793453853905_525bed21.png`).
+  - [x] Mantida a linha horizontal divisória exclusivamente abaixo do texto regulatório (`border-b border-white/10` em line 218), em estrita conformidade com o design original (`media_1793453866358_7fa30f21.png`).
+  - [x] Atualizada a redação do disclaimer institucional para correspondência exata: `"A Versell Technology Ltda (CNPJ 38.322.428/0001-23)... autorizada pelo Banco Central do Brasil... Bass Pago Instituição de Pagamento (CNPJ 37.293.930/0001-90)"`.
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando ausência de linha acima do parágrafo regulatório e presença da borda única abaixo dele.
+  - [x] Comparativo visual gerado [footer_disclaimer_border_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/footer_disclaimer_border_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

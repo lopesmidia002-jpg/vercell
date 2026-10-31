@@ -78,7 +78,7 @@ export default function SolutionsGrid() {
                   <Icon className="w-6 h-6 text-[#D2FB07] stroke-[1.8]" />
                 </div>
 
-                <h3 className="text-xl sm:text-[22px] font-normal text-[#111111] tracking-tight mb-3">
+                <h3 className="text-xl sm:text-[22px] font-light text-[#111111] tracking-tight mb-3">
                   {item.title}
                 </h3>
 

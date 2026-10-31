@@ -49,7 +49,7 @@ export default function BentoGrid() {
 
                 <a
                   href="#como-comecar"
-                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#5B7500] hover:text-[#485d00] transition-colors mt-auto"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-normal text-[#5B7500] hover:text-[#485d00] transition-colors mt-auto"
                 >
                   <span>Abrir conta grátis</span>
                   <ArrowRight className="w-3.5 h-3.5" />
