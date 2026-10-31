@@ -203,3 +203,15 @@
   - [x] Teste de interação via Chrome DevTools Protocol simulando evento de mouse hover real.
   - [x] Captura de tela (`hover_screenshot_result.png`) confirmando correspondência idêntica com as imagens de referência (`media_1793407498660_f8ac4c9b.png` e `media_1793407504886_4b6be56a.png`).
   - [x] Docker compilando em < 600ms, HTTP 200 OK.
+
+---
+
+### [x] Passo 13: Suavização da Iluminação Neon do Círculo Central (`OrbitalSupport.tsx`)
+- [x] **Remoção da Mancha Radial Intensa de Fundo:**
+  - [x] Removido o elemento `div` de fundo com `w-48 sm:w-64 md:w-72 bg-[#D2FB07]/20 blur-3xl` que causava saturação e névoa excessiva sobre o fundo escuro.
+- [x] **Suavização do Halo de Iluminação Neon Diretamente no Círculo WhatsApp:**
+  - [x] Substituída a sombra anterior por uma dupla difusão aveludada, suave e contida: `shadow-[0_0_25px_rgba(210,251,7,0.2),0_0_45px_rgba(210,251,7,0.08)]`.
+  - [x] Preservada a escuridão pura (`#0A0A0A`) do espaço entre o núcleo e a primeira órbita tracejada, exatamente como no mockup original de referência (`media_1793408068223_8f8e48fe.jpg`).
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless e medição de decaimento radial via Python confirmando curva de iluminação idêntica ao original.
+  - [x] Next.js compilando com sucesso no Docker em < 600ms, HTTP 200 OK.

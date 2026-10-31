@@ -40,9 +40,6 @@ export default function OrbitalSupport() {
                 onTouchEnd={() => setIsPaused(false)}
                 className="relative w-[260px] h-[260px] sm:w-[380px] sm:h-[380px] md:w-[460px] md:h-[460px] lg:w-[520px] lg:h-[520px] flex items-center justify-center group cursor-pointer"
               >
-                {/* Centralized Radial Glow Behind the Center Core (Sem iluminar o segundo círculo) */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 sm:w-64 md:w-72 h-48 sm:h-64 md:h-72 bg-[#D2FB07]/20 rounded-full blur-3xl pointer-events-none z-10" />
-
                 {/* Outer Ring (suporte-fora.png) */}
                 <div
                   className={`absolute inset-0 flex items-center justify-center anim-orbit-outer pointer-events-none ${
@@ -96,7 +93,7 @@ export default function OrbitalSupport() {
                   href="https://wa.me/5584992315908"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative z-20 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-[#D2FB07] flex items-center justify-center shadow-[0_0_40px_rgba(210,251,7,0.45)] group-hover:scale-105 active:scale-95 transition-all duration-300"
+                  className="relative z-20 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-[#D2FB07] flex items-center justify-center shadow-[0_0_25px_rgba(210,251,7,0.2),0_0_45px_rgba(210,251,7,0.08)] group-hover:scale-105 active:scale-95 transition-all duration-300"
                   aria-label="Abrir atendimento no WhatsApp"
                 >
                   <svg
