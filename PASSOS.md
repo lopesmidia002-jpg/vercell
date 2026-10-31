@@ -122,3 +122,23 @@
   - [x] Inclusão do bloco `# Resposta` documentado.
   - [x] Rodapé limpo com link `"documentação oficial"` em verde neon.
 - [x] Validação completa no container Docker e verificação visual por screenshot headless (HTTP 200 OK, zero erros de compilação).
+
+---
+
+### [x] Passo 9: Ampliação e Padronização Global de Escala dos Badges (`TagBadge.tsx`)
+- [x] **Calibração Dimensional dos Badges:**
+  - [x] Altura total externa ampliada para ~42-44px (contra ~28-30px anteriores) com padding `p-1.5 pr-5` e borda sutil `border border-black/[0.08]`.
+  - [x] Pílula interna ("● Versell") expandida para ~31-32px de altura com padding `px-3 py-1`, fundo pastel `#EDF4D4` e ponto neon `#D2FB07` com halo luminoso.
+  - [x] Tipografia proporcionalmente calibrada: `"Versell"` em `#556F00` e texto da seção em `#333333` com `text-xs sm:text-[13px]` e espaçamento generoso `gap-3`.
+- [x] **Propagação Automática em 100% dos Badges do Projeto:**
+  - [x] `Hero.tsx` ("Conta digital + API de Pix")
+  - [x] `ValueCards.tsx` ("Pix sem limites")
+  - [x] `BentoGrid.tsx` ("Produtos")
+  - [x] `SolutionsGrid.tsx` ("Para quem é")
+  - [x] `ThreeSteps.tsx` ("Como começar")
+  - [x] `DevSection.tsx` ("Desenvolvedores")
+  - [x] `SecuritySection.tsx` ("Segurança")
+  - [x] `FaqSection.tsx` ("Perguntas frequentes")
+  - [x] `OrbitalSupport.tsx` ("Suporte 24h")
+  - [x] `PreFooterCta.tsx` ("Vamos crescer juntos?")
+- [x] Validação visual via screenshot headless em Docker (Next.js compilado com sucesso, HTTP 200 OK).
