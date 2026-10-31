@@ -297,6 +297,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Deslocamento Assimétrico Alinhado com a Haste Direita:** Reajuste da posição horizontal do halo radial para `left-[68%]` (ao invés de centralizado no contêiner da coluna), concentrando o brilho verde neon atrás da haste vertical direita e irradiando suavemente para o espaço à direita da logo, enquanto a lateral esquerda preserva o contraste límpido do fundo `#F6F7F2`, atingindo correspondência rigorosa com o mockup de referência.
 
 ---
+38. **Alinhamento dos Computadores no Canto Inferior Direito do Card Painel e Monitoramento (`BentoGrid.tsx`):**
+    - **Posicionamento Flutuante no Canto Inferior Direito:** Reestruturação da área do mockup dos 3 MacBooks no Card 6 de `BentoGrid.tsx`, substituindo a centralização `mx-auto` por alinhamento à direita e ao fundo (`ml-auto self-end object-right-bottom`), com margens negativas que eliminam o vão branco lateral (margem direita = 0px) e assentam os laptops na borda inferior do card, idêntico à captura original.
+
+---
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:

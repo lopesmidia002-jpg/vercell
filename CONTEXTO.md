@@ -110,6 +110,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 40. **Deslocamento do Sombreamento Neon para a Direita da Logo na Hero (`Hero.tsx`):** Centralização do halo radial verde neon posicionada a 68% horizontal da coluna (`left-[68%]`), concentrando a luminosidade sob a haste direita e expandindo o brilho suave para o lado direito da seção, mantendo a esquerda limpa conforme o mockup original.
 
 ---
+41. **Posicionamento dos Computadores no Canto Inferior Direito do Card Painel e Monitoramento (`BentoGrid.tsx`):** Deslocamento da imagem dos 3 MacBooks para o canto inferior direito com sangria zerada na lateral direita e base do card (`ml-auto self-end object-right-bottom`), eliminando vãos brancos e alinhando a composição com o mockup original.
+
+---
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.

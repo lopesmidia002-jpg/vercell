@@ -638,3 +638,14 @@
   - [x] Auditoria numérica CDP confirmando decaimento assimétrico idêntico ao original (fundo limpo à esquerda a -100px com `[245, 247, 235]` e brilho sustentado à direita a +100px com `[239, 247, 193]`).
   - [x] Comparativo visual gerado [hero_logo_right_shift_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_right_shift_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 46: Alinhamento dos Computadores no Canto Inferior Direito do Card Painel e Monitoramento (`BentoGrid.tsx`)
+- [x] **Posicionamento e Sangria no Canto Inferior Direito:**
+  - [x] Substituída a centralização anterior (`mx-auto` com vãos brancos de 89px) por alinhamento à direita (`ml-auto self-end`) com sangria negativa nas bordas (`-mr-8 sm:-mr-10 lg:-mr-12 -mb-11 sm:-mb-13 lg:-mb-16`).
+  - [x] Dimensões do contêiner do mockup ampliadas para `w-[115%] sm:w-[112%] lg:w-[860px]` e altura `lg:h-[320px]`, configurado com `object-contain object-right-bottom`.
+  - [x] O MacBook direito agora encosta perfeitamente na borda direita do card (margem direita reduzida de 104px para 0px, sendo recortado suavemente pelo `overflow-hidden`), a base dos computadores assenta diretamente no rodapé do card (margem inferior = 0px), e o extremo esquerdo do conjunto de laptops alinha-se verticalmente com o início do texto do título ("Painel e"), reproduzindo fielmente a composição do mockup original (`media_1793474433276_c81e37fb.jpg`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria numérica CDP confirmando margem direita de 0px e margem inferior de 0px no contêiner do card.
+  - [x] Comparativo visual gerado [card6_laptops_bottom_right_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/card6_laptops_bottom_right_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

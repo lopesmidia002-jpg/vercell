@@ -162,13 +162,13 @@ export default function BentoGrid() {
                 </p>
               </div>
 
-              {/* MacBooks Mockup positioned centered at bottom */}
-              <div className="relative w-full max-w-[540px] sm:max-w-[620px] h-60 sm:h-72 mx-auto -mb-8 sm:-mb-10">
+              {/* MacBooks Mockup positioned at bottom-right corner (fiel à imagem original) */}
+              <div className="relative w-[115%] sm:w-[112%] lg:w-[860px] max-w-none h-60 sm:h-72 lg:h-[320px] ml-auto -mr-8 sm:-mr-10 lg:-mr-12 -mb-11 sm:-mb-13 lg:-mb-16 self-end">
                 <Image
                   src="/assets/MacBook-Air-2022-3.webp"
                   alt="Dashboard de Extrato, Home Banking e Gráficos analíticos Versell"
                   fill
-                  className="object-contain object-bottom group-hover:scale-[1.02] transition-transform duration-500"
+                  className="object-contain object-right-bottom group-hover:scale-[1.02] transition-transform duration-500"
                 />
               </div>
             </div>
