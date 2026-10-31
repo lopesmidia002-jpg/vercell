@@ -163,7 +163,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 15. **Padronização Pixel-Perfect da Seção de FAQ (`FaqSection.tsx`):**
     - **Tipografia do Título Sem Negrito:** `"Perguntas"` em preto regular (`#111111`, peso 400) e `"Frequentes"` em cinza neutro (`#666666`, peso 400), alinhados em linha única, eliminando negrito prévio.
     - **Ícones de Expansão/Fechamento com Rotacionamento:** Substituição de chevrons por ícones minimalistas de traço fino em verde oliva (`#5B7500`): sinal `+` quando recolhido e `x` (rotação de 45°) quando expandido.
-    - **Alternância Interativa Fluida:** Correção definitiva do fluxo de fechar/abrir via hidratação limpa em Docker, permitindo recolher a pergunta aberta com um clique e abrir qualquer outra.
+    - **Fechamento por Padrão e Interatividade Bidirecional:** Redefinição do estado inicial para todos os cards começarem fechados (`openIndex = null`), permitindo abrir qualquer pergunta ao clicar e recolher ao clicar novamente no botão de cabeçalho ou no corpo da resposta (`cursor-pointer`).
     - **Estilização de Card Ativo e Respostas Integrais:** Borda em verde neon sutil (`border border-[#D2FB07]`) no item expandido, sem divisória de linha cinza entre pergunta e resposta, e respostas completas cadastradas para todas as 8 perguntas frequentes.
 
 16. **Padronização Pixel-Perfect do Card de Cartão e Checkout (`VersellPayBanner.tsx`):**

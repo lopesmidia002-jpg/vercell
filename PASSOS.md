@@ -291,3 +291,14 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless com inspeção de recortes e medição de distâncias confirmando correspondência milimétrica.
   - [x] Next.js compilando com sucesso no Docker em < 250ms, HTTP 200 OK.
+
+---
+
+### [x] Passo 19: Fechamento Padrão e Ajuste de Interatividade da Seção FAQ (`FaqSection.tsx`)
+- [x] **Fechamento do Primeiro Card por Padrão:**
+  - [x] Estado inicial do accordion redefinido para `useState<number | null>(null)`, garantindo que todas as perguntas comecem fechadas com o ícone `+` em verde oliva, eliminando a exibição errônea de card aberto no carregamento da página.
+  - [x] Resposta da primeira pergunta ajustada com precisão institucional correspondente ao mockup original (`media_1793409011595_c6f33f5e.png`).
+  - [x] Adicionado suporte a fechamento do card ao clicar também no próprio corpo/painel da resposta aberta (`cursor-pointer`), garantindo usabilidade intuitiva e fechamento imediato.
+- [x] **Validação Visual e Docker:**
+  - [x] Captura de tela headless confirmando que todos os 8 cards estão limpos, fechados e alinhados.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

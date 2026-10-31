@@ -15,7 +15,7 @@ const faqs: FaqItem[] = [
     id: "faq-1",
     question: "O que é a Versell?",
     answer:
-      "A Versell é uma plataforma financeira focada em Pix: conta digital, API de Pix, subcontas e split em um só lugar. Operamos com a infraestrutura da Baas Pago Instituição de Pagamento, garantindo liquidação direta, tecnologia de ponta e total conformidade com o Banco Central do Brasil.",
+      "A Versell é uma plataforma financeira focada em Pix: conta digital, API de Pix, subcontas e split em um só lugar. Operamos com a infraestrutura da Bass Pago Instituição de Pagamento.",
   },
   {
     id: "faq-2",
@@ -62,7 +62,7 @@ const faqs: FaqItem[] = [
 ];
 
 export default function FaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (idx: number) => {
     setOpenIndex((prev) => (prev === idx ? null : idx));
@@ -123,7 +123,8 @@ export default function FaqSection() {
                       id={`panel-${faq.id}`}
                       role="region"
                       aria-labelledby={`button-${faq.id}`}
-                      className="px-6 pb-6 pt-1 text-xs sm:text-sm text-[#666666] leading-relaxed animate-in fade-in-50 duration-200"
+                      onClick={() => toggleItem(idx)}
+                      className="px-6 pb-6 pt-1 text-xs sm:text-sm text-[#666666] leading-relaxed animate-in fade-in-50 duration-200 cursor-pointer"
                     >
                       {faq.answer}
                     </div>
