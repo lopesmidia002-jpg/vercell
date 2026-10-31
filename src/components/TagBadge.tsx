@@ -8,13 +8,15 @@ export default function TagBadge({ text, className = "", isDark = false }: TagBa
   if (isDark) {
     return (
       <div
-        className={`inline-flex items-center gap-4 sm:gap-4.5 p-1.5 sm:p-2 pr-6 sm:pr-7 rounded-full bg-white/10 border border-white/15 shadow-sm text-sm sm:text-[15px] ${className}`}
+        className={`inline-flex items-center gap-3.5 sm:gap-4 p-1.5 sm:p-2 pr-6 sm:pr-7 rounded-full bg-[#18191B] border border-white/10 shadow-sm text-sm sm:text-[15px] ${className}`}
       >
-        <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#D2FB07]/20 text-[#D2FB07] font-normal text-sm sm:text-[15px]">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#D2FB07] flex-shrink-0 shadow-[0_0_8px_#D2FB07]" />
+        <span className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#242528] text-[#D2FB07] font-normal text-sm sm:text-[15px]">
+          <span className="w-3 h-3 rounded-full bg-[#526017] flex items-center justify-center flex-shrink-0">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#D2FB07]" />
+          </span>
           Versell
         </span>
-        <span className="text-neutral-300 font-normal text-sm sm:text-[15px]">
+        <span className="text-[#D8D8D8] font-normal text-sm sm:text-[15px]">
           {text}
         </span>
       </div>

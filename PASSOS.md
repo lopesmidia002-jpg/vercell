@@ -1,4 +1,4 @@
-<!--  --># CHECKLIST DE EXECUÇÃO SEQUENCIAL - PROJETO VERSELL
+<!-- se --># CHECKLIST DE EXECUÇÃO SEQUENCIAL - PROJETO VERSELL
 
 > **REGRA DE OPERAÇÃO:** Conforme diretiva global de governança, o avanço entre etapas ocorre de forma estritamente sequencial. Cada passo concluído é documentado e validado antes da transição para a próxima fase, sendo que **o próximo passo só será iniciado mediante solicitação explícita do usuário**.
 
@@ -252,3 +252,19 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless com recorte de precisão validando correspondência exata com o design original (`media_1793409489981_3edbac07.png`).
   - [x] Container Docker rodando em perfeito estado com compilação em 304ms, HTTP 200 OK.
+
+---
+
+### [x] Passo 16: Padronização Pixel-Perfect do Card CTA Pré-Footer e TagBadge Dark (`PreFooterCta.tsx` e `TagBadge.tsx`)
+- [x] **Mini Badge Dark com Fundo Cinza Destacado:**
+  - [x] Atualização do `TagBadge.tsx` no modo `isDark`: mini badge interna com fundo cinza sólido de destaque (`bg-[#242528]`), nome "Versell" em verde neon fluorescente (`text-[#D2FB07] font-normal`) e ponto indicador com anel verde oliva escuro (`bg-[#526017]`) contendo núcleo neon no centro (`bg-[#D2FB07]`), idêntico à captura de referência (`media_1793410524482_6b53081a.png`).
+  - [x] Contêiner externo em pílula escura sutil (`bg-[#18191B] border border-white/10`) com texto "Vamos crescer juntos?" em cinza claro regular (`text-[#D8D8D8] font-normal`), eliminando saturação verde anterior.
+- [x] **Ícones Bare Neon à Frente dos Textos de Destaque:**
+  - [x] Remoção dos contêineres circulares com tiques de checkmark genéricos.
+  - [x] Inclusão de ícones minimalistas diretos em verde neon fluorescente (`#D2FB07` com traço `stroke-[1.8]`): raio `Zap` para "Pix 24/7", escudo checado `ShieldCheck` para "Infraestrutura completa" e colchetes de código `Code` (`< >`) para "API e sandbox", rigorosamente alinhados ao recorte da referência (`media_1793410428973_8669a3a5.png`).
+- [x] **Iluminação Ambiente e Elemento 3D da Versell:**
+  - [x] Remoção da mancha circular artificial no topo/centro do card, reposicionando o glow difuso na base e no canto inferior direito (`from-[#D2FB07]/15 rounded-full blur-[90px]`).
+  - [x] Elemento 3D de acrílico verde (`logo_versell.webp`) nítido, sem desfoque, emergindo com presença e riqueza volumétrica no canto inferior direito (`opacity-75 sm:opacity-85`), em perfeita conformidade com o mockup original (`media_1793410412462_f9f727a3.jpg`).
+- [x] **Validação Visual e Docker:**
+  - [x] Capturas de tela e análises pixel-a-pixel confirmando paridade absoluta.
+  - [x] Next.js compilando em 883ms no Docker, HTTP 200 OK.

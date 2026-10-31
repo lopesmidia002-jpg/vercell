@@ -172,6 +172,11 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Link e Seta em Verde Oliva da Marca:** O identificador `"versellpay.com"` e o ícone conector foram atualizados para verde oliva `#5B7500` com substituição da seta diagonal por seta horizontal à direita (`ArrowRight` `→`).
     - **Squircle Escuro e Cartão Neon:** Caixa de ícone escura compacta com cantos arredondados (`rounded-[14px] bg-[#0F1012]`) e ícone `CreditCard` com traço firme na cor verde neon `#D2FB07`.
 
+17. **Padronização Pixel-Perfect do Card CTA Pré-Footer e TagBadge Dark (`PreFooterCta.tsx` e `TagBadge.tsx`):**
+    - **TagBadge Dark com Mini Badge Cinza Destacado:** No tema dark, a mini badge interna recebe fundo cinza sólido (`bg-[#242528]`), nome "Versell" em verde neon fluorescente (`text-[#D2FB07] font-normal`) e ponto indicador com anel verde oliva escuro (`bg-[#526017]`) e núcleo neon no centro (`bg-[#D2FB07]`), envolto por pílula externa sutil (`bg-[#18191B] border border-white/10`) com texto "Vamos crescer juntos?" em cinza claro (`text-[#D8D8D8] font-normal`).
+    - **Ícones Bare Neon nos Recursos:** Remoção de círculos com tiques de checkmark genéricos, adotando ícones minimalistas diretos em neon `#D2FB07` com traço fino (`stroke-[1.8]`): `Zap` para "Pix 24/7", `ShieldCheck` para "Infraestrutura completa" e `Code` (`< >`) para "API e sandbox".
+    - **Iluminação e 3D Acrylic Visual:** Eliminação da mancha circular no topo central, posicionando a iluminação ambiente suave na base e no canto inferior direito (`blur-[90px]`), e elemento 3D de acrílico verde da Versell nítido e em alta fidelidade no canto direito do card.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

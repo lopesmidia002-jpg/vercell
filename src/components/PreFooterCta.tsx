@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Check } from "lucide-react";
+import { Zap, ShieldCheck, Code } from "lucide-react";
 import TagBadge from "./TagBadge";
 import CtaButton from "./CtaButton";
 
@@ -7,18 +7,19 @@ export default function PreFooterCta() {
   return (
     <section className="py-16 md:py-24 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-[#0C0D0E] rounded-3xl p-8 sm:p-14 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden flex flex-col items-center text-center">
-          {/* Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] lime-glow-dark rounded-full blur-3xl pointer-events-none" />
+        <div className="bg-[#0F1012] rounded-[32px] sm:rounded-[36px] p-8 sm:p-14 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden flex flex-col items-center text-center">
+          {/* Ambient Glows focused at the bottom half and right corner */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[750px] h-[250px] bg-[#D2FB07]/15 rounded-full blur-[90px] pointer-events-none" />
+          <div className="absolute -bottom-10 -right-10 w-[380px] h-[280px] bg-[#D2FB07]/12 rounded-full blur-[80px] pointer-events-none" />
 
-          {/* 3D Visual Accent (floating subtly on background corner) */}
-          <div className="absolute -bottom-16 -right-16 w-64 h-64 opacity-25 pointer-events-none hidden md:block">
+          {/* 3D Visual Accent (vibrant acrylic logo rising from bottom-right corner) */}
+          <div className="absolute -bottom-12 -right-8 sm:-bottom-16 sm:-right-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 opacity-75 sm:opacity-85 pointer-events-none hidden sm:block">
             <Image
               src="/assets/logo_versell.webp"
-              alt="Versell 3D Glow"
-              width={260}
-              height={260}
-              className="w-full h-full object-contain filter blur-[1px]"
+              alt="Versell 3D Visual"
+              width={384}
+              height={384}
+              className="w-full h-full object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
             />
           </div>
 
@@ -47,24 +48,18 @@ export default function PreFooterCta() {
               Abrir minha conta
             </CtaButton>
 
-            {/* Micro Badges */}
-            <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs sm:text-sm font-medium text-neutral-400">
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-[#D2FB07]/30 flex items-center justify-center text-[#D2FB07]">
-                  <Check className="w-3 h-3 stroke-[3]" />
-                </div>
+            {/* Highlights List with bare neon icons (fiel ao mockup original) */}
+            <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs sm:text-sm font-normal text-neutral-400">
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <Zap className="w-4 h-4 text-[#D2FB07] stroke-[1.8]" />
                 <span>Pix 24/7</span>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-[#D2FB07]/30 flex items-center justify-center text-[#D2FB07]">
-                  <Check className="w-3 h-3 stroke-[3]" />
-                </div>
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#D2FB07] stroke-[1.8]" />
                 <span>Infraestrutura completa</span>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-[#D2FB07]/30 flex items-center justify-center text-[#D2FB07]">
-                  <Check className="w-3 h-3 stroke-[3]" />
-                </div>
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <Code className="w-4 h-4 text-[#D2FB07] stroke-[1.8]" />
                 <span>API e sandbox</span>
               </div>
             </div>
