@@ -160,6 +160,12 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
       - **Transição Fluida:** Animação combinada de escala, opacidade e translação suave (`transition-all duration-300 ease-out`).
     - **Adoção Unificada:** Replicado em todos os botões no estilo CTA do projeto: Hero ("Abrir minha conta"), ThreeSteps ("Abrir minha conta"), PreFooterCta ("Abrir minha conta"), DevSection ("Ver documentação"), Navbar (Desktop e Mobile: "Falar com especialista") e Footer ("Falar com especialista").
 
+15. **Padronização Pixel-Perfect da Seção de FAQ (`FaqSection.tsx`):**
+    - **Tipografia do Título Sem Negrito:** `"Perguntas"` em preto regular (`#111111`, peso 400) e `"Frequentes"` em cinza neutro (`#666666`, peso 400), alinhados em linha única, eliminando negrito prévio.
+    - **Ícones de Expansão/Fechamento com Rotacionamento:** Substituição de chevrons por ícones minimalistas de traço fino em verde oliva (`#5B7500`): sinal `+` quando recolhido e `x` (rotação de 45°) quando expandido.
+    - **Alternância Interativa Fluida:** Correção definitiva do fluxo de fechar/abrir via hidratação limpa em Docker, permitindo recolher a pergunta aberta com um clique e abrir qualquer outra.
+    - **Estilização de Card Ativo e Respostas Integrais:** Borda em verde neon sutil (`border border-[#D2FB07]`) no item expandido, sem divisória de linha cinza entre pergunta e resposta, e respostas completas cadastradas para todas as 8 perguntas frequentes.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

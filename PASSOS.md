@@ -215,3 +215,22 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless e medição de decaimento radial via Python confirmando curva de iluminação idêntica ao original.
   - [x] Next.js compilando com sucesso no Docker em < 600ms, HTTP 200 OK.
+
+---
+
+### [x] Passo 14: Correção e Padronização Pixel-Perfect da Seção de FAQ (`FaqSection.tsx`)
+- [x] **Remoção do Negrito das Duas Frases do Título:**
+  - [x] Título unificado em linha única sem negrito: `"Perguntas"` em preto normal (`text-[#111111] font-normal`) e `"Frequentes"` em cinza normal (`text-[#666666] font-normal`).
+  - [x] TagBadge atualizado para `"Perguntas Frequentes"`.
+- [x] **Substituição dos Botões e Ícones do Accordion:**
+  - [x] Removidos os círculos de fundo cinza e as setas chevron anteriores.
+  - [x] Ícones em verde oliva da marca (`#5B7500`, traço `stroke-[2]`): sinal de mais (`+`) nas perguntas fechadas e `x` (mais rotacionado a 45°) na pergunta aberta.
+- [x] **Correção do Funcionamento do Botão de Fechar/Abrir:**
+  - [x] Limpeza de cache de desenvolvimento do Next.js no Docker garantindo hidratação 100% ativa de scripts client-side (`main-app.js` e `app-pages-internals.js` retornando 200 OK).
+  - [x] Validação via automação de eventos: clicar na pergunta aberta agora fecha imediatamente o card, e clicar em qualquer outra pergunta abre com animação fluida.
+- [x] **Bordas e Respostas de 100% das Perguntas:**
+  - [x] Card aberto estilizado com borda em verde neon suave (`border border-[#D2FB07]`), sem divisória artificial entre pergunta e resposta.
+  - [x] Todas as 8 perguntas com respostas completas, técnicas e institucionais revisadas.
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless confirmando correspondência idêntica ao mockup original (`media_1793409011595_c6f33f5e.png`).
+  - [x] Docker compilando em tempo recorde, HTTP 200 OK.

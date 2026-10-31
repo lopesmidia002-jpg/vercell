@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Plus } from "lucide-react";
 import TagBadge from "./TagBadge";
 
 interface FaqItem {
@@ -21,7 +21,7 @@ const faqs: FaqItem[] = [
     id: "faq-2",
     question: "Quais formas de pagamento a Versell oferece?",
     answer:
-      "Nosso foco principal e especialidade é o ecossistema Pix: Pix Cobrança (QR Code dinâmico e Copia e Cola), Pix Automático (recorrências e assinaturas) e split automático. Para quem necessita de cartão de crédito e checkout unificado de alta conversão, disponibilizamos também o gateway complementar VersellPay.",
+      "Nosso foco principal e especialidade é o ecossistema Pix: Pix Cobrança (QR Code dinâmico e Copia e Cola), Pix Automático (recorrências e mensalidades) e split na hora do pagamento. Para quem necessita de cartão de crédito e checkout unificado de alta conversão, disponibilizamos também o gateway complementar VersellPay.",
   },
   {
     id: "faq-3",
@@ -33,25 +33,25 @@ const faqs: FaqItem[] = [
     id: "faq-4",
     question: "Dá para cobrar assinaturas e recorrências?",
     answer:
-      "Sim. Com o Pix Automático, o cliente autoriza a cobrança uma única vez e as mensalidades subsequentes caem automaticamente a cada ciclo, sem fricção e reduzindo a inadimplência a quase zero.",
+      "Sim. Com o Pix Automático, o seu cliente autoriza a cobrança uma única vez e as cobranças seguintes caem sozinhas a cada ciclo, sem fricção e reduzindo a inadimplência a quase zero.",
   },
   {
     id: "faq-5",
     question: "Posso dividir os recebimentos?",
     answer:
-      "Com certeza. Nosso recurso de split automático divide cada Pix instantaneamente entre quantos sócios, coprodutores, parceiros ou afiliados você configurar, com saldos e conciliações calculados em milissegundos sem planilhas manuais.",
+      "Com certeza. Nosso recurso de split divide cada recebimento automaticamente na hora do pagamento entre sellers, parceiros e coprodutores, com saldos e conciliação calculados instantaneamente sem necessidade de planilhas manuais.",
   },
   {
     id: "faq-6",
     question: "Como integro a Versell ao meu sistema?",
     answer:
-      "Disponibilizamos uma API REST moderna nos padrões do Bacen, webhooks em tempo real, SDKs em Node.js, Python e PHP, autenticação mTLS + OAuth2, ambiente sandbox e coleção oficial no Postman para testes imediatos.",
+      "Disponibilizamos uma API REST moderna no padrão Pix do Banco Central, webhooks em tempo real para cada evento, SDKs em Node.js, Python e PHP, autenticação mTLS + OAuth2, ambiente sandbox e coleção oficial no Postman para testes imediatos.",
   },
   {
     id: "faq-7",
     question: "Vocês atendem infoproduto e nicho hot?",
     answer:
-      "Sim, atendemos com excelência produtores digitais, plataformas SaaS, e-commerces e também operações de conteúdo adulto legal (+18) com verificação de maioridade legal, operando com total discrição, estabilidade e conformidade bancária.",
+      "Sim, atendemos operações de conteúdo adulto legal (+18) com verificação de idade, recebendo no Pix com discrição, estabilidade e total segurança bancária, além de infoprodutos, SaaS, ERPs e e-commerces.",
   },
   {
     id: "faq-8",
@@ -65,64 +65,69 @@ export default function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleItem = (idx: number) => {
-    setOpenIndex(openIndex === idx ? null : idx);
+    setOpenIndex((prev) => (prev === idx ? null : idx));
   };
 
   return (
     <section id="faq" className="py-20 md:py-28 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Title */}
-          <div className="lg:col-span-4 flex flex-col items-start lg:sticky lg:top-28">
-            <TagBadge text="Perguntas frequentes" className="mb-4" />
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          {/* Left Title: Sem negrito nas duas frases, exatamente como no original */}
+          <div className="lg:col-span-5 flex flex-col items-start lg:sticky lg:top-28">
+            <TagBadge text="Perguntas Frequentes" className="mb-4" />
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight mb-4">
-              <span className="font-normal text-[#111111]">Perguntas </span><br />
-              <span className="font-bold text-[#5B7500]">frequentes</span>
+            <h2 className="text-3xl sm:text-4xl md:text-[46px] lg:text-[48px] font-normal tracking-tight leading-tight mb-4">
+              <span className="text-[#111111] font-normal">Perguntas</span>{" "}
+              <span className="text-[#666666] font-normal">Frequentes</span>
             </h2>
 
-            <p className="text-base text-[#666666] font-normal leading-relaxed">
+            <p className="text-sm sm:text-base text-[#666666] font-normal leading-relaxed">
               Ficou com alguma dúvida? A gente responde.
             </p>
           </div>
 
           {/* Right Accordion List */}
-          <div className="lg:col-span-8 flex flex-col space-y-3.5">
+          <div className="lg:col-span-7 flex flex-col space-y-3 sm:space-y-3.5">
             {faqs.map((faq, idx) => {
               const isOpen = openIndex === idx;
               return (
                 <div
                   key={faq.id}
-                  className="bg-white rounded-2xl border border-black/[0.06] shadow-sm overflow-hidden transition-all duration-200"
+                  className={`bg-white rounded-[20px] sm:rounded-[22px] transition-all duration-300 overflow-hidden ${
+                    isOpen
+                      ? "border border-[#D2FB07] shadow-sm"
+                      : "border border-black/[0.06] shadow-sm hover:border-black/10"
+                  }`}
                 >
                   <button
+                    type="button"
                     id={`button-${faq.id}`}
                     onClick={() => toggleItem(idx)}
-                    className="w-full min-h-[56px] px-6 py-4 text-left flex items-center justify-between gap-4 font-normal text-base sm:text-lg text-[#111111] hover:text-black transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2FB07]"
+                    className="w-full px-6 py-4 sm:py-4.5 text-left flex items-center justify-between gap-4 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D2FB07]"
                     aria-expanded={isOpen}
                     aria-controls={`panel-${faq.id}`}
                   >
-                    <span>{faq.question}</span>
-                    <div
-                      className={`w-7 h-7 rounded-full bg-neutral-100 flex items-center justify-center flex-shrink-0 transition-transform duration-300 ${
-                        isOpen ? "rotate-180 bg-[#D2FB07]" : ""
+                    <span className="font-normal text-sm sm:text-base text-[#111111]">
+                      {faq.question}
+                    </span>
+                    <Plus
+                      className={`w-4 h-4 text-[#5B7500] stroke-[2] flex-shrink-0 transition-transform duration-300 ease-out ${
+                        isOpen ? "rotate-45" : "rotate-0"
                       }`}
-                    >
-                      <ChevronDown className="w-4 h-4 text-black" />
-                    </div>
+                      aria-label={isOpen ? "Fechar pergunta" : "Abrir pergunta"}
+                    />
                   </button>
 
-                  <div
-                    id={`panel-${faq.id}`}
-                    role="region"
-                    aria-labelledby={`button-${faq.id}`}
-                    hidden={!isOpen}
-                    className={`px-6 pb-6 pt-1 text-sm sm:text-base text-[#666666] leading-relaxed border-t border-neutral-100 ${
-                      isOpen ? "block animate-in fade-in-50 duration-200" : "hidden"
-                    }`}
-                  >
-                    {faq.answer}
-                  </div>
+                  {isOpen && (
+                    <div
+                      id={`panel-${faq.id}`}
+                      role="region"
+                      aria-labelledby={`button-${faq.id}`}
+                      className="px-6 pb-6 pt-1 text-xs sm:text-sm text-[#666666] leading-relaxed animate-in fade-in-50 duration-200"
+                    >
+                      {faq.answer}
+                    </div>
+                  )}
                 </div>
               );
             })}
