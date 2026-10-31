@@ -107,6 +107,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 39. **Calibração Fiel do Sombreamento Neon da Logo na Hero (`Hero.tsx`):** Halo radial único suave de 660px posicionado no centro do 'V' (`left-[53%]`), com opacidade aveludada de 36% e atenuação completa nas bordas, preservando o fundo `#F6F7F2` imaculado nas quinas do grid e correspondência 100% fiel com a referência.
 
 ---
+40. **Deslocamento do Sombreamento Neon para a Direita da Logo na Hero (`Hero.tsx`):** Centralização do halo radial verde neon posicionada a 68% horizontal da coluna (`left-[68%]`), concentrando a luminosidade sob a haste direita e expandindo o brilho suave para o lado direito da seção, mantendo a esquerda limpa conforme o mockup original.
+
+---
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.

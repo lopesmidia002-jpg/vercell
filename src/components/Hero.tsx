@@ -63,8 +63,8 @@ export default function Hero() {
 
           {/* Right Column: 3D Acrylic Logo Visual */}
           <div className="lg:col-span-5 flex items-center justify-center relative mt-2 lg:mt-0">
-            {/* Ambient Radial Lime Glow único, suave e aveludado perfeitamente calibrado com o original */}
-            <div className="absolute top-[49%] left-[53%] -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[500px] md:w-[600px] lg:w-[660px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[660px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.36)_0%,rgba(210,251,7,0.24)_40%,rgba(210,251,7,0.12)_65%,transparent_85%)] blur-3xl pointer-events-none" />
+            {/* Ambient Radial Lime Glow deslocado para a direita da logo, fiel à referência original */}
+            <div className="absolute top-[48%] left-[64%] sm:left-[66%] md:left-[68%] -translate-x-1/2 -translate-y-1/2 w-[420px] sm:w-[540px] md:w-[660px] lg:w-[740px] h-[420px] sm:h-[540px] md:h-[660px] lg:h-[740px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.40)_0%,rgba(210,251,7,0.26)_38%,rgba(210,251,7,0.12)_62%,transparent_82%)] blur-3xl pointer-events-none" />
 
             {/* 3D Floating Element with GPU acceleration */}
             <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] flex items-center justify-center">

@@ -293,6 +293,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Camada Única com Curva de Decaimento Fiel:** Halo radial neon unificado de 660px com opacidade aveludada de 36% no núcleo e decaimento contido a 85%, eliminando qualquer sangramento ou saturação amarelada nas quinas da malha quadriculada (`#F6F7F2`), reproduzindo exatamente o contraste elegante e a suavidade da captura original.
 
 ---
+37. **Posicionamento do Sombreamento Neon à Direita da Logo na Hero (`Hero.tsx`):**
+    - **Deslocamento Assimétrico Alinhado com a Haste Direita:** Reajuste da posição horizontal do halo radial para `left-[68%]` (ao invés de centralizado no contêiner da coluna), concentrando o brilho verde neon atrás da haste vertical direita e irradiando suavemente para o espaço à direita da logo, enquanto a lateral esquerda preserva o contraste límpido do fundo `#F6F7F2`, atingindo correspondência rigorosa com o mockup de referência.
+
+---
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:

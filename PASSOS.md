@@ -627,3 +627,14 @@
   - [x] Auditoria numérica CDP confirmando decaimento suave e perfeita correspondência pixel-perfect com o mockup de referência (`media_1793457281856_a7db4885.jpg`).
   - [x] Comparativo visual gerado [hero_logo_perfect_soft_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_perfect_soft_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+---
+
+### [x] Passo 45: Posicionamento do Sombreamento Neon à Direita da Logo na Hero (`Hero.tsx`)
+- [x] **Deslocamento do Centro de Iluminação para a Haste Direita:**
+  - [x] Alinhado o centro do halo radial neon diretamente sob a haste vertical direita da logo (`left-[64%] sm:left-[66%] md:left-[68%] top-[48%]`), recriando o deslocamento assimétrico de +112px observado na análise espectral do mockup original (`media_1793457704474_48c4751f.jpg`).
+  - [x] Dimensões ajustadas para até `740x740px` (`w-[420px] sm:w-[540px] md:w-[660px] lg:w-[740px] h-[420px] sm:h-[540px] md:h-[660px] lg:h-[740px]`) com curva `bg-[radial-gradient(circle,rgba(210,251,7,0.40)_0%,rgba(210,251,7,0.26)_38%,rgba(210,251,7,0.12)_62%,transparent_82%)] blur-3xl`.
+  - [x] Com este deslocamento, a luz fluorescente projeta-se generosamente para o lado direito da haste do 'V' (`[225, 237, 171]` a +30px e `[233, 244, 182]` a +60px), enquanto a margem esquerda da logo e o bloco de textos/botões da Hero permanecem sobre a malha quadriculada limpa no off-white `#F6F7F2` (`[245, 246, 239]`), idêntico à referência original.
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria numérica CDP confirmando decaimento assimétrico idêntico ao original (fundo limpo à esquerda a -100px com `[245, 247, 235]` e brilho sustentado à direita a +100px com `[239, 247, 193]`).
+  - [x] Comparativo visual gerado [hero_logo_right_shift_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_logo_right_shift_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
