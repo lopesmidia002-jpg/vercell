@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Zap, ShieldCheck, Code } from "lucide-react";
 import TagBadge from "./TagBadge";
+import CtaButton from "./CtaButton";
 
 export default function Hero() {
   return (
@@ -35,12 +36,9 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto mb-8">
-              <a
-                href="#como-comecar"
-                className="min-h-[56px] sm:min-h-[62px] px-9 sm:px-11 py-3.5 sm:py-4 text-base sm:text-[17px] font-normal text-black bg-[#D2FB07] hover:bg-[#c4ed00] rounded-full transition-all duration-200 shadow-[0_2px_12px_rgba(210,251,7,0.4)] flex items-center justify-center text-center transform active:scale-[0.98]"
-              >
+              <CtaButton href="#como-comecar" size="lg">
                 Abrir minha conta
-              </a>
+              </CtaButton>
               <a
                 href="#suporte"
                 className="min-h-[56px] sm:min-h-[62px] px-8 sm:px-10 py-3.5 sm:py-4 text-base sm:text-[17px] font-normal text-[#111111] bg-white border border-black/[0.12] hover:border-black/25 rounded-full transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.03)] flex items-center justify-center text-center active:scale-[0.98]"

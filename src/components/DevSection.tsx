@@ -2,6 +2,7 @@
 
 import { Code, Key, Webhook, FlaskConical, ArrowRight } from "lucide-react";
 import TagBadge from "./TagBadge";
+import CtaButton from "./CtaButton";
 
 const features = [
   {
@@ -54,12 +55,9 @@ export default function DevSection() {
 
             {/* Action Buttons */}
             <div className="flex flex-wrap items-center gap-6">
-              <a
-                href="#docs"
-                className="px-7 py-3 text-sm font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all shadow-sm"
-              >
+              <CtaButton href="#docs" size="md">
                 Ver documentação
-              </a>
+              </CtaButton>
               <a
                 href="#postman"
                 className="inline-flex items-center gap-1.5 text-sm sm:text-[15px] font-normal text-[#5B7500] hover:text-[#455900] transition-colors"

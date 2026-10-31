@@ -150,6 +150,16 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Novo Ícone e Círculo WhatsApp:** Núcleo central ampliado para um círculo sólido em verde neon fluorescente (`w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#D2FB07]`) contendo o ícone oficial do WhatsApp em preto puro vazado.
     - **Remoção de Iluminação no Segundo Círculo:** Eliminada a iluminação neon deslocada sobre o anel intermediário (`suporte-meio.png`), com a luz ambiente radial suave centralizada exclusivamente atrás do núcleo do WhatsApp, iluminando suavemente a órbita menor.
 
+14. **Padronização Global do Efeito Hover nos Botões CTA Pill (`CtaButton.tsx`):**
+    - **Arquitetura Componentizada:** Criação do componente `CtaButton` (`src/components/CtaButton.tsx`) reutilizável em todo o ecossistema da aplicação.
+    - **Estado Padrão (Normal):** Pílula sólida em verde neon fluorescente (`#D2FB07`), cantos totalmente arredondados (`rounded-full`), texto perfeitamente centralizado em preto (`text-black font-normal`), sem seta aparente e com sombra suave.
+    - **Estado Hover (Ao passar o cursor):**
+      - **Halo Neon Expansivo:** Aplicação de efeito de iluminação difusa fluorescente ao redor de todo o botão: `hover:shadow-[0_0_32px_rgba(210,251,7,0.75),0_0_55px_rgba(210,251,7,0.35)]`.
+      - **Centralização Preservada:** O rótulo do botão permanece rigidamente alinhado ao centro geométrico.
+      - **Círculo Branco Flutuante:** Emersão à direita do botão de um círculo branco puro (`bg-white rounded-full`) contendo o ícone diagonal `ArrowUpRight` (`↗`) em preto com traço fino (`stroke-[2.2]`).
+      - **Transição Fluida:** Animação combinada de escala, opacidade e translação suave (`transition-all duration-300 ease-out`).
+    - **Adoção Unificada:** Replicado em todos os botões no estilo CTA do projeto: Hero ("Abrir minha conta"), ThreeSteps ("Abrir minha conta"), PreFooterCta ("Abrir minha conta"), DevSection ("Ver documentação"), Navbar (Desktop e Mobile: "Falar com especialista") e Footer ("Falar com especialista").
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

@@ -180,3 +180,26 @@
   - [x] Remoção da iluminação neon deslocada sobre o anel intermediário (`suporte-meio.png`).
   - [x] Luz ambiente radial difusa centralizada exclusivamente atrás do núcleo do WhatsApp, iluminando suavemente a órbita menor.
 - [x] Validação visual por screenshot headless em Docker (Next.js compilado com sucesso, HTTP 200 OK).
+
+---
+
+### [x] Passo 12: Padronização Global do Efeito Hover nos Botões CTA Pill (`CtaButton.tsx`)
+- [x] **Criação do Componente Unificado `CtaButton` (`src/components/CtaButton.tsx`):**
+  - [x] **Estado Padrão (Default):** Fundo sólido verde neon `#D2FB07`, cantos totalmente arredondados (`rounded-full`), texto centralizado em preto (`text-black font-normal`).
+  - [x] **Estado Hover (Ao passar o mouse):**
+    - [x] Brilho difuso neon verde expansivo ao redor do botão: `hover:shadow-[0_0_32px_rgba(210,251,7,0.75),0_0_55px_rgba(210,251,7,0.35)]`.
+    - [x] Texto mantido centralizado perfeitamente no botão.
+    - [x] Círculo branco flutuante posicionado à direita (`bg-white rounded-full`) contendo ícone preto `ArrowUpRight` (`↗`) com traço fino (`stroke-[2.2]`).
+    - [x] Animação suave com transição de opacidade, escala e translação (`opacity-0 scale-75 translate-x-1 group-hover:opacity-100 group-hover:scale-100 group-hover:translate-x-0 transition-all duration-300 ease-out`).
+  - [x] Variantes de tamanho suportadas: `lg` (Hero, ThreeSteps), `md` (PreFooterCta, Navbar Mobile, DevSection) e `sm` (Navbar Desktop, Footer).
+- [x] **Substituição e Padronização em Todos os Botões do Projeto:**
+  - [x] `Hero.tsx`: Botão "Abrir minha conta" atualizado com `CtaButton size="lg"`.
+  - [x] `ThreeSteps.tsx`: Botão "Abrir minha conta" atualizado com `CtaButton size="lg"`.
+  - [x] `PreFooterCta.tsx`: Botão "Abrir minha conta" atualizado com `CtaButton size="md"`.
+  - [x] `DevSection.tsx`: Botão "Ver documentação" atualizado com `CtaButton size="md"`.
+  - [x] `Navbar.tsx`: Botão desktop "Falar com especialista" (`size="sm"`) e botão mobile (`size="md"`).
+  - [x] `Footer.tsx`: Botão "Falar com especialista" atualizado com `CtaButton size="sm"`.
+- [x] **Validação e Prova Visual:**
+  - [x] Teste de interação via Chrome DevTools Protocol simulando evento de mouse hover real.
+  - [x] Captura de tela (`hover_screenshot_result.png`) confirmando correspondência idêntica com as imagens de referência (`media_1793407498660_f8ac4c9b.png` e `media_1793407504886_4b6be56a.png`).
+  - [x] Docker compilando em < 600ms, HTTP 200 OK.

@@ -1,4 +1,5 @@
 import TagBadge from "./TagBadge";
+import CtaButton from "./CtaButton";
 
 export default function ThreeSteps() {
   const steps = [
@@ -63,12 +64,9 @@ export default function ThreeSteps() {
 
         {/* CTA Button Ampliado idêntico ao original */}
         <div className="flex justify-center">
-          <a
-            href="#planos"
-            className="min-h-[56px] sm:min-h-[60px] px-12 sm:px-16 py-3.5 sm:py-4 text-base sm:text-[17px] font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.35)] hover:shadow-[0_6px_25px_rgba(210,251,7,0.5)] flex items-center justify-center text-center transform active:scale-[0.98]"
-          >
+          <CtaButton href="#planos" size="lg">
             Abrir minha conta
-          </a>
+          </CtaButton>
         </div>
       </div>
     </section>

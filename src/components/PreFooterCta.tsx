@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Check } from "lucide-react";
 import TagBadge from "./TagBadge";
+import CtaButton from "./CtaButton";
 
 export default function PreFooterCta() {
   return (
@@ -38,12 +39,13 @@ export default function PreFooterCta() {
             </p>
 
             {/* Primary Action Button */}
-            <a
+            <CtaButton
               href="#como-comecar"
-              className="min-h-[48px] px-9 py-3.5 text-base font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_25px_rgba(210,251,7,0.4)] flex items-center justify-center text-center mb-8 transform active:scale-[0.98]"
+              size="md"
+              className="mb-8"
             >
               Abrir minha conta
-            </a>
+            </CtaButton>
 
             {/* Micro Badges */}
             <div className="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs sm:text-sm font-medium text-neutral-400">

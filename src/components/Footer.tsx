@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUp, Instagram, MessageCircle, ArrowRight } from "lucide-react";
+import CtaButton from "./CtaButton";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -31,12 +32,9 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
-              <a
-                href="#suporte"
-                className="min-h-[44px] px-6 py-2.5 text-xs sm:text-sm font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all text-center flex items-center justify-center shadow-sm"
-              >
+              <CtaButton href="#suporte" size="sm">
                 Falar com especialista
-              </a>
+              </CtaButton>
               <a
                 href="#como-comecar"
                 className="min-h-[44px] px-6 py-2.5 text-xs sm:text-sm font-medium text-white bg-white/5 border border-white/15 hover:bg-white/10 rounded-full transition-all text-center flex items-center justify-center"

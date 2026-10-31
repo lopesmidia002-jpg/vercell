@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
+import CtaButton from "./CtaButton";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -117,12 +118,9 @@ export default function Navbar() {
             >
               Entrar
             </a>
-            <a
-              href="#suporte"
-              className="px-6 py-2.5 text-sm font-normal text-black bg-[#D2FB07] hover:bg-[#c4ed00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.5)] active:scale-[0.98]"
-            >
+            <CtaButton href="#suporte" size="sm">
               Falar com especialista
-            </a>
+            </CtaButton>
           </div>
 
           {/* Mobile Hamburger Button (min 44x44px touch target) */}
@@ -208,13 +206,14 @@ export default function Navbar() {
               >
                 Entrar no painel
               </a>
-              <a
+              <CtaButton
                 href="#suporte"
+                size="md"
+                className="w-full"
                 onClick={() => setIsOpen(false)}
-                className="min-h-[48px] w-full flex items-center justify-center text-center font-normal text-black bg-[#D2FB07] hover:bg-[#c4ec00] active:scale-[0.98] rounded-full py-3 shadow-[0_4px_20px_rgba(210,251,7,0.45)] transition-all"
               >
                 Falar com especialista
-              </a>
+              </CtaButton>
             </div>
           </nav>
         </div>
