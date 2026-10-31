@@ -12,8 +12,8 @@ export default function OrbitalSupport() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#0C0D0E] rounded-3xl p-8 sm:p-12 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center relative z-10">
-            {/* Left Content */}
-            <div className="lg:col-span-6 flex flex-col items-start text-left">
+            {/* Left Content (centralizada no mobile, alinhada à esquerda no desktop) */}
+            <div className="lg:col-span-6 flex flex-col items-center text-center lg:items-start lg:text-left">
               <TagBadge text="Suporte 24h" isDark className="mb-6" />
 
               <h2 className="text-3xl sm:text-4xl md:text-[40px] lg:text-[42px] text-white tracking-tight leading-tight mb-6">
@@ -23,7 +23,7 @@ export default function OrbitalSupport() {
                 <span className="font-bold text-[#D2FB07]">horas por dia</span>
               </h2>
 
-              <p className="text-base sm:text-lg text-neutral-400 font-normal leading-relaxed max-w-lg">
+              <p className="text-base sm:text-lg text-neutral-400 font-normal leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Integração, dúvidas ou demandas operacionais: nossa equipe está
                 disponível 24 horas por dia para ajudar o seu time, com
                 respostas rápidas sempre que sua empresa precisar.

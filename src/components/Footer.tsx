@@ -31,13 +31,13 @@ export default function Footer() {
               Conta digital, API de Pix, subcontas e split para quem vende online.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
-              <CtaButton href="#suporte" size="sm">
+            <div className="flex flex-row items-center gap-2.5 sm:gap-3 flex-wrap sm:flex-nowrap">
+              <CtaButton href="#suporte" size="sm" className="whitespace-nowrap font-normal px-4 sm:px-6">
                 Falar com especialista
               </CtaButton>
               <a
                 href="#como-comecar"
-                className="min-h-[44px] px-6 py-2.5 text-xs sm:text-sm font-medium text-white bg-white/5 border border-white/15 hover:bg-white/10 rounded-full transition-all text-center flex items-center justify-center"
+                className="min-h-[44px] px-4 sm:px-6 py-2.5 text-xs sm:text-sm font-normal text-white bg-white/5 border border-white/15 hover:bg-white/10 rounded-full transition-all text-center flex items-center justify-center whitespace-nowrap"
               >
                 Abrir conta grátis
               </a>
@@ -145,7 +145,7 @@ export default function Footer() {
               <li className="pt-2">
                 <a
                   href="#politicas"
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#D2FB07] hover:underline"
+                  className="inline-flex items-center gap-1 text-xs font-normal text-[#D2FB07] hover:underline"
                 >
                   <span>Central de políticas</span>
                   <ArrowRight className="w-3 h-3" />
@@ -206,11 +206,10 @@ export default function Footer() {
             <div className="mt-8">
               <button
                 onClick={scrollToTop}
-                className="min-h-[44px] px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/10 text-xs font-semibold text-white flex items-center gap-2 transition-all"
+                className="min-h-[38px] px-5 py-2 rounded-full border border-[#D2FB07] bg-transparent hover:bg-[#D2FB07]/10 text-xs font-normal text-[#D2FB07] transition-all"
                 aria-label="Voltar para o Topo"
               >
                 <span>Voltar para o Topo</span>
-                <ArrowUp className="w-3.5 h-3.5" />
               </button>
             </div>
           </div>

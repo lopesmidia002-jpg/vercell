@@ -367,3 +367,34 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless em emulação mobile 390px (`dev_mobile_emulated_390.png`), desktop 1280px (`dev_desktop_1280.png`) e comparação direta [dev_mobile_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/dev_mobile_comparison.png) comprovando centralização milimétrica no mobile e preservação total no desktop.
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 25: Centralização Sistemática de Badges e Textos de Seções no Mobile (`DevSection`, `SecuritySection`, `OrbitalSupport`, `FaqSection`)
+- [x] **Padronização Responsiva de Cabeçalhos e Badges no Mobile:**
+  - [x] Identificadas e ajustadas as 4 seções de layout com coluna lateral (`lg:col-span-5` / `lg:col-span-6`) que permaneciam alinhadas à esquerda no mobile:
+    - `DevSection.tsx`: Coluna de informações ajustada para `items-center text-center lg:items-start lg:text-left`, centralizando o `TagBadge` ("Desenvolvedores"), título e subtítulo no mobile. Lista de recursos como bloco centralizado (`w-fit mx-auto lg:mx-0`) com alinhamento textual interno simétrico.
+    - `SecuritySection.tsx`: Coluna institucional ajustada para `items-center text-center lg:items-start lg:text-left`, centralizando o `TagBadge` ("Segurança"), título, subtítulo, link de políticas e canais de e-mail no mobile.
+    - `OrbitalSupport.tsx`: Coluna textual ajustada para `items-center text-center lg:items-start lg:text-left`, centralizando o `TagBadge` ("Suporte 24h"), título com destaque neon "24 horas por dia" e descrição explicativa no mobile.
+    - `FaqSection.tsx`: Coluna lateral de título ajustada para `items-center text-center lg:items-start lg:text-left lg:sticky lg:top-28`, centralizando o `TagBadge` ("Perguntas Frequentes"), título e subtítulo no mobile.
+  - [x] Preservação absoluta de 100% dos alinhamentos à esquerda e sticky layout no desktop (`lg:items-start lg:text-left lg:sticky`).
+- [x] **Validação Visual e Docker:**
+  - [x] Verificação CDP em emulação móvel (390px) comprovando que todos os 4 badges e títulos estão geometricamente centralizados na coordenada exata x = 195.0px (delta = 0.0px).
+  - [x] Capturas e comparativo direto [badges_mobile_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/badges_mobile_comparison.png) confirmando a harmonia estética no mobile.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 26: Calibração de Cores, Tipografia e Linha Única das Badges do Rodapé (`Footer.tsx`)
+- [x] **Botão "Voltar para o Topo" com Estilo Neon Fiel:**
+  - [x] Cor e borda convertidas para o verde neon oficial `#D2FB07` (`border border-[#D2FB07] bg-transparent hover:bg-[#D2FB07]/10 text-xs font-normal text-[#D2FB07]`), eliminando o antigo fundo branco/translúcido e removendo a seta para paridade absoluta com a referência original (`media_1793449092588_d2096bbd.png`).
+- [x] **Link "Central de Políticas" Sem Negrito:**
+  - [x] Tipografia alterada de `font-semibold` para peso regular `font-normal text-[#D2FB07]`, eliminando qualquer negrito conforme solicitado pelo usuário (`media_1793449137330_70314b32.png`).
+- [x] **Botões CTA em Linha Única e Sem Negrito:**
+  - [x] Textos dos botões `"Falar com especialista"` e `"Abrir conta grátis"` protegidos contra quebra de linha com `whitespace-nowrap`, garantindo apresentação rigorosamente em linha única.
+  - [x] Negrito removido de `"grátis"` e padronização integral em `font-normal text-xs sm:text-sm` com padding responsivo (`px-4 sm:px-6`), permitindo encaixe perfeito lado a lado no mobile (`media_1793449231187_554abcda.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Capturas e comparativo direto [footer_badges_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/footer_badges_comparison.png) comprovando conformidade visual dos 3 elementos com as capturas originais.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

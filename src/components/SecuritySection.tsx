@@ -39,8 +39,8 @@ export default function SecuritySection() {
     <section id="seguranca" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="politicas" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Bass Pago info */}
-          <div className="lg:col-span-5 flex flex-col items-start">
+          {/* Left Column: Bass Pago info (centralizada no mobile, alinhada à esquerda no desktop) */}
+          <div className="lg:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left">
             <TagBadge text="Segurança" className="mb-5" />
 
             <h2 className="text-2xl sm:text-3xl md:text-[34px] lg:text-[36px] xl:text-[40px] text-[#111111] tracking-tight leading-tight mb-5 whitespace-normal xl:whitespace-nowrap">
@@ -48,7 +48,7 @@ export default function SecuritySection() {
               <span className="font-bold text-[#5B7500]">cada Pix</span>
             </h2>
 
-            <p className="text-base text-[#666666] font-normal leading-relaxed mb-6 max-w-lg">
+            <p className="text-base text-[#666666] font-normal leading-relaxed mb-6 max-w-lg mx-auto lg:mx-0">
               A Versell opera com a infraestrutura da{" "}
               <span className="text-[#111111] font-bold">
                 Bass Pago Instituição de Pagamento
@@ -58,14 +58,14 @@ export default function SecuritySection() {
 
             <a
               href="#politicas"
-              className="inline-flex items-center gap-1.5 text-sm font-bold text-[#111111] hover:text-neutral-700 mb-8 transition-colors"
+              className="inline-flex items-center justify-center gap-1.5 text-sm font-bold text-[#111111] hover:text-neutral-700 mb-8 transition-colors"
             >
               <span>Conheça nossas políticas</span>
               <ArrowRight className="w-4 h-4 stroke-[2]" />
             </a>
 
             {/* Email Channels (Sem ícones de carta, com termos em negrito sublinhados) */}
-            <div className="flex flex-col space-y-2 text-xs sm:text-sm text-[#666666]">
+            <div className="flex flex-col space-y-2 text-xs sm:text-sm text-[#666666] items-center lg:items-start">
               <div>
                 <span>Canal de denúncias: </span>
                 <a

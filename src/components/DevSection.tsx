@@ -28,8 +28,8 @@ export default function DevSection() {
     <section id="desenvolvedores" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="docs" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: API Info */}
-          <div className="lg:col-span-5 flex flex-col items-start">
+          {/* Left Column: API Info (centralizada no mobile, alinhada à esquerda no desktop) */}
+          <div className="lg:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left">
             <TagBadge text="Desenvolvedores" className="mb-6" />
 
             <h2 className="text-3xl sm:text-4xl md:text-[44px] lg:text-[46px] text-[#111111] tracking-tight leading-[1.15] mb-5">
@@ -39,12 +39,12 @@ export default function DevSection() {
               <span className="font-bold text-[#5B7500]">robusta</span>
             </h2>
 
-            <p className="text-base text-[#666666] font-normal leading-relaxed mb-8 max-w-lg">
+            <p className="text-base text-[#666666] font-normal leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
               API REST no padrão Pix do Banco Central, com documentação completa e exemplos em cURL, Node.js, Python e PHP. Em pouco tempo o seu time já está emitindo Pix.
             </p>
 
             {/* Feature List with exact icons and olive green color */}
-            <div className="flex flex-col space-y-4 mb-10 w-full">
+            <div className="flex flex-col space-y-4 mb-10 w-fit mx-auto lg:mx-0 items-start text-left">
               {features.map((item, idx) => (
                 <div key={idx} className="flex items-center gap-3.5 text-sm sm:text-[15px] text-[#111111]">
                   <item.icon className="w-5 h-5 text-[#5B7500] stroke-[1.8] flex-shrink-0" />

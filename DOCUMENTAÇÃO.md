@@ -124,7 +124,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Alinhamento e Cores do Título:** Quebra de linha e coloração exatas: `"API de Pix "` em texto preto sem negrito (`font-normal text-[#111111]`) seguido por `"simples e"` na mesma linha em verde oliva em negrito (`font-bold text-[#5B7500]`), e `"robusta"` na segunda linha em verde oliva em negrito (`font-bold text-[#5B7500]`).
     - **Ícones Minimalistas dos Recursos:** Substituição dos antigos círculos checados pelos 4 ícones bare correspondentes em verde oliva da marca (`#5B7500` / `stroke-[1.8]`): `<Code>` para "Cash In, Cash Out e Pix Automático", `<Key>` para "Autenticação mTLS + OAuth2", `<Webhook>` para "Webhooks em tempo real para cada evento" e `<FlaskConical>` para "Ambiente sandbox e coleção Postman".
     - **Link de Coleção do Postman:** Texto `"Baixar coleção Postman"` calibrado na cor verde oliva (`text-[#5B7500] font-normal`) acompanhado por seta horizontal para a direita (`ArrowRight` `→`).
-    - **Centralização das Badges/Ações no Mobile:** Contêiner de ações ajustado para `w-full flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6`, garantindo centralização horizontal precisa das badges ("Ver documentação" e "Baixar coleção Postman →") no mobile (`< lg`) e preservando o alinhamento à esquerda no desktop (`lg:`).
+    - **Centralização de Cabeçalho, Badges e Ações no Mobile:** Coluna de informações ajustada para `items-center text-center lg:items-start lg:text-left`, centralizando o `TagBadge` ("Desenvolvedores"), título, subtítulo, bloco de recursos e botões/badges de ação no mobile (`< lg`), mantendo alinhamento à esquerda no desktop (`lg:`).
     - **Janela de Terminal de Código Fiel:**
       - Barra superior com os 3 pontos de janela (verde neon `#D2FB07`, âmbar `#EAB308` e verde escuro `#3F590A`), nome de arquivo centralizado `criar-cobranca.sh` e badge pílula `Cash In` em verde neon translúcido no canto direito.
       - Remoção de abas (cURL, Node.js, Python) e botão Copiar artificiais.
@@ -133,6 +133,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
       - Rodapé com nota documental: `"Exemplo resumido da "` em cinza neutro e `"documentação oficial"` em link verde neon com sublinhado ao passar o cursor.
 
 12. **Refinamento Pixel-Perfect da Seção de Segurança (`SecuritySection.tsx`):**
+    - **Centralização de Cabeçalho e Badges no Mobile:** Coluna institucional ajustada para `items-center text-center lg:items-start lg:text-left`, centralizando o `TagBadge` ("Segurança"), título, descrição, link e canais de contato no mobile.
     - **Alinhamento do Título em Linha Única:** O título `"Segurança em cada Pix"` foi unificado em uma única linha fluida com `"Segurança em "` em negrito preto (`font-bold text-[#111111]`) e `"cada Pix"` em negrito verde oliva (`font-bold text-[#5B7500]`).
     - **Texto Institucional Bass Pago:** Redação atualizada para `"Bass Pago Instituição de Pagamento"` com destaque em negrito (`font-bold text-[#111111]`).
     - **Remoção dos Ícones de Carta e Formatação dos E-mails:**
@@ -147,6 +148,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Tipografia dos Títulos dos Cards:** Títulos dos 4 cards definidos em negrito (`font-bold text-[#111111]`) com proporções generosas idênticas ao mockup original.
 
 13. **Padronização Pixel-Perfect da Seção Orbital de Suporte 24h (`OrbitalSupport.tsx`):**
+    - **Centralização de Cabeçalho e Badges no Mobile:** Coluna de suporte ajustada para `items-center text-center lg:items-start lg:text-left`, centralizando o `TagBadge` ("Suporte 24h"), título e parágrafo no mobile.
     - **Ocultação de Elementos Suprérfluos:** Removidos os dois badges de status ("Tempo médio de resposta: < 2 min", "Plantão técnico 24/7/365"), o botão inferior "Chamar no WhatsApp" e o texto de instrução tátil ("Toque ou passe o mouse nos anéis..."), mantendo o layout limpo e minimalista fiel à referência original.
     - **Harmonização do Título:** Primeira linha `"Um time do seu lado 24"` com o numeral `"24"` destacado em verde neon fluorescente (`#D2FB07`), e segunda linha `"horas por dia"` em verde neon fluorescente em negrito (`font-bold text-[#D2FB07]`).
     - **Novo Ícone e Círculo WhatsApp:** Núcleo central ampliado para um círculo sólido em verde neon fluorescente (`w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#D2FB07]`) contendo o ícone oficial do WhatsApp em preto puro vazado.
@@ -163,6 +165,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Adoção Unificada:** Replicado em todos os botões no estilo CTA do projeto: Hero ("Abrir minha conta"), ThreeSteps ("Abrir minha conta"), PreFooterCta ("Abrir minha conta"), DevSection ("Ver documentação"), Navbar (Desktop e Mobile: "Falar com especialista") e Footer ("Falar com especialista").
 
 15. **Padronização Pixel-Perfect da Seção de FAQ (`FaqSection.tsx`):**
+    - **Centralização de Cabeçalho e Badges no Mobile:** Coluna lateral ajustada para `items-center text-center lg:items-start lg:text-left lg:sticky lg:top-28`, centralizando o `TagBadge` ("Perguntas Frequentes"), título e subtítulo no mobile.
     - **Tipografia do Título Sem Negrito:** `"Perguntas"` em preto regular (`#111111`, peso 400) e `"Frequentes"` em cinza neutro (`#666666`, peso 400), alinhados em linha única, eliminando negrito prévio.
     - **Ícones de Expansão/Fechamento com Rotacionamento:** Substituição de chevrons por ícones minimalistas de traço fino em verde oliva (`#5B7500`): sinal `+` quando recolhido e `x` (rotação de 45°) quando expandido.
     - **Fechamento por Padrão e Interatividade Bidirecional:** Redefinição do estado inicial para todos os cards começarem fechados (`openIndex = null`), permitindo abrir qualquer pergunta ao clicar e recolher ao clicar novamente no botão de cabeçalho ou no corpo da resposta (`cursor-pointer`).
@@ -182,6 +185,11 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **TagBadge Dark com Mini Badge Cinza Destacado:** No tema dark, a mini badge interna recebe fundo cinza sólido (`bg-[#242528]`), nome "Versell" em verde neon fluorescente (`text-[#D2FB07] font-normal`) e ponto indicador com anel verde oliva escuro (`bg-[#526017]`) e núcleo neon no centro (`bg-[#D2FB07]`), envolto por pílula externa sutil (`bg-[#18191B] border border-white/10`) com texto "Vamos crescer juntos?" em cinza claro (`text-[#D8D8D8] font-normal`).
     - **Ícones Bare Neon nos Recursos:** Remoção de círculos com tiques de checkmark genéricos, adotando ícones minimalistas diretos em neon `#D2FB07` com traço fino (`stroke-[1.8]`): `Zap` para "Pix 24/7", `ShieldCheck` para "Infraestrutura completa" e `Code` (`< >`) para "API e sandbox" em espaçamento harmonioso.
     - **Iluminação e Proporção Calibrada da Logo 3D de Canto:** Logotipo volumétrico 3D de acrílico verde da Versell calibrado para `560x560px` com deslocamento de precisão (`-bottom-[190px] sm:-bottom-[210px] md:-bottom-[230px] -right-[90px] sm:-right-[100px] md:-right-[110px]`), posicionando a haste esquerda inclinada logo abaixo do término da linha 1 do subtítulo e a haste direita vertical alinhada à margem direita da curva do card, com ampla folga em relação ao botão e destaques.
+
+18. **Padronização das Badges e Ações do Rodapé (`Footer.tsx`):**
+    - **Botão "Voltar para o Topo" Neon:** Estilizado em pílula com borda e texto em verde neon fluorescente `#D2FB07` (`border border-[#D2FB07] bg-transparent hover:bg-[#D2FB07]/10 text-xs font-normal text-[#D2FB07]`), sem seta, idêntico à captura original.
+    - **Link "Central de Políticas" Sem Negrito:** Tipografia convertida para peso regular `font-normal text-[#D2FB07]`, eliminando qualquer negrito prévio.
+    - **Botões CTA em Linha Única:** `"Falar com especialista"` e `"Abrir conta grátis"` com `whitespace-nowrap font-normal`, garantindo apresentação em uma linha única e eliminando quebras indesejadas no mobile.
 
 ---
 
