@@ -318,6 +318,9 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 42. **Deslocamento dos Laptops para a Direita no Card Painel e Monitoramento (`BentoGrid.tsx`):**
     - **Alinhamento Preciso no Canto Inferior Direito:** Reajuste da margem de sangria direita para `lg:-mr-[155px]`, deslocando o mockup em +80px para a direita. O notch do laptop central foi reposicionado em 52.3% da largura do card, o laptop direito passa a ser cortado na altura do gráfico circular roxo e o laptop esquerdo inicia-se sob "seus webhooks pelo Finance, o", liberando um respiro amplo na margem esquerda e espelhando exatamente a composição da referência visual original.
 
+---
+43. **Ajuste Fino do Canto Inferior Direito no Card Painel e Monitoramento (`BentoGrid.tsx`):**
+    - **Equilíbrio Milimétrico de Sangria Horizontal e Vertical:** Calibração refinada para `lg:-mr-[150px] lg:-mb-[100px]`, posicionando o gráfico circular roxo do laptop direito a exatamente 38px da margem direita do card (referência original: 37px) e rebaixando o teclado para 2px da base inferior (idêntico aos 2px da referência). A curva `rounded-[32px]` do card corta suavemente o teclado na quina inferior direita, mantendo gráficos secundários ocultos e reproduzindo a composição original com fidelidade absoluta.
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:

@@ -126,6 +126,8 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 ---
 45. **Deslocamento dos Laptops para a Direita no Card Painel e Monitoramento (`BentoGrid.tsx`):** Calibração de sangria horizontal (`lg:-mr-[155px]`) deslocando o mockup em 80px à direita. O conjunto de computadores posiciona-se agora na metade direita do card (notch a 52.3% da largura), com o laptop direito suavemente recortado pela quina do card e o laptop esquerdo iniciando-se alinhado com a segunda linha descritiva.
 
+---
+46. **Ajuste Fino do Canto Inferior Direito no Card Painel e Monitoramento (`BentoGrid.tsx`):** Sangria milimétrica refinada para `lg:-mr-[150px] lg:-mb-[100px]`. O donut chart roxo alinha-se a 38px da lateral direita (referência original: 37px), e o teclado do laptop direito afunda na base inferior a 2px do limite do card, sendo fatiado pelo arco `rounded-[32px]` do card exatamente como na referência visual original (`media_1793478266081_bae9590b.png`).
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.
