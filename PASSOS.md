@@ -319,3 +319,18 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless (`prefooter_screen_v8.png`) e comparação lado a lado (`prefooter_v8_compare.png`) confirmando fidelidade milimétrica com a referência original.
   - [x] Container Docker rodando em perfeito estado com compilação limpa sem erros, HTTP 200 OK.
+
+---
+
+### [x] Passo 21: Ajuste Fino da Logo 3D e Refinamento do Subtítulo no Card CTA (`PreFooterCta.tsx`)
+- [x] **Refinamento Tipográfico e Quebra de Linha do Subtítulo:**
+  - [x] Contêiner ampliado para `max-w-[620px]` com quebra de linha deliberada `<br className="hidden sm:inline" />` logo após `"com a segurança e o "`, garantindo divisão em 2 linhas idêntica à referência original (`media_1793413900298_1a82c111.png`):
+    - Linha 1: *"Abra sua conta e comece a receber na hora, todos os dias, com a segurança e o"*
+    - Linha 2: *"suporte que a sua operação merece."*
+  - [x] Tipografia calibrada com `text-sm sm:text-base md:text-[17px] text-[#D8D8D8] font-normal leading-[1.65]`.
+- [x] **Calibração de Posição e Escala da Logo 3D:**
+  - [x] Escala e deslocamento ajustados para `w-[440px] sm:w-[500px] md:w-[560px]` com `-bottom-[190px] sm:-bottom-[210px] md:-bottom-[230px]` e `-right-[90px] sm:-right-[100px] md:-right-[110px]`, posicionando a haste esquerda do "V" logo abaixo do final da linha 1 do subtítulo e a haste direita vertical alinhada à margem direita da curva do card (`media_1793413838771_6467ecc7.jpg`).
+  - [x] Eliminação completa de sobreposição: botão CTA centralizado em escala equilibrada (`min-w-[210px] sm:min-w-[230px] md:min-w-[240px] px-8 sm:px-9`) e destaques inferiores compactados (`gap-x-5 sm:gap-x-7`), preservando mais de 100px de espaço livre ao redor da logo 3D.
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless (`prefooter_screen_v11.png`) e comparação visual de alta fidelidade confirmando paridade absoluta com a referência original.
+  - [x] Container Docker rodando de forma saudável (HTTP 200 OK) e compilação Next.js instantânea.
