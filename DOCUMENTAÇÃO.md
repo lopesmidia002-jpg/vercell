@@ -118,6 +118,18 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Alinhamento à Esquerda e Textos Fiéis:** Títulos e descrições com alinhamento textual à esquerda em tipografia sem negrito (`font-normal text-[#111111]`).
     - **Botão CTA Amplo e Centralizado:** Botão "Abrir minha conta" em formato pílula generoso (`min-h-[56px] sm:min-h-[60px] px-12 sm:px-16`) em verde neon fluorescente `#D2FB07`.
 
+11. **Refinamento Pixel-Perfect da Seção de Desenvolvedores (`DevSection.tsx` e `TagBadge.tsx`):**
+    - **TagBadge Suavizado:** Atualizado com pílula pastel suave `#F0F5DD`, ponto neon `#D2FB07` com halo luminoso sutil, texto da marca "Versell" em `#556F00` e texto identificador "Desenvolvedores" em cinza neutro suavizado `#555555` com peso normal (`font-normal`), harmonizando com o mockup original.
+    - **Alinhamento e Cores do Título:** Quebra de linha e coloração exatas: `"API de Pix "` em texto preto sem negrito (`font-normal text-[#111111]`) seguido por `"simples e"` na mesma linha em verde oliva em negrito (`font-bold text-[#5B7500]`), e `"robusta"` na segunda linha em verde oliva em negrito (`font-bold text-[#5B7500]`).
+    - **Ícones Minimalistas dos Recursos:** Substituição dos antigos círculos checados pelos 4 ícones bare correspondentes em verde oliva da marca (`#5B7500` / `stroke-[1.8]`): `<Code>` para "Cash In, Cash Out e Pix Automático", `<Key>` para "Autenticação mTLS + OAuth2", `<Webhook>` para "Webhooks em tempo real para cada evento" e `<FlaskConical>` para "Ambiente sandbox e coleção Postman".
+    - **Link de Coleção do Postman:** Texto `"Baixar coleção Postman"` calibrado na cor verde oliva (`text-[#5B7500] font-normal`) acompanhado por seta horizontal para a direita (`ArrowRight` `→`).
+    - **Janela de Terminal de Código Fiel:**
+      - Barra superior com os 3 pontos de janela (verde neon `#D2FB07`, âmbar `#EAB308` e verde escuro `#3F590A`), nome de arquivo centralizado `criar-cobranca.sh` e badge pílula `Cash In` em verde neon translúcido no canto direito.
+      - Remoção de abas (cURL, Node.js, Python) e botão Copiar artificiais.
+      - Snippet de código com chamada curl exata (`PUT https://api.pix.basspago.com.br/cob/{txid}`) com tokens de sintaxe em ciano (`#38BDF8`) nas chaves JSON e verde neon (`#D2FB07`) nos valores e variáveis.
+      - Adição da seção de retorno documentada (`# Resposta` com `status: ATIVA` e `pixCopiaECola`).
+      - Rodapé com nota documental: `"Exemplo resumido da "` em cinza neutro e `"documentação oficial"` em link verde neon com sublinhado ao passar o cursor.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

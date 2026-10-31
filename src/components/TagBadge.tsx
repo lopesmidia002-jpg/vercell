@@ -23,13 +23,13 @@ export default function TagBadge({ text, className = "", isDark = false }: TagBa
 
   return (
     <div
-      className={`inline-flex items-center gap-2.5 p-1 pr-4 rounded-full bg-white border border-black/[0.08] shadow-[0_2px_8px_rgba(0,0,0,0.02)] text-xs ${className}`}
+      className={`inline-flex items-center gap-2.5 p-1 pr-4 rounded-full bg-white/80 border border-black/[0.06] shadow-[0_1px_4px_rgba(0,0,0,0.03)] text-xs ${className}`}
     >
-      <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#EEF3DB] text-[#556F00] font-normal text-xs">
-        <span className="w-2.5 h-2.5 rounded-full bg-[#D2FB07] flex-shrink-0" />
+      <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#F0F5DD] text-[#556F00] font-normal text-xs">
+        <span className="w-2 h-2 rounded-full bg-[#D2FB07] flex-shrink-0 shadow-[0_0_6px_rgba(210,251,7,0.7)]" />
         Versell
       </span>
-      <span className="text-[#222222] font-normal">
+      <span className="text-[#555555] font-normal">
         {text}
       </span>
     </div>

@@ -96,3 +96,29 @@
 - [x] **Alinhamento à Esquerda e Textos Exatos:** Títulos (`Fale com a gente`, `Conta aprovada`, `Integre e receba`) e descrições alinhados à esquerda com peso de fonte regular/normal (`font-normal text-[#111111]`).
 - [x] **Botão CTA Ampliado:** Botão "Abrir minha conta" posicionado ao centro com formato pílula generoso (`min-h-[56px] sm:min-h-[60px] px-12 sm:px-16`), peso normal e leve sombreamento difuso.
 - [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).
+
+---
+
+### [x] Passo 8: Refinamento Pixel-Perfect da Seção de Desenvolvedores (`DevSection.tsx` e `TagBadge.tsx`)
+- [x] **Calibração do TagBadge (`TagBadge.tsx`):**
+  - [x] Pílula interna com fundo pastel suave `#F0F5DD`, ponto indicador neon `#D2FB07` com halo luminoso e nome "Versell" em `#556F00`.
+  - [x] Texto descritivo da seção ("Desenvolvedores") suavizado para cinza neutro `#555555` com peso normal (`font-normal`).
+- [x] **Harmonização do Título e Cores (`DevSection.tsx`):**
+  - [x] Linha 1: `"API de Pix "` em texto preto sem negrito (`font-normal text-[#111111]`) seguido na mesma linha por `"simples e"` em negrito verde oliva (`font-bold text-[#5B7500]`).
+  - [x] Linha 2: `"robusta"` em negrito verde oliva (`font-bold text-[#5B7500]`).
+- [x] **Atualização de 100% dos Ícones de Recursos:**
+  - [x] Remoção dos círculos de fundo e adoção de ícones bare em verde oliva `#5B7500` com traço refinado (`stroke-[1.8]`):
+    - `Code` (`< >`) para "Cash In, Cash Out e Pix Automático"
+    - `Key` para "Autenticação mTLS + OAuth2"
+    - `Webhook` (triskelion de 3 pás) para "Webhooks em tempo real para cada evento"
+    - `FlaskConical` (balão de laboratório) para "Ambiente sandbox e coleção Postman"
+- [x] **Calibração do Link do Postman:**
+  - [x] Texto `"Baixar coleção Postman"` ajustado para a cor verde oliva da marca (`text-[#5B7500] font-normal`).
+  - [x] Substituição da seta diagonal anterior pela seta horizontal para a direita (`ArrowRight` `→`).
+- [x] **Terminal de Código Fiel à Referência:**
+  - [x] Barra superior com controles de janela (verde neon `#D2FB07`, âmbar `#EAB308`, verde escuro `#3F590A`), título `criar-cobranca.sh` e pill badge `Cash In` neon.
+  - [x] Remoção de abas e botões espúrios.
+  - [x] Chamada curl exata com rota `PUT https://api.pix.basspago.com.br/cob/{txid}` e tokens coloridos (chaves em ciano `#38BDF8`, valores em verde neon `#D2FB07`).
+  - [x] Inclusão do bloco `# Resposta` documentado.
+  - [x] Rodapé limpo com link `"documentação oficial"` em verde neon.
+- [x] Validação completa no container Docker e verificação visual por screenshot headless (HTTP 200 OK, zero erros de compilação).
