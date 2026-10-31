@@ -46,11 +46,11 @@ export default function PreFooterCta() {
               suporte que a sua operação merece.
             </p>
 
-            {/* Primary Action Button (proporção fiel ao mockup original) */}
+            {/* Primary Action Button (comprimento calibrado rigorosamente aos ~324px do mockup original) */}
             <CtaButton
               href="#como-comecar"
               size="lg"
-              className="mb-8 sm:mb-9 min-w-[210px] sm:min-w-[230px] md:min-w-[240px] px-8 sm:px-9"
+              className="mb-8 sm:mb-9 w-[280px] sm:w-[324px] max-w-full text-[15px] sm:text-base"
             >
               Abrir minha conta
             </CtaButton>

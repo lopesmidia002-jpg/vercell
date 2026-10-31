@@ -334,3 +334,25 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless (`prefooter_screen_v11.png`) e comparação visual de alta fidelidade confirmando paridade absoluta com a referência original.
   - [x] Container Docker rodando de forma saudável (HTTP 200 OK) e compilação Next.js instantânea.
+
+
+---
+
+### [x] Passo 22: Remoção do Menu Sanduíche e Centralização da Marca Versell no Mobile (`Navbar.tsx`)
+- [x] **Remoção do Menu Sanduíche (Mobile):**
+  - [x] Eliminação do botão de hambúrguer mobile e do drawer de navegação deslizante em viewports mobile (`< md`), mantendo o cabeçalho clean e minimalista em conformidade estrita com a solicitação do usuário.
+- [x] **Centralização da Marca Versell no Mobile:**
+  - [x] Atualização do layout do container para `justify-center md:justify-between`, centralizando o logotipo oficial "Versell" geometricamente na largura da viewport em telas móveis e preservando o alinhamento à esquerda com menu completo e botões de ação em telas desktop (`md:`).
+- [x] **Validação Visual e Docker:**
+  - [x] Capturas headless mobile (`navbar_mobile_crop_500.png`) e desktop (`navbar_desktop_crop.png`) e comparação direta [navbar_mobile_compare.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/navbar_mobile_compare.png) confirmando centralização matemática no mobile e integridade total no desktop.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 23: Calibração de Comprimento do Botão/Badge CTA no Card Pré-Footer (`PreFooterCta.tsx`)
+- [x] **Ajuste de Comprimento e Proporção do Botão CTA:**
+  - [x] Comprimento/largura horizontal do botão `"Abrir minha conta"` ampliado de 240px para 324px no desktop (`w-[280px] sm:w-[324px] max-w-full`), correspondendo exatamente ao aspect ratio original de 5.31:1 (`324px x 61px`) da referência (`media_1793413882076_daa3730f.jpg` e `media_1793411577297_5ab6f976.png`).
+  - [x] Tipografia calibrada com `text-[15px] sm:text-base font-normal`, garantindo respiro e padding horizontal generoso (~106px de cada lado) perfeitamente alinhado ao design original.
+- [x] **Validação Visual e Docker:**
+  - [x] Capturas e comparações 1:1 [btn_compare_1to1.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/btn_compare_1to1.png) e [prefooter_card_compare_v12.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/prefooter_card_compare_v12.png) comprovando harmonia visual e paridade de dimensões com o mockup de referência.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
