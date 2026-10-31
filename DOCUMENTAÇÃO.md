@@ -20,10 +20,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 ## 2. Ajustes Pixel-Perfect (Hero, Badges, Bento Grid, Carrossel e Navbar)
 1. **Componente de Tag Badge (`TagBadge.tsx`):**
-   - Reprodução cirúrgica da pílula original com escala e proporções ampliadas: altura total calibrada para ~42-44px com contorno externo branco limpo `border border-black/[0.08]` e sombra sutil `shadow-[0_2px_8px_rgba(0,0,0,0.02)]`.
-   - Pílula interna pastel `#EDF4D4` ampliada (`px-3 py-1` / altura ~31-32px) com ponto indicador circular neon limpo (`w-2.5 h-2.5 rounded-full bg-[#D2FB07]`) e halo difuso suave.
-   - Nome **Versell** em peso normal (`font-normal`), na cor verde oliva `#556F00`, com tipografia `text-xs sm:text-[13px]`.
-   - Texto de identificação de seção em `font-normal text-[#333333] text-xs sm:text-[13px]` com espaçamento generoso (`gap-3`) e padding lateral (`pr-5`), aplicado uniformemente em todos os 10 locais onde o componente é utilizado (Hero, ValueCards, BentoGrid, SolutionsGrid, ThreeSteps, DevSection, SecuritySection, FaqSection, OrbitalSupport e PreFooterCta).
+   - Reprodução cirúrgica da pílula original com escala e proporções ampliadas para o tamanho real: altura total calibrada para ~52-54px com contorno externo branco limpo `border border-black/[0.08]` e sombra sutil `shadow-[0_2px_10px_rgba(0,0,0,0.03)]`.
+   - Pílula interna pastel `#EDF4D4` ampliada (`px-4 py-2` / altura ~38-40px) com ponto indicador circular neon limpo (`w-2.5 h-2.5 rounded-full bg-[#D2FB07]`) e halo luminoso difuso (`shadow-[0_0_8px_rgba(210,251,7,0.9)]`).
+   - Nome **Versell** em peso normal (`font-normal`), na cor verde oliva `#556F00`, com tipografia `text-sm sm:text-[15px]`.
+   - Texto de identificação de seção em `font-normal text-[#333333] text-sm sm:text-[15px]` com espaçamento generoso (`gap-4 sm:gap-4.5`) e padding lateral (`pr-6 sm:pr-7`), aplicado uniformemente em todos os 10 locais onde o componente é utilizado (Hero, ValueCards, BentoGrid, SolutionsGrid, ThreeSteps, DevSection, SecuritySection, FaqSection, OrbitalSupport e PreFooterCta).
 2. **Hero Section:**
    - Adicionada tela com quadrados em efeito leve de fundo (`bg-[size:48px_48px]`), estendendo-se por toda a seção e sob a luz ambiente neon do ícone 3D.
    - **Tipografia do Título Principal:** A frase `"Quem vende no Pix,"` foi ajustada para peso de fonte normal (`font-normal`), sem negrito, enquanto a segunda linha `"vende com Versell."` mantém o destaque em negrito (`font-bold`) na cor verde oliva `#5B7500`, exatamente como na referência original.

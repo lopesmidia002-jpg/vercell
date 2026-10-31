@@ -127,9 +127,9 @@
 
 ### [x] Passo 9: Ampliação e Padronização Global de Escala dos Badges (`TagBadge.tsx`)
 - [x] **Calibração Dimensional dos Badges:**
-  - [x] Altura total externa ampliada para ~42-44px (contra ~28-30px anteriores) com padding `p-1.5 pr-5` e borda sutil `border border-black/[0.08]`.
-  - [x] Pílula interna ("● Versell") expandida para ~31-32px de altura com padding `px-3 py-1`, fundo pastel `#EDF4D4` e ponto neon `#D2FB07` com halo luminoso.
-  - [x] Tipografia proporcionalmente calibrada: `"Versell"` em `#556F00` e texto da seção em `#333333` com `text-xs sm:text-[13px]` e espaçamento generoso `gap-3`.
+  - [x] Altura total externa ampliada para ~52-54px (contra ~28-36px anteriores) com padding `p-1.5 sm:p-2 pr-6 sm:pr-7`, borda sutil `border border-black/[0.08]` e sombra suave `shadow-[0_2px_10px_rgba(0,0,0,0.03)]`.
+  - [x] Pílula interna ("● Versell") expandida para ~38-40px de altura com padding `px-4 py-2`, fundo pastel `#EDF4D4` e ponto neon `#D2FB07` com halo luminoso circular difuso (`shadow-[0_0_8px_rgba(210,251,7,0.9)]`).
+  - [x] Tipografia proporcionalmente calibrada: `"Versell"` em `#556F00` e texto da seção em `#333333` com `text-sm sm:text-[15px]` e espaçamento generoso `gap-4 sm:gap-4.5`.
 - [x] **Propagação Automática em 100% dos Badges do Projeto:**
   - [x] `Hero.tsx` ("Conta digital + API de Pix")
   - [x] `ValueCards.tsx` ("Pix sem limites")
