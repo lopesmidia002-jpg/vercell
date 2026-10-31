@@ -665,3 +665,16 @@
   - [x] Auditoria CDP em viewport mobile (390x844) confirmando altura padronizada de 250px nos cards de texto (Cards 2, 3, 4, 5 e 7) e enquadramento limpo.
   - [x] Comparativo visual gerado [bento_mobile_cards_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/bento_mobile_cards_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 48: Redução do Zoom dos Computadores no Card Painel e Monitoramento (`BentoGrid.tsx`)
+- [x] **Redução de Escala e Alinhamento Pixel-Perfect com o Original:**
+  - [x] Redimensionado o contêiner do mockup dos MacBooks (`MacBook-Air-2022-3.webp`) de `lg:w-[860px]` / `lg:h-[320px]` para `lg:w-[670px]` / `lg:h-[270px]`, eliminando a ampliação excessiva ("zoom") que ocupava 94% da largura do card.
+  - [x] Ajustadas as margens de sangria no canto inferior direito para `-mr-6 sm:-mr-14 lg:-mr-[75px]` e `-mb-8 sm:-mb-16 lg:-mb-[95px]`, assentando e rebaixando o teclado e trackpad do laptop central abaixo do rodapé do card, exatamente como na captura original (`media_1793475387104_d83a993c.png`).
+  - [x] A lateral esquerda do card agora mantém um respiro limpo e elegante sob o texto explicativo, enquanto a lateral direita apresenta o recorte suave do laptop direito na borda arredondada, idêntico à referência visual original.
+  - [x] Responsividade preservada para mobile (`w-full h-52 -mr-6 -mb-8`) e tablet (`sm:w-[540px] sm:h-64 sm:-mr-14 sm:-mb-16`).
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP confirmando redução da proporção dos laptops na largura do card de 94% para ~68%, reproduzindo fielmente as proporções e o zoom do mockup original.
+  - [x] Comparativo visual gerado [card6_laptop_zoom_reduced_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/card6_laptop_zoom_reduced_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
