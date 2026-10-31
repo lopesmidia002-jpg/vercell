@@ -25,9 +25,9 @@ export default function VersellPayBanner() {
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-1.5 text-sm sm:text-[14px] font-medium text-[#5B7500] group-hover:text-[#475b00] transition-colors self-end sm:self-center pr-2">
+            <div className="inline-flex items-center gap-2 text-[15px] sm:text-base font-normal text-[#5B7500] group-hover:text-[#475b00] transition-colors self-end sm:self-center pr-2">
               <span>versellpay.com</span>
-              <ArrowRight className="w-4 h-4 text-[#5B7500] group-hover:text-[#475b00] stroke-[2] group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-4 h-4 text-[#5B7500] group-hover:text-[#475b00] stroke-[1.8] group-hover:translate-x-1 transition-transform" />
             </div>
           </div>
         </a>

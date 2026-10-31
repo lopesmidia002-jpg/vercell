@@ -169,7 +169,7 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 16. **Padronização Pixel-Perfect do Card de Cartão e Checkout (`VersellPayBanner.tsx`):**
     - **Sobremesa Neon em Gradiente Suave:** Card estilizado com gradiente horizontal suave que entra com luz verde-limão pastel à esquerda e transita suavemente para branco puro na metade direita (`bg-gradient-to-r from-[#EEF9BD] via-[#FAFCEE] via-35% to-white to-70% bg-white rounded-[24px] border border-[#E2E6D5]`).
     - **Título em Negrito de Alto Contraste:** Frase `"Também precisa de cartão e checkout?"` ajustada para negrito (`font-bold text-[#111111] text-base sm:text-[17px] tracking-tight`), garantindo legibilidade e destaque visual fiel à referência original.
-    - **Link e Seta em Verde Oliva da Marca:** O identificador `"versellpay.com"` e o ícone conector foram atualizados para verde oliva `#5B7500` com substituição da seta diagonal por seta horizontal à direita (`ArrowRight` `→`).
+    - **Link e Seta em Verde Oliva sem Negrito:** O identificador `"versellpay.com"` calibrado em peso normal (`font-normal`), com escala tipográfica ampliada para `text-[15px] sm:text-base` na cor verde oliva `#5B7500`, acompanhado por seta horizontal à direita (`ArrowRight` `→`, `stroke-[1.8]`).
     - **Squircle Escuro e Cartão Neon:** Caixa de ícone escura compacta com cantos arredondados (`rounded-[14px] bg-[#0F1012]`) e ícone `CreditCard` com traço firme na cor verde neon `#D2FB07`.
 
 17. **Padronização Pixel-Perfect do Card CTA Pré-Footer e TagBadge Dark (`PreFooterCta.tsx` e `TagBadge.tsx`):**

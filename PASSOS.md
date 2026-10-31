@@ -268,3 +268,14 @@
 - [x] **Validação Visual e Docker:**
   - [x] Capturas de tela e análises pixel-a-pixel confirmando paridade absoluta.
   - [x] Next.js compilando em 883ms no Docker, HTTP 200 OK.
+
+---
+
+### [x] Passo 17: Ajuste Tipográfico do Link VersellPay (`VersellPayBanner.tsx`)
+- [x] **Remoção de Negrito e Aumento da Fonte:**
+  - [x] Texto `"versellpay.com"` atualizado para peso regular/normal (`font-normal`), eliminando o peso semibold/medium anterior.
+  - [x] Escala tipográfica ampliada para `text-[15px] sm:text-base` com espaçamento `gap-2`, assegurando legibilidade proporcional e fidelidade milimétrica com a captura de referência (`media_1793410874662_cb511e3f.png`).
+  - [x] Ícone `ArrowRight` (`→`) calibrado com `stroke-[1.8]` para harmonizar visualmente com os traços dos caracteres em peso normal.
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless e inspeção de recorte confirmando correspondência idêntica.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
