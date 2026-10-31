@@ -356,3 +356,14 @@
 - [x] **Validação Visual e Docker:**
   - [x] Capturas e comparações 1:1 [btn_compare_1to1.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/btn_compare_1to1.png) e [prefooter_card_compare_v12.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/prefooter_card_compare_v12.png) comprovando harmonia visual e paridade de dimensões com o mockup de referência.
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 24: Centralização das Badges/Botões de Ação no Mobile (`DevSection.tsx`)
+- [x] **Alinhamento e Centralização no Mobile:**
+  - [x] Atualizado o contêiner de botões/badges de ação para `w-full flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6`, garantindo centralização horizontal precisa das badges (`Ver documentação` e `Baixar coleção Postman →`) no mobile (`< lg`) e preservando o alinhamento à esquerda no desktop (`lg:`).
+  - [x] Link `"Baixar coleção Postman"` ajustado com `justify-center` para alinhamento simétrico caso ocorra quebra de linha em viewports móveis compactas.
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless em emulação mobile 390px (`dev_mobile_emulated_390.png`), desktop 1280px (`dev_desktop_1280.png`) e comparação direta [dev_mobile_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/dev_mobile_comparison.png) comprovando centralização milimétrica no mobile e preservação total no desktop.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

@@ -53,14 +53,14 @@ export default function DevSection() {
               ))}
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-6">
+            {/* Action Buttons (centralizadas no mobile, alinhadas à esquerda no desktop) */}
+            <div className="w-full flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6">
               <CtaButton href="#docs" size="md">
                 Ver documentação
               </CtaButton>
               <a
                 href="#postman"
-                className="inline-flex items-center gap-1.5 text-sm sm:text-[15px] font-normal text-[#5B7500] hover:text-[#455900] transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 text-sm sm:text-[15px] font-normal text-[#5B7500] hover:text-[#455900] transition-colors"
               >
                 <span>Baixar coleção Postman</span>
                 <ArrowRight className="w-4 h-4 text-[#5B7500] stroke-[1.8]" />
