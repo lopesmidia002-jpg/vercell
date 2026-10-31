@@ -114,6 +114,10 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 
 ---
 
+---
+42. **Redução de Espaços em Branco dos Cards do Bento Grid no Mobile (`BentoGrid.tsx`):** Eliminação das alturas mínimas estáticas (`min-h-[350px]`, `min-h-[440px]`) no mobile, substituindo-as por `min-h-0` em conjunto com classes responsivas (`md:min-h-[380px]` e `lg:min-h-[520px]`). No mobile, os cards textuais (API de Pix, Subcontas, Split, Pix Automático e Antifraude) ajustam-se organicamente a ~250px de altura com espaçamento interno equilibrado, extinguindo grandes vãos vazios e preservando o alinhamento de colunas no desktop.
+
+
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.
 - `README.md`: Documentação de apresentação da fintech, arquitetura Docker, guia de início rápido e catálogo de conformidade com o Banco Central.

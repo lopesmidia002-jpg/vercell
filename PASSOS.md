@@ -649,3 +649,19 @@
   - [x] Auditoria numérica CDP confirmando margem direita de 0px e margem inferior de 0px no contêiner do card.
   - [x] Comparativo visual gerado [card6_laptops_bottom_right_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/card6_laptops_bottom_right_comparison.png).
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 47: Otimização do Espaçamento dos Cards do Bento Grid no Mobile (`BentoGrid.tsx`)
+- [x] **Redução de Espaço em Branco Vazio nos Cards de Conteúdo Textual:**
+  - [x] Ajustadas as alturas mínimas dos cards no mobile para `min-h-0`, restringindo as alturas mínimas generosas exclusivamente aos breakpoints maiores (`sm:min-h-...` ou `md:min-h-[380px]` e `lg:min-h-[520px]`).
+  - [x] Card 2 (`API de Pix`): `min-h-0 sm:min-h-[480px] lg:min-h-[520px]`.
+  - [x] Cards 3, 4 e 5 (`Subcontas`, `Split automático`, `Pix Automático`): substituído `min-h-[350px] sm:min-h-[380px]` por `min-h-0 md:min-h-[380px]`.
+  - [x] Card 6 (`Painel e monitoramento`): `min-h-0 sm:min-h-[480px] lg:min-h-[520px]`.
+  - [x] Card 7 (`Antifraude inteligente`): `min-h-0 sm:min-h-[480px] lg:min-h-[520px]`.
+  - [x] No mobile, a altura de cada card textual foi reduzida de ~380-440px para ~250px, eliminando mais de 150-190px de espaço vazio desnecessário por card, mantendo o espaçamento interno limpo, equilibrado e proporcional ao conteúdo textual, conforme a solicitação do usuário.
+  - [x] No desktop e tablet, a integridade da grade simétrica e as proporções verticais generosas com alinhamento uniforme permanecem 100% preservadas.
+- [x] **Validação Visual e Docker:**
+  - [x] Auditoria CDP em viewport mobile (390x844) confirmando altura padronizada de 250px nos cards de texto (Cards 2, 3, 4, 5 e 7) e enquadramento limpo.
+  - [x] Comparativo visual gerado [bento_mobile_cards_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/bento_mobile_cards_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
