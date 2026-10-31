@@ -234,3 +234,21 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless confirmando correspondência idêntica ao mockup original (`media_1793409011595_c6f33f5e.png`).
   - [x] Docker compilando em tempo recorde, HTTP 200 OK.
+
+---
+
+### [x] Passo 15: Padronização Pixel-Perfect do Card de Cartão e Checkout (`VersellPayBanner.tsx`)
+- [x] **Sobremesa Neon em Gradiente Suave:**
+  - [x] Aplicação de gradiente horizontal aveludado partindo de verde-limão pastel à esquerda e transicionando para branco puro à direita: `bg-gradient-to-r from-[#EEF9BD] via-[#FAFCEE] via-35% to-white to-70% bg-white`.
+  - [x] Borda limpa e discreta sem contorno neon agressivo: `border border-[#E2E6D5] rounded-[24px]` com sombra sutil `shadow-sm hover:shadow-md`.
+- [x] **Tipografia em Negrito do Título Principal:**
+  - [x] Título `"Também precisa de cartão e checkout?"` formatado em negrito preto de alto contraste: `font-bold text-[#111111] text-base sm:text-[17px] tracking-tight`.
+  - [x] Subtítulo descritivo em cinza neutro com espaçamento ajustado: `text-xs sm:text-[13px] text-[#666666] font-normal mt-0.5 leading-snug`.
+- [x] **Correção da Cor e Seta do Link VersellPay:**
+  - [x] Palavra/link `"versellpay.com"` na cor verde oliva oficial da marca: `text-[#5B7500] group-hover:text-[#475b00] font-medium text-sm sm:text-[14px]`.
+  - [x] Substituição do ícone de seta diagonal (`ArrowUpRight` `↗`) pela seta horizontal para a direita (`ArrowRight` `→`) na mesma cor verde oliva `#5B7500`.
+- [x] **Ícone Squircle Escuro com Cartão Neon:**
+  - [x] Container escuro em squircle arredondado (`rounded-[14px] bg-[#0F1012]`) com ícone de cartão de crédito em neon fluorescente (`CreditCard text-[#D2FB07] stroke-[1.8]`).
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless com recorte de precisão validando correspondência exata com o design original (`media_1793409489981_3edbac07.png`).
+  - [x] Container Docker rodando em perfeito estado com compilação em 304ms, HTTP 200 OK.
