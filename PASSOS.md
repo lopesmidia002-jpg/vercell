@@ -302,3 +302,20 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura de tela headless confirmando que todos os 8 cards estão limpos, fechados e alinhados.
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 20: Ampliação da Altura do Card CTA e Iluminação Neon na Metade Inferior (`PreFooterCta.tsx`)
+- [x] **Ampliação da Altura e Respiro Interno do Card:**
+  - [x] Altura mínima do contêiner escuro ampliada para `min-h-[500px] sm:min-h-[560px] lg:min-h-[590px]` com padding vertical generoso `px-6 py-14 sm:px-12 sm:py-20 lg:px-16 lg:py-24`, alcançando proporções verticais idênticas à referência original (`media_1793412880627_379559bb.jpg`).
+  - [x] Espaçamentos verticais calibrados entre elementos: TagBadge `mb-6 sm:mb-8`, título `mb-4 sm:mb-5`, subtítulo `mb-8 sm:mb-10` e botão CTA `mb-8 sm:mb-10`.
+- [x] **Efeito de Iluminação Neon no Fundo da Metade Inferior:**
+  - [x] Inclusão de dupla camada de iluminação ambiente neon fluorescente cobrindo a metade inferior (~55-60%) do card escuro:
+    - Camada 1: Gradiente radial elíptico expansivo `radial-gradient(ellipse 95% 80% at 50% 100%, rgba(210, 251, 7, 0.22) 0%, rgba(210, 251, 7, 0.1) 45%, rgba(210, 251, 7, 0.03) 75%, transparent 100%)` preenchendo os 62% inferiores.
+    - Camada 2: Gradiente linear vertical ascendente `bg-gradient-to-t from-[#D2FB07]/14 via-[#D2FB07]/6 to-transparent` preenchendo os 48% inferiores.
+  - [x] Preservação do preto profundo puro (`#0F1012`) na metade superior (topo 40%), criando a transição suave e luminosa idêntica à captura original.
+- [x] **Enquadramento e Escala da Logo 3D Acrílica:**
+  - [x] Dimensões ajustadas para `w-[460px] h-[460px] sm:w-[540px] sm:h-[540px] md:w-[600px] md:h-[600px]` com posicionamento `-bottom-[220px] sm:-bottom-[260px] md:-bottom-[290px] -right-[95px] sm:-right-[105px] md:-right-[115px]`, mantendo as duas hastes superiores do "V" perfeitamente alinhadas ao novo respiro vertical do card.
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless (`prefooter_screen_v8.png`) e comparação lado a lado (`prefooter_v8_compare.png`) confirmando fidelidade milimétrica com a referência original.
+  - [x] Container Docker rodando em perfeito estado com compilação limpa sem erros, HTTP 200 OK.
