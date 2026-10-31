@@ -289,6 +289,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Gradiente Aveludado e Calibração de Opacidade:** Redução da opacidade central do halo radial para 42% e da camada da haste direita para 30%, proporcionando uma iluminação suave, harmoniosa e aveludada em 360° ao redor do ícone volumétrico sem estourar as quinas da malha quadriculada, preservando a pureza do fundo `#F6F7F2` e a fidelidade pixel-perfect ao mockup de referência.
 
 ---
+36. **Calibração Final da Suavização do Sombreamento Neon da Logo na Hero (`Hero.tsx`):**
+    - **Camada Única com Curva de Decaimento Fiel:** Halo radial neon unificado de 660px com opacidade aveludada de 36% no núcleo e decaimento contido a 85%, eliminando qualquer sangramento ou saturação amarelada nas quinas da malha quadriculada (`#F6F7F2`), reproduzindo exatamente o contraste elegante e a suavidade da captura original.
+
+---
 
 ## 4. Variáveis de Ambiente
 Configurações pré-definidas no ambiente do container:

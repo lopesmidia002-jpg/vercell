@@ -63,11 +63,8 @@ export default function Hero() {
 
           {/* Right Column: 3D Acrylic Logo Visual */}
           <div className="lg:col-span-5 flex items-center justify-center relative mt-2 lg:mt-0">
-            {/* Ambient Radial Lime Glow suave e aveludado abrangendo a logo em 360° com decaimento harmonioso */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[460px] sm:w-[580px] md:w-[680px] lg:w-[780px] h-[460px] sm:h-[580px] md:h-[680px] lg:h-[780px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.42)_0%,rgba(210,251,7,0.22)_35%,rgba(210,251,7,0.08)_60%,transparent_78%)] blur-3xl pointer-events-none" />
-
-            {/* Suave realce neon calibrado sob a haste direita e cavidade da logo */}
-            <div className="absolute top-[48%] left-[55%] -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[380px] md:w-[440px] lg:w-[500px] h-[300px] sm:h-[380px] md:h-[440px] lg:h-[500px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.3)_0%,rgba(210,251,7,0.12)_45%,transparent_72%)] blur-2xl pointer-events-none" />
+            {/* Ambient Radial Lime Glow único, suave e aveludado perfeitamente calibrado com o original */}
+            <div className="absolute top-[49%] left-[53%] -translate-x-1/2 -translate-y-1/2 w-[400px] sm:w-[500px] md:w-[600px] lg:w-[660px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[660px] rounded-full bg-[radial-gradient(circle,rgba(210,251,7,0.36)_0%,rgba(210,251,7,0.24)_40%,rgba(210,251,7,0.12)_65%,transparent_85%)] blur-3xl pointer-events-none" />
 
             {/* 3D Floating Element with GPU acceleration */}
             <div className="relative z-10 w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] lg:w-[460px] lg:h-[460px] flex items-center justify-center">

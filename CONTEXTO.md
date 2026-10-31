@@ -104,6 +104,9 @@ A experiência do usuário foi projetada estritamente com abordagem **Mobile Fir
 38. **Suavização da Iluminação Neon da Logo na Hero (`Hero.tsx`):** Calibração de opacidade para 42% no halo principal e 30% na camada de realce sob a haste direita, atingindo uma difusão aveludada contida e equilibrada que ilumina suavemente o entorno e a cavidade do 'V' sem espalhar verde-limão saturado nas quinas do grid.
 
 ---
+39. **Calibração Fiel do Sombreamento Neon da Logo na Hero (`Hero.tsx`):** Halo radial único suave de 660px posicionado no centro do 'V' (`left-[53%]`), com opacidade aveludada de 36% e atenuação completa nas bordas, preservando o fundo `#F6F7F2` imaculado nas quinas do grid e correspondência 100% fiel com a referência.
+
+---
 
 ## 6. Governança e Repositório
 - `.gitignore`: Regras completas de exclusão de artefatos de build Next.js, dependências Node, variáveis `.env` e caches de sistema.
