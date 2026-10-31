@@ -111,10 +111,10 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
      - Proporções verticais dos cards aumentadas com padding generoso `p-8 sm:p-9 md:p-10`, bordas arredondadas `rounded-[32px]` e altura mínima `min-h-[260px] sm:min-h-[280px]`.
      - Espaçamento vertical generoso `mb-6 sm:mb-8` entre o ícone e o título.
 
-10. **Reestruturação da Seção de 3 Passos (`ThreeSteps.tsx`):**
+10. **Reestruturação e Calibração da Seção de 3 Passos (`ThreeSteps.tsx`):**
     - **Remoção dos Cards Retangulares Fechados:** Eliminação dos cards brancos caixote, permitindo que a linha do tempo repouse de forma elegante e limpa sobre a superfície suave `#F6F7F2` da página, idêntico à captura original.
-    - **Linha Horizontal Contínua Neon:** Linha conectiva de 2px em verde neon fluorescente (`#D2FB07`) interligando os 3 círculos no desktop através de seu eixo central.
-    - **Círculos Numerados Minimalistas:** Círculos `01`, `02` e `03` estilizados com fundo branco (`bg-white`), contorno fino em verde neon (`border-2 border-[#D2FB07]`), sombra suave e alinhados à esquerda junto ao texto.
+    - **Linha Conectiva Horizontal Suavizada:** Linha fina de 1px em gradiente suave neon (`from-[#DFFA5A] via-[#DFFA5A]/80 to-transparent`) interligando os círculos no desktop a partir do centro do círculo `01` e atenuando delicadamente em direção à margem direita, eliminando o traço pesado anterior.
+    - **Círculos e Numeração em Verde Oliva:** Círculos `01`, `02` e `03` estilizados com fundo branco (`bg-white`), contorno fino de 1px em verde neon (`border border-[#D2FB07]`), sombra difusa sutil e numeração em verde oliva oficial (`font-bold text-[#557008]`), exatamente idêntica à referência original.
     - **Alinhamento à Esquerda e Textos Fiéis:** Títulos e descrições com alinhamento textual à esquerda em tipografia sem negrito (`font-normal text-[#111111]`).
     - **Botão CTA Amplo e Centralizado:** Botão "Abrir minha conta" em formato pílula generoso (`min-h-[56px] sm:min-h-[60px] px-12 sm:px-16`) em verde neon fluorescente `#D2FB07`.
 

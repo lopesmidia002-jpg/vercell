@@ -37,15 +37,15 @@ export default function ThreeSteps() {
 
         {/* Steps Timeline Container (Sem cards brancos, com linha contínua neon idêntica ao original) */}
         <div className="relative max-w-6xl mx-auto mb-16 sm:mb-20">
-          {/* Linha horizontal conectiva em verde neon no desktop */}
-          <div className="hidden md:block absolute top-7 sm:top-8 left-8 right-8 h-[2px] bg-[#D2FB07] z-0" />
+          {/* Linha horizontal conectiva em verde neon suave no desktop */}
+          <div className="hidden md:block absolute top-7 sm:top-8 left-7 sm:left-8 right-0 h-[1px] bg-gradient-to-r from-[#DFFA5A] via-[#DFFA5A]/80 to-transparent z-0" />
 
           {/* Grid dos 3 Passos (alinhamento à esquerda, sem caixas) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 lg:gap-16 relative z-10">
             {steps.map((item, idx) => (
               <div key={idx} className="flex flex-col items-start text-left">
-                {/* Círculo numerado com borda neon e fundo branco cobrindo a linha */}
-                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white border-2 border-[#D2FB07] flex items-center justify-center font-normal text-base sm:text-lg text-[#111111] shadow-[0_2px_8px_rgba(210,251,7,0.2)] mb-6 sm:mb-8 flex-shrink-0">
+                {/* Círculo numerado com borda neon fina, número verde e fundo branco */}
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white border border-[#D2FB07] flex items-center justify-center font-bold text-base sm:text-lg text-[#557008] shadow-[0_2px_10px_rgba(210,251,7,0.18)] mb-6 sm:mb-8 flex-shrink-0">
                   {item.step}
                 </div>
 

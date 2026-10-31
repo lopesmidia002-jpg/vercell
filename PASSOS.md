@@ -91,8 +91,8 @@
 
 ### [x] Passo 7: Reestruturação da Seção de 3 Passos (`ThreeSteps.tsx`) para o Design Original em Linha do Tempo
 - [x] **Remoção dos Cards Retangulares Brancos:** Eliminação dos contêineres em cards fechados, permitindo que a linha do tempo respire livremente sobre a superfície suave `#F6F7F2` da página, idêntico à captura original.
-- [x] **Linha Conectiva Horizontal Neon:** Adição de linha contínua em verde neon fluorescente (`#D2FB07`, altura 2px) passando pelo eixo central dos 3 círculos no desktop.
-- [x] **Círculos Numerados Minimalistas:** Círculos `01`, `02` e `03` estilizados com fundo branco puro (`bg-white`), borda nítida em verde neon (`border-2 border-[#D2FB07]`), sombra suave e alinhados à esquerda junto ao texto.
+- [x] **Linha Conectiva Horizontal Neon Suavizada:** Linha fina de 1px em gradiente suave neon (`from-[#DFFA5A] via-[#DFFA5A]/80 to-transparent`) passando pelo centro dos 3 círculos no desktop e atenuando à direita.
+- [x] **Círculos Numerados Minimalistas e Números em Verde:** Círculos `01`, `02` e `03` estilizados com fundo branco puro (`bg-white`), borda fina de 1px em verde neon (`border border-[#D2FB07]`), sombra suave e tipografia dos números em verde oliva (`font-bold text-[#557008]`), idêntico à captura original.
 - [x] **Alinhamento à Esquerda e Textos Exatos:** Títulos (`Fale com a gente`, `Conta aprovada`, `Integre e receba`) e descrições alinhados à esquerda com peso de fonte regular/normal (`font-normal text-[#111111]`).
 - [x] **Botão CTA Ampliado:** Botão "Abrir minha conta" posicionado ao centro com formato pílula generoso (`min-h-[56px] sm:min-h-[60px] px-12 sm:px-16`), peso normal e leve sombreamento difuso.
 - [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).
