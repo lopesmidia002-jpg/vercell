@@ -86,3 +86,13 @@
   - [x] Dimensões do squircle e ícones ampliadas: container escuro `w-12 h-12 rounded-2xl bg-[#0D0E10]` com ícones neon `w-6 h-6 text-[#D2FB07] stroke-[1.8]`.
 - [x] **Padronização Global de Squircles:** Replicado o padrão proporcional `w-12 h-12 rounded-2xl` e ícones `w-6 h-6 stroke-[1.8]` em `BentoGrid.tsx`, `SecuritySection.tsx` e `ThreeSteps.tsx`.
 - [x] Validação de compilação limpa no container Docker (HTTP 200 OK).
+
+---
+
+### [x] Passo 7: Reestruturação da Seção de 3 Passos (`ThreeSteps.tsx`) para o Design Original em Linha do Tempo
+- [x] **Remoção dos Cards Retangulares Brancos:** Eliminação dos contêineres em cards fechados, permitindo que a linha do tempo respire livremente sobre a superfície suave `#F6F7F2` da página, idêntico à captura original.
+- [x] **Linha Conectiva Horizontal Neon:** Adição de linha contínua em verde neon fluorescente (`#D2FB07`, altura 2px) passando pelo eixo central dos 3 círculos no desktop.
+- [x] **Círculos Numerados Minimalistas:** Círculos `01`, `02` e `03` estilizados com fundo branco puro (`bg-white`), borda nítida em verde neon (`border-2 border-[#D2FB07]`), sombra suave e alinhados à esquerda junto ao texto.
+- [x] **Alinhamento à Esquerda e Textos Exatos:** Títulos (`Fale com a gente`, `Conta aprovada`, `Integre e receba`) e descrições alinhados à esquerda com peso de fonte regular/normal (`font-normal text-[#111111]`).
+- [x] **Botão CTA Ampliado:** Botão "Abrir minha conta" posicionado ao centro com formato pílula generoso (`min-h-[56px] sm:min-h-[60px] px-12 sm:px-16`), peso normal e leve sombreamento difuso.
+- [x] Validação completa no container Docker (Next.js compilado com sucesso, HTTP 200 OK).

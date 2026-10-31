@@ -12,7 +12,7 @@ export default function ThreeSteps() {
       step: "02",
       title: "Conta aprovada",
       description:
-        "Depois da análise, sua conta digital é liberada com acesso ao painel, ao app e às credenciais de API.",
+        "Depois da análise, sua conta digital é liberada com acesso ao painel, ao app e às credenciais da API.",
     },
     {
       step: "03",
@@ -26,7 +26,7 @@ export default function ThreeSteps() {
     <section id="como-comecar" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="planos" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16">
+        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-16 sm:mb-20">
           <TagBadge text="Como começar" className="mb-4" />
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl text-[#111111] tracking-tight leading-tight">
@@ -35,33 +35,37 @@ export default function ThreeSteps() {
           </h2>
         </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative max-w-5xl mx-auto mb-14">
-          {steps.map((item, idx) => (
-            <div
-              key={idx}
-              className="flex flex-col items-center text-center p-8 sm:p-9 bg-white rounded-[32px] border border-black/[0.06] shadow-sm relative group hover:shadow-md transition-all min-h-[250px]"
-            >
-              <div className="w-12 h-12 rounded-full border border-black/[0.1] bg-[#FAFAFA] flex items-center justify-center font-mono text-base font-normal text-neutral-800 mb-6 group-hover:bg-[#D2FB07] group-hover:border-transparent transition-colors">
-                {item.step}
+        {/* Steps Timeline Container (Sem cards brancos, com linha contínua neon idêntica ao original) */}
+        <div className="relative max-w-6xl mx-auto mb-16 sm:mb-20">
+          {/* Linha horizontal conectiva em verde neon no desktop */}
+          <div className="hidden md:block absolute top-7 sm:top-8 left-8 right-8 h-[2px] bg-[#D2FB07] z-0" />
+
+          {/* Grid dos 3 Passos (alinhamento à esquerda, sem caixas) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 lg:gap-16 relative z-10">
+            {steps.map((item, idx) => (
+              <div key={idx} className="flex flex-col items-start text-left">
+                {/* Círculo numerado com borda neon e fundo branco cobrindo a linha */}
+                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white border-2 border-[#D2FB07] flex items-center justify-center font-normal text-base sm:text-lg text-[#111111] shadow-[0_2px_8px_rgba(210,251,7,0.2)] mb-6 sm:mb-8 flex-shrink-0">
+                  {item.step}
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-normal text-[#111111] tracking-tight mb-3">
+                  {item.title}
+                </h3>
+
+                <p className="text-sm sm:text-[15px] text-[#666666] font-normal leading-relaxed max-w-sm">
+                  {item.description}
+                </p>
               </div>
-
-              <h3 className="text-xl font-normal text-black tracking-tight mb-3">
-                {item.title}
-              </h3>
-
-              <p className="text-sm text-[#666666] leading-relaxed">
-                {item.description}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button Ampliado idêntico ao original */}
         <div className="flex justify-center">
           <a
             href="#planos"
-            className="min-h-[48px] px-9 py-3.5 text-base font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.35)] hover:shadow-[0_6px_25px_rgba(210,251,7,0.5)] flex items-center justify-center text-center transform active:scale-[0.98]"
+            className="min-h-[56px] sm:min-h-[60px] px-12 sm:px-16 py-3.5 sm:py-4 text-base sm:text-[17px] font-normal text-black bg-[#D2FB07] hover:bg-[#c3ec00] rounded-full transition-all duration-200 shadow-[0_4px_20px_rgba(210,251,7,0.35)] hover:shadow-[0_6px_25px_rgba(210,251,7,0.5)] flex items-center justify-center text-center transform active:scale-[0.98]"
           >
             Abrir minha conta
           </a>
