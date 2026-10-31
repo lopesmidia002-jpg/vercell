@@ -398,3 +398,48 @@
 - [x] **Validação Visual e Docker:**
   - [x] Capturas e comparativo direto [footer_badges_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/footer_badges_comparison.png) comprovando conformidade visual dos 3 elementos com as capturas originais.
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 27: Título em Linha Única e Subtítulos Justificados à Esquerda no Mobile (`DevSection`, `SecuritySection`, `OrbitalSupport`, `FaqSection`)
+- [x] **Título da API em Linha Única Sem Quebra Forçada (`DevSection.tsx`):**
+  - [x] Remoção da quebra `<br />` que isolava `"robusta"` na segunda linha, unificando a frase em `"API de Pix simples e robusta"`.
+  - [x] Aplicação de `whitespace-nowrap` e escala fluida responsiva (`text-[21px] min-[375px]:text-[23px] sm:text-3xl md:text-[44px] lg:text-[46px]`), garantindo exibição estritamente em uma única linha no mobile conforme captura do usuário (`media_1793450985797_56c64aa2.png`).
+- [x] **Subtítulos e Listas Justificados à Esquerda no Mobile:**
+  - [x] `DevSection.tsx`: Subtítulo explicativo (`"API REST no padrão Pix..."`) alinhado à esquerda (`text-left mx-0`) e lista de recursos ajustada para largura total com início na margem esquerda (`w-full items-start text-left mx-0`), com `whitespace-nowrap` em cada item. Botões de ação alinhados com `justify-start` no mobile.
+  - [x] `SecuritySection.tsx`: Subtítulo institucional (`"A Versell opera com a infraestrutura..."`) alinhado à esquerda (`text-left mx-0`), com link de políticas e canais de denúncia/compliance alinhados à esquerda (`items-start text-left w-full`).
+  - [x] `OrbitalSupport.tsx`: Subtítulo descritivo (`"Integração, dúvidas ou demandas operacionais..."`) alinhado à esquerda (`text-left mx-0`).
+  - [x] `FaqSection.tsx`: Subtítulo (`"Ficou com alguma dúvida? A gente responde."`) alinhado à esquerda (`text-left w-full`).
+- [x] **Validação Visual e Docker:**
+  - [x] Verificação CDP em emulação móvel (390px) confirmando altura do `h2` em 26.4px (linha única), alinhamento `text-align: left` em 100% dos subtítulos e início rigorosamente em x = 16.0px (margem esquerda).
+  - [x] Comparativo visual gerado [subtitles_mobile_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/subtitles_mobile_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 28: Centralização do Badge da Hero no Mobile e Texto em Linha Única (`TagBadge.tsx`, `Hero.tsx`)
+- [x] **Centralização do Badge no Mobile (`Hero.tsx`):**
+  - [x] Badge `"Conta digital + API de Pix"` encapsulado em `<div className="w-full flex justify-center lg:justify-start">`, assegurando centralização simétrica no mobile e preservando alinhamento à esquerda no desktop (`lg:justify-start`).
+  - [x] Agora 100% de todos os 10 badges de seções da landing page estão rigorosamente centralizados no mobile.
+- [x] **Proteção de Linha Única nos Badges (`TagBadge.tsx`):**
+  - [x] Aplicado `whitespace-nowrap` no contêiner principal, na mini-pílula interna ("Versell") e no `span` de texto, impedindo que o texto do badge quebre em duas linhas em qualquer tamanho de tela móvel.
+  - [x] Calibradas as proporções para dispositivos móveis (`text-xs sm:text-[15px]`, `px-3 sm:px-4 py-1.5 sm:py-2`, `gap-2.5 sm:gap-4.5` e `pr-4 sm:pr-7`), permitindo que até mesmo o badge mais longo (`244px`) caiba confortavelmente em telas compactas (360px a 390px) com ampla margem lateral.
+- [x] **Validação Visual e Docker:**
+  - [x] Medição CDP no viewport mobile (390px) comprovando centralização milimétrica do badge da Hero (`badgeCenterDelta: -0.007px`), altura contínua de 38px (linha única) e `whitespace: nowrap`.
+  - [x] Comparativo visual gerado [hero_badge_centered_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/hero_badge_centered_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+
+---
+
+### [x] Passo 29: Justificação à Esquerda dos Textos, Políticas e Contatos de Segurança no Mobile (`SecuritySection.tsx`)
+- [x] **Alinhamento à Esquerda Integral na Seção de Segurança:**
+  - [x] Subtítulo descritivo (`"A Versell opera com a infraestrutura..."`) alinhado à esquerda (`text-left mx-0`).
+  - [x] Link institucional (`"Conheça nossas políticas →"`) posicionado na margem esquerda com contêiner `<div className="w-full flex justify-start mb-8">`.
+  - [x] Canais oficiais de e-mail (`"Canal de denúncias: ..."` e `"Compliance: ..."`) alinhados rigorosamente à esquerda (`items-start text-left w-full`), eliminando qualquer centralização residual no mobile conforme solicitado (`media_1793451180824_3d95f5d2.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Inspeção CDP comprovando que título, subtítulo, botão de políticas e links de e-mail iniciam na coordenada exata `left: 16.0px` (`text-align: left`).
+  - [x] Comparativo visual gerado [security_mobile_justified_comparison.png](file:///C:/Users/Nilto/.gemini/antigravity/brain/72d170e4-9940-412d-a4b1-03f753d4e3a0/security_mobile_justified_comparison.png).
+  - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.

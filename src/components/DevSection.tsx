@@ -28,33 +28,33 @@ export default function DevSection() {
     <section id="desenvolvedores" className="py-20 md:py-28 bg-[#F6F7F2] scroll-mt-12">
       <div id="docs" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: API Info (centralizada no mobile, alinhada à esquerda no desktop) */}
-          <div className="lg:col-span-5 flex flex-col items-center text-center lg:items-start lg:text-left">
-            <TagBadge text="Desenvolvedores" className="mb-6" />
+          {/* Left Column: API Info (Badge centralizada no mobile, textos e subtítulos justificados à esquerda) */}
+          <div className="lg:col-span-5 flex flex-col items-start text-left">
+            <div className="w-full flex justify-center lg:justify-start">
+              <TagBadge text="Desenvolvedores" className="mb-6" />
+            </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-[44px] lg:text-[46px] text-[#111111] tracking-tight leading-[1.15] mb-5">
+            <h2 className="w-full text-left text-[21px] min-[375px]:text-[23px] sm:text-3xl md:text-[44px] lg:text-[46px] text-[#111111] tracking-tight leading-[1.15] mb-5 whitespace-nowrap">
               <span className="font-normal text-[#111111]">API de Pix </span>
-              <span className="font-bold text-[#5B7500]">simples e</span>
-              <br />
-              <span className="font-bold text-[#5B7500]">robusta</span>
+              <span className="font-bold text-[#5B7500]">simples e robusta</span>
             </h2>
 
-            <p className="text-base text-[#666666] font-normal leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
+            <p className="text-base text-[#666666] font-normal leading-relaxed mb-8 max-w-lg text-left mx-0">
               API REST no padrão Pix do Banco Central, com documentação completa e exemplos em cURL, Node.js, Python e PHP. Em pouco tempo o seu time já está emitindo Pix.
             </p>
 
-            {/* Feature List with exact icons and olive green color */}
-            <div className="flex flex-col space-y-4 mb-10 w-fit mx-auto lg:mx-0 items-start text-left">
+            {/* Feature List with exact icons and olive green color (justificada à esquerda e em uma linha) */}
+            <div className="flex flex-col space-y-4 mb-10 w-full items-start text-left mx-0">
               {features.map((item, idx) => (
                 <div key={idx} className="flex items-center gap-3.5 text-sm sm:text-[15px] text-[#111111]">
                   <item.icon className="w-5 h-5 text-[#5B7500] stroke-[1.8] flex-shrink-0" />
-                  <span className="font-normal text-[#111111]">{item.text}</span>
+                  <span className="font-normal text-[#111111] whitespace-nowrap">{item.text}</span>
                 </div>
               ))}
             </div>
 
-            {/* Action Buttons (centralizadas no mobile, alinhadas à esquerda no desktop) */}
-            <div className="w-full flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6">
+            {/* Action Buttons (alinhados à esquerda) */}
+            <div className="w-full flex flex-wrap items-center justify-start gap-4 sm:gap-6">
               <CtaButton href="#docs" size="md">
                 Ver documentação
               </CtaButton>

@@ -191,6 +191,24 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
     - **Link "Central de Políticas" Sem Negrito:** Tipografia convertida para peso regular `font-normal text-[#D2FB07]`, eliminando qualquer negrito prévio.
     - **Botões CTA em Linha Única:** `"Falar com especialista"` e `"Abrir conta grátis"` com `whitespace-nowrap font-normal`, garantindo apresentação em uma linha única e eliminando quebras indesejadas no mobile.
 
+19. **Título em Linha Única e Subtítulos Justificados à Esquerda no Mobile:**
+    - **Título `DevSection.tsx` em Linha Única:** Remoção da quebra `<br />` que dividia `"API de Pix simples e"` e `"robusta"`, unificando em uma única linha contínua com `whitespace-nowrap` e escala fluida `text-[21px] min-[375px]:text-[23px] sm:text-3xl md:text-[44px] lg:text-[46px]`.
+    - **Subtítulos e Recursos Justificados à Esquerda:** Parágrafos explicativos (`DevSection`, `SecuritySection`, `OrbitalSupport` e `FaqSection`) ajustados para alinhamento à esquerda (`text-left mx-0`), garantindo início nivelado na margem esquerda e leitura confortável no mobile, acompanhados de listas de recursos e canais de contato com `items-start text-left w-full`.
+
+20. **Centralização do Badge da Hero e Proteção de Linha Única (`TagBadge.tsx`, `Hero.tsx`):**
+    - **Centralização Universal de Badges no Mobile:** Badge `"Conta digital + API de Pix"` na `Hero.tsx` centralizado com `<div className="w-full flex justify-center lg:justify-start">`, unificando 100% dos badges do projeto em alinhamento centralizado no mobile.
+    - **Texto Estritamente em Linha Única:** Inclusão de `whitespace-nowrap` no contêiner e no texto do componente `TagBadge`, com escala proporcional (`text-xs sm:text-[15px]` e respiros responsivos), impedindo qualquer quebra de linha interna ou deformação de badge em telas móveis compactas.
+
+21. **Alinhamento à Esquerda dos Textos e Contatos de Segurança (`SecuritySection.tsx`):**
+    - **Subtítulo, Políticas e Canais de E-mail:** Na coluna institucional de `SecuritySection`, subtítulo explicativo, link `"Conheça nossas políticas →"` e canais de compliance/denúncia formatados com alinhamento rigoroso à esquerda (`items-start text-left w-full`), nivelados no ponto `left: 16px` no mobile.
+
+20. **Centralização do Badge da Hero e Proteção de Linha Única (`TagBadge.tsx`, `Hero.tsx`):**
+    - **Centralização Universal de Badges no Mobile:** Badge `"Conta digital + API de Pix"` na `Hero.tsx` centralizado com `<div className="w-full flex justify-center lg:justify-start">`, unificando 100% dos badges do projeto em alinhamento centralizado no mobile.
+    - **Texto Estritamente em Linha Única:** Inclusão de `whitespace-nowrap` no contêiner e no texto do componente `TagBadge`, com escala proporcional (`text-xs sm:text-[15px]` e respiros responsivos), impedindo qualquer quebra de linha interna ou deformação de badge em telas móveis compactas.
+
+21. **Alinhamento à Esquerda dos Textos e Contatos de Segurança (`SecuritySection.tsx`):**
+    - **Subtítulo, Políticas e Canais de E-mail:** Na coluna institucional de `SecuritySection`, subtítulo explicativo, link `"Conheça nossas políticas →"` e canais de compliance/denúncia formatados com alinhamento rigoroso à esquerda (`items-start text-left w-full`), nivelados no ponto `left: 16px` no mobile.
+
 ---
 
 ## 3. Instruções de Execução via Docker (100% Isolado)

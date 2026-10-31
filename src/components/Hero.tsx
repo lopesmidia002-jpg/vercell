@@ -16,8 +16,10 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Text & CTA */}
           <div className="lg:col-span-7 flex flex-col items-start text-left">
-            {/* Tag Badge: idêntico à imagem original */}
-            <TagBadge text="Conta digital + API de Pix" className="mb-6" />
+            {/* Tag Badge: centralizado no mobile, alinhado à esquerda no desktop */}
+            <div className="w-full flex justify-center lg:justify-start">
+              <TagBadge text="Conta digital + API de Pix" className="mb-6" />
+            </div>
 
             {/* Main Title */}
             <h1 className="text-[34px] leading-[1.12] sm:text-5xl lg:text-[54px] text-[#111111] tracking-tight mb-5">
