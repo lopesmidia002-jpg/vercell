@@ -8,22 +8,21 @@ export default function PreFooterCta() {
     <section className="py-16 md:py-24 bg-[#F6F7F2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#0F1012] rounded-[32px] sm:rounded-[36px] p-8 sm:p-14 lg:p-16 border border-white/10 shadow-2xl relative overflow-hidden flex flex-col items-center text-center">
-          {/* Ambient Glows focused at the bottom half and right corner */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[750px] h-[250px] bg-[#D2FB07]/15 rounded-full blur-[90px] pointer-events-none" />
-          <div className="absolute -bottom-10 -right-10 w-[380px] h-[280px] bg-[#D2FB07]/12 rounded-full blur-[80px] pointer-events-none" />
+          {/* Ambient Glow focused at the bottom center */}
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] sm:w-[750px] h-[250px] bg-[#D2FB07]/12 rounded-full blur-[90px] pointer-events-none" />
 
-          {/* 3D Visual Accent (vibrant acrylic logo rising from bottom-right corner) */}
-          <div className="absolute -bottom-12 -right-8 sm:-bottom-16 sm:-right-10 w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 opacity-75 sm:opacity-85 pointer-events-none hidden sm:block">
+          {/* 3D Visual Accent (deep metallic olive acrylic logo rising from bottom-right corner) */}
+          <div className="absolute -bottom-[200px] sm:-bottom-[230px] md:-bottom-[260px] -right-[95px] sm:-right-[105px] md:-right-[115px] w-[420px] h-[420px] sm:w-[480px] sm:h-[480px] md:w-[520px] md:h-[520px] pointer-events-none hidden sm:block z-0">
             <Image
               src="/assets/logo_versell.webp"
               alt="Versell 3D Visual"
-              width={384}
-              height={384}
-              className="w-full h-full object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
+              width={520}
+              height={520}
+              className="w-full h-full object-contain filter brightness-[0.52] contrast-[1.1] drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
             />
           </div>
 
-          <div className="relative z-10 max-w-2xl flex flex-col items-center">
+          <div className="relative z-10 max-w-xl flex flex-col items-center">
             {/* Tag Badge */}
             <TagBadge text="Vamos crescer juntos?" isDark className="mb-6" />
 
@@ -39,11 +38,11 @@ export default function PreFooterCta() {
               segurança e o suporte que a sua operação merece.
             </p>
 
-            {/* Primary Action Button */}
+            {/* Primary Action Button (Wide & generous matching original) */}
             <CtaButton
               href="#como-comecar"
-              size="md"
-              className="mb-8"
+              size="lg"
+              className="mb-8 min-w-[280px] sm:min-w-[320px] md:min-w-[340px]"
             >
               Abrir minha conta
             </CtaButton>

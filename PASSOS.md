@@ -279,3 +279,15 @@
 - [x] **Validação Visual e Docker:**
   - [x] Captura headless e inspeção de recorte confirmando correspondência idêntica.
   - [x] Container Docker rodando em perfeito estado com compilação limpa, HTTP 200 OK.
+
+---
+
+### [x] Passo 18: Calibração de Proporções do Botão CTA e Logo 3D de Canto (`PreFooterCta.tsx`)
+- [x] **Ampliação do Botão CTA para o Tamanho Original:**
+  - [x] Botão "Abrir minha conta" ampliado para escala `size="lg"` com largura mínima generosa: `min-w-[280px] sm:min-w-[320px] md:min-w-[340px]`, altura `min-h-[56px] sm:min-h-[62px]` e padding lateral `px-12 sm:px-16`, alcançando a proporção de 1/3 da largura do card idêntica à referência original (`media_1793411577297_5ab6f976.png`).
+- [x] **Proporção, Enquadramento e Coloração da Logo 3D:**
+  - [x] Calibração de escala da imagem `logo_versell.webp` para `520x520px` com deslocamento de precisão (`-bottom-[200px] sm:-bottom-[230px] md:-bottom-[260px] -right-[95px] sm:-right-[105px] md:-right-[115px]`), ocultando completamente a bifurcação inferior (crotch) abaixo da borda do card e exibindo exclusivamente as duas hastes superiores verticais do "V".
+  - [x] Ajuste tonal via `filter brightness-[0.52] contrast-[1.1] drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]`, convertendo o amarelo fluorescente em verde oliva metálico escuro com reflexos realistas, eliminando interferências com os textos de benefícios e correspondendo fielmente à referência (`media_1793411491530_229d733b.png`).
+- [x] **Validação Visual e Docker:**
+  - [x] Captura headless com inspeção de recortes e medição de distâncias confirmando correspondência milimétrica.
+  - [x] Next.js compilando com sucesso no Docker em < 250ms, HTTP 200 OK.

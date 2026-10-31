@@ -174,8 +174,9 @@ A Landing Page da Versell foi construída com foco em performance extrema, fidel
 
 17. **Padronização Pixel-Perfect do Card CTA Pré-Footer e TagBadge Dark (`PreFooterCta.tsx` e `TagBadge.tsx`):**
     - **TagBadge Dark com Mini Badge Cinza Destacado:** No tema dark, a mini badge interna recebe fundo cinza sólido (`bg-[#242528]`), nome "Versell" em verde neon fluorescente (`text-[#D2FB07] font-normal`) e ponto indicador com anel verde oliva escuro (`bg-[#526017]`) e núcleo neon no centro (`bg-[#D2FB07]`), envolto por pílula externa sutil (`bg-[#18191B] border border-white/10`) com texto "Vamos crescer juntos?" em cinza claro (`text-[#D8D8D8] font-normal`).
+    - **Botão CTA Ampliado Proporcional:** Botão "Abrir minha conta" ampliado para escala `size="lg"` com largura generosa (`min-w-[280px] sm:min-w-[320px] md:min-w-[340px]`) e altura confortável (`min-h-[56px] sm:min-h-[62px]`), ocupando 1/3 da largura do card de forma idêntica à referência original.
     - **Ícones Bare Neon nos Recursos:** Remoção de círculos com tiques de checkmark genéricos, adotando ícones minimalistas diretos em neon `#D2FB07` com traço fino (`stroke-[1.8]`): `Zap` para "Pix 24/7", `ShieldCheck` para "Infraestrutura completa" e `Code` (`< >`) para "API e sandbox".
-    - **Iluminação e 3D Acrylic Visual:** Eliminação da mancha circular no topo central, posicionando a iluminação ambiente suave na base e no canto inferior direito (`blur-[90px]`), e elemento 3D de acrílico verde da Versell nítido e em alta fidelidade no canto direito do card.
+    - **Iluminação e Proporção da Logo 3D de Canto:** Eliminação da mancha circular no topo central, posicionando a iluminação ambiente suave na base (`blur-[90px]`), e elemento 3D de acrílico da Versell ampliado para `520x520px` com deslocamento inferior que oculta a bifurcação e exibe apenas as duas hastes superiores com tonalidade metálica oliva escura (`brightness-[0.52] contrast-[1.1]`), alinhado milimetricamente ao mockup.
 
 ---
 
